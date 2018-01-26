@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Recettes : ScriptableObject {
 
-    [SerializeField]
-    public List<Ingredients> ingredients = new List<Ingredients>();
 
     public enum Type{
         Ordered, Balec
     };
 
-    Type type;
+    public Type type;
     bool good = true;
+
+    public int score = 10;
+    [SerializeField]
+    public List<Ingredients> ingredients = new List<Ingredients>();
 
     public bool ConsumeIngredient(Ingredients ingredient)
     {
@@ -47,6 +49,11 @@ public class Recettes : ScriptableObject {
     public bool IsGood()
     {
         return ingredients.Count == 0 && good;
+    }
+
+    public bool IsFinished()
+    {
+        return ingredients.Count == 0 || !good;
     }
 
 }
