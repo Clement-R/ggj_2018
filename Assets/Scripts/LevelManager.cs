@@ -17,8 +17,7 @@ public class LevelManager : MonoBehaviour {
         }
     }
 
-    public List<Recettes> recetteJoueur1;
-    public List<Recettes> recetteJoueur2;
+    public Level level;
 
     public float time = 50f;
     float elapsedTime = 0f;
@@ -36,16 +35,16 @@ public class LevelManager : MonoBehaviour {
 
     Recettes GetNext(int player)
     {
-        if(player == 0 && Manager.recetteJoueur1 != null && Manager.recetteJoueur1.Count > 0)
+        if(player == 0 && level.recetteJoueur1 != null && level.recetteJoueur1.Count > 0)
         {
-            Recettes r = Instantiate<Recettes>(Manager.recetteJoueur1[0]);
-            Manager.recetteJoueur1.RemoveAt(0);
+            Recettes r = Instantiate<Recettes>(level.recetteJoueur1[0]);
+            level.recetteJoueur1.RemoveAt(0);
             return r;
         }
-        if (player == 1 && Manager.recetteJoueur2 != null && Manager.recetteJoueur2.Count > 0)
+        if (player == 1 && level.recetteJoueur2 != null && level.recetteJoueur2.Count > 0)
         {
-            Recettes r = Instantiate<Recettes>(Manager.recetteJoueur2[0]);
-            Manager.recetteJoueur2.RemoveAt(0);
+            Recettes r = Instantiate<Recettes>(level.recetteJoueur2[0]);
+            level.recetteJoueur2.RemoveAt(0);
             return r;
         }
         return null;
@@ -101,6 +100,11 @@ public class LevelManager : MonoBehaviour {
             }
         }
         return achieved;
+    }
+
+    private void Start()
+    {
+        level = Instantiate<Level>(level);
     }
 
     private void Update()
