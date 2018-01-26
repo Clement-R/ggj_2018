@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Ingredients : ScriptableObject {
 
-    public string name = "Unknown";
+    new public string name = "Unknown";
     public Sprite sprite;
 }

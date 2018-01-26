@@ -17,4 +17,10 @@ public class RecettesEditor : Editor {
     {
         Utility.CreateAsset<Ingredients>();
     }
+
+    [MenuItem("Assets/Create/Level")]
+    public static void CreateLevel()
+    {
+        Utility.CreateAsset<Level>();
+    }
 }
