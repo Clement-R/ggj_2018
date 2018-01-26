@@ -12,6 +12,7 @@ public class Recettes : ScriptableObject {
     };
 
     Type type;
+    bool good = true;
 
     public bool ConsumeIngredient(Ingredients ingredient)
     {
@@ -24,6 +25,7 @@ public class Recettes : ScriptableObject {
             }
             else
             {
+                good = false;
                 return false;
             }
         }
@@ -37,8 +39,14 @@ public class Recettes : ScriptableObject {
                     return true;
                 }
             }
+            good = false;
             return false;
         }
+    }
+
+    public bool IsGood()
+    {
+        return ingredients.Count == 0 && good;
     }
 
 }
