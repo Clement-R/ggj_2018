@@ -9,8 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
-  m_Name: TideShots
+  m_Name: Bobe
   m_EditorClassIdentifier: 
+  recipeName: 
   type: 0
+  sprite: {fileID: 0}
   score: 10
   ingredients: []
