@@ -13,6 +13,7 @@ public class Recettes : ScriptableObject {
     public Type type;
     bool good = true;
 
+    public Sprite sprite;
     public int score = 10;
     [SerializeField]
     public List<Ingredients> ingredients = new List<Ingredients>();

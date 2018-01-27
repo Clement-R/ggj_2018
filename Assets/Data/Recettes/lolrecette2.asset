@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
-  m_Name: lolrecette
+  m_Name: lolrecette2
   m_EditorClassIdentifier: 
   recipeName: 
   type: 0
-  sprite: {fileID: 21300000, guid: 7032b8ffc5de3e3439b06f90c4c04239, type: 3}
+  sprite: {fileID: 21300000, guid: 2c32e6cf99f210d44aaeb38ffa9b543f, type: 3}
   score: 10
   ingredients: []

@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour {
 
     public Level level;
 
-    public float time = 50f;
+    
     float elapsedTime = 0f;
 
     public Recettes currentJoueur1 = null;
@@ -66,13 +66,18 @@ public class LevelManager : MonoBehaviour {
                 {
                     if (currentJoueur1.IsGood())
                     {
+                        Debug.Log("J1 validé!");
                         score += currentJoueur1.score;
                     }
-                    if(joueur1Ended != null)
+                    else
+                    {
+                        Debug.Log("J1 Raté");
+                    }
+                    currentJoueur1 = GetNext(0);
+                    if (joueur1Ended != null)
                     {
                         joueur1Ended.Invoke(currentJoueur1);
                     }
-                    currentJoueur1 = GetNext(0);
                 }
             }
         }
@@ -89,28 +94,36 @@ public class LevelManager : MonoBehaviour {
                 {
                     if (currentJoueur2.IsGood())
                     {
+                        Debug.Log("J2 Validé!");
                         score += currentJoueur2.score;
                     }
+                    else
+                    {
+                        Debug.Log("J2 Raté");
+                    }
+                    currentJoueur2 = GetNext(1);
                     if (joueur2Ended != null)
                     {
                        joueur2Ended.Invoke(currentJoueur2);
                     }
-                    currentJoueur2 = GetNext(1);
                 }
             }
         }
         return achieved;
     }
 
-    private void Start()
+    private void Awake()
     {
+        manager = this;
         level = Instantiate<Level>(level);
+        currentJoueur1 = GetNext(0);
+        currentJoueur2 = GetNext(1);
     }
 
     private void Update()
     {
         elapsedTime += Time.deltaTime;
-        if(elapsedTime > time && finish != null)
+        if(elapsedTime > level.time && finish != null)
         {
             finish.Invoke();
         }
