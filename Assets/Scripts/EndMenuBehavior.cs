@@ -10,6 +10,11 @@ public class EndMenuBehavior : MonoBehaviour {
     public float scoreMedium;
     public float scoreHigh;
 
+    [Header("Result sprites")]
+    public Sprite resultLow;
+    public Sprite resultMedium;
+    public Sprite resultHigh;
+
     private bool _isVisible = false;
 
 	void Start ()
@@ -25,15 +30,15 @@ public class EndMenuBehavior : MonoBehaviour {
         
         if(LevelManager.Manager.Score < scoreMedium)
         {
-            transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = null;
+            transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = null;
         }
         else if(LevelManager.Manager.Score >= scoreMedium && LevelManager.Manager.Score < scoreHigh)
         {
-            transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = null;
+            transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = null;
         }
         else
         {
-            transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = null;
+            transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = null;
         }
         
         _isVisible = true;
