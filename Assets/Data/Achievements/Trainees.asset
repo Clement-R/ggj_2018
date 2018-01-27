@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c18c45ae53340144b6a26ed88d06d8b, type: 3}
   m_Name: Trainees
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: bff7667be50f7c947b97bd93d9d9f0b5, type: 3}
+  sprite: {fileID: 21300000, guid: 38184547fd0a8e647a47641653a23aa4, type: 3}
   title: Trainees
-  description: Lol
+  description: First drink made

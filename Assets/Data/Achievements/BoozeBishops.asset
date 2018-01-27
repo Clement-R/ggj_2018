@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c18c45ae53340144b6a26ed88d06d8b, type: 3}
-  m_Name: Trainees 3
+  m_Name: BoozeBishops
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ca3878688d029b448bfecba4e5af404a, type: 3}
-  title: Trainees
-  description: 
+  sprite: {fileID: 21300000, guid: 6fa493c4e2dc7e04886a6f6ace8c7825, type: 3}
+  title: Booze Bishops
+  description: 60 drinks made

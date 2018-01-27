@@ -8,11 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
-  m_Name: Dobric
+  m_Script: {fileID: 11500000, guid: 7c18c45ae53340144b6a26ed88d06d8b, type: 3}
+  m_Name: CannedHeatConnoisseurs
   m_EditorClassIdentifier: 
-  recipeName: 
-  type: 0
-  sprite: {fileID: 0}
-  score: 10
-  ingredients: []
+  sprite: {fileID: 21300000, guid: 41fe7f9ed7fa6ad479edfa23d60fe6c5, type: 3}
+  title: Canned Heat Connoisseurs
+  description: 20 drinks made
