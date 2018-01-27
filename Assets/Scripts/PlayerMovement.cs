@@ -94,20 +94,7 @@ public class PlayerMovement : MonoBehaviour {
             {
                 StartCoroutine(Move(1 * (int)_sign));
             }
-<<<<<<< HEAD
-            else
-            {
-                EventManager.TriggerEvent("WrongBottle", new { type = _playerId });
-            }
-        }
-        else if(Input.GetButtonDown(validationKey) && _actualPositionIndex == 0)
-        {
-            print("Validation time");
-            bool success = LevelManager.Manager.Valider(_playerId);
-            if(success)
-=======
             else if (Input.GetAxisRaw(axisMove) < -0.5 && _canMove)
->>>>>>> 6c0b8f74c61dbd3dbdc0eadc9aee73ee6933642d
             {
                 StartCoroutine(Move(-1 * (int)_sign));
             }
