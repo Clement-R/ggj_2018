@@ -116,6 +116,10 @@ public class PlayerMovement : MonoBehaviour {
             {
                 // TODO : play feedback
             }
+            else
+            {
+                EventManager.TriggerEvent("WrongBottle", new { type = _playerId });
+            }
         }
         else if(Input.GetButtonDown(validationKey) && _actualPositionIndex == 0)
         {
