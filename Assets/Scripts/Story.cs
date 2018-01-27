@@ -15,20 +15,30 @@ public class Story : MonoBehaviour {
 
     public void LaunchNext()
     {
-        if(next >= levels.Count || levels[next] == null)
+        AsyncOperation op;
+        ScreenEffectsManager.manager.Launch();
+        if (next >= levels.Count || levels[next] == null)
         {
-            SceneManager.LoadScene("main_menu");
+            
+            op = SceneManager.LoadSceneAsync("main_menu");
+            op.allowSceneActivation = false;
             next = 0;
+            ScreenEffectsManager.manager.middle += () =>
+            {
+                op.allowSceneActivation = true;
+            };
             return;
         }
-        AsyncOperation op = SceneManager.LoadSceneAsync("main");
-        op.completed += (o) =>
+        op = SceneManager.LoadSceneAsync("main");
+        op.allowSceneActivation = false;
+        ScreenEffectsManager.manager.middle += () =>
         {
             LevelManager.Manager.type = LevelManager.Type.Normal;
             LevelManager.Manager.level = levels[next];
             LevelManager.Manager.Init();
             LevelManager.Manager.finish += LaunchNext;
             next++;
+            op.allowSceneActivation = true;
         };
     }
 }
