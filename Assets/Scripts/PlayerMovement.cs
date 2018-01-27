@@ -52,11 +52,15 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool _canLightItUp = true;
 
+    private bool _defaultFlip;
+
     private void Start()
     {
         _sr = GetComponent<SpriteRenderer>();
         _sign = Mathf.Sign(positions[1].position.x - positions[0].position.x);
         _playerId = _sign == -1 ? 1 : 0;
+
+        _defaultFlip = _sr.flipX;
 
         LevelManager.Manager.joueur1Ended += OnRecipeEnd;
     }
@@ -98,12 +102,17 @@ public class PlayerMovement : MonoBehaviour {
 
         if(Input.GetButtonDown(validationKey) && _actualPositionIndex != 0)
         {
-            print("VALIDATION TIME");
-            LevelManager.Manager.Valider(_playerId);
+            print("Take a bottle");
+            AddIngredient();
             EventManager.TriggerEvent("ServeDrink", new { });
         }
+        else if(Input.GetButtonDown(validationKey) && _actualPositionIndex != 0)
+        {
+            print("Validation time");
+            LevelManager.Manager.Valider(_playerId);
+        }
 
-        if(LevelManager.Manager.GetNextIngredient(_playerId) != null)
+        if (LevelManager.Manager.GetNextIngredient(_playerId) != null)
         {
             string ingredientName = LevelManager.Manager.GetNextIngredient(_playerId).name;
             
@@ -269,20 +278,24 @@ public class PlayerMovement : MonoBehaviour {
     {
         Ingredients ingredient = null;
 
+        float x = positions[_actualPositionIndex].position.x;
+
+        print(x);
+
         // Get bottle's Ingredient at position
         foreach (var bottle in GameObject.FindGameObjectsWithTag("Bottle"))
         {
-            if(_actualPositionHigh == bottle.GetComponent<BottleBehavior>().highPosition && transform.position.x == bottle.transform.position.x)
+            if(_actualPositionHigh == bottle.GetComponent<BottleBehavior>().highPosition && x == bottle.transform.position.x)
             {
-                print(bottle.GetComponent<BottleBehavior>().name);
+                print(bottle.GetComponent<BottleBehavior>().ingredient.name);
                 ingredient = bottle.GetComponent<BottleBehavior>().ingredient;
                 break;
             }
         }
 
-        bool success = LevelManager.Manager.AddIngredient(_playerId, ingredient);
+        // bool success = LevelManager.Manager.AddIngredient(_playerId, ingredient);
     }
-
+    
     IEnumerator MoveHigh(int direction)
     {
         _canMoveHigh = false;
@@ -306,21 +319,29 @@ public class PlayerMovement : MonoBehaviour {
         yield return null;
     }
 
+    public int GetPositionIndex()
+    {
+        return _actualPositionIndex;
+    }
+
     IEnumerator Move(int direction)
     {
         _canMove = false;
         
+        int otherIndex = otherPlayer.GetComponent<PlayerMovement>().GetPositionIndex();
+        otherIndex = positions.Length - otherIndex;
+
         switch (direction)
         {
             case 1:
-                if (_actualPositionIndex + 1 < positions.Length && positions[_actualPositionIndex + 1].position.x != otherPlayer.transform.position.x)
+                if (_actualPositionIndex + 1 < positions.Length && _actualPositionIndex + 1 != otherIndex)
                 {
                     _actualPositionIndex++;
                 }
                 break;
 
             case -1:
-                if (_actualPositionIndex - 1 >= 0 && positions[_actualPositionIndex - 1].position.x != otherPlayer.transform.position.x)
+                if (_actualPositionIndex - 1 >= 0 && _actualPositionIndex - 1 != otherIndex)
                 {
                     _actualPositionIndex--;
                 }
@@ -329,13 +350,19 @@ public class PlayerMovement : MonoBehaviour {
         
         _actualPositionIndex = Mathf.Clamp(_actualPositionIndex, 0, positions.Length - 1);
         _sr.sprite = highPositionsSprites[_actualPositionHigh];
-
-        // transform.position = new Vector3(positions[_actualPositionIndex].position.x, transform.position.y, transform.position.z);
-        Vector3 newPos = new Vector3(positions[_actualPositionIndex].position.x, transform.position.y, transform.position.z);
+        
+        float x = positions[_actualPositionIndex].position.x;
+        x = _actualPositionIndex == 0 ? x : x - (110f * _sign);
+        Vector3 newPos = new Vector3(x, transform.position.y, transform.position.z);
 
         if (_actualPositionIndex == 0)
         {
             _sr.sprite = idleSprite;
+            _sr.flipX = _defaultFlip;
+        }
+        else
+        {
+            _sr.flipX = !_defaultFlip;
         }
 
         float t = 0f;
