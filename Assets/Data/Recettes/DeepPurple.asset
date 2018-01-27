@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Name: DeepPurple
   m_EditorClassIdentifier: 
   recipeName: The Deep Purple
-  type: 0
+  type: 1
+  sprite: {fileID: 0}
   score: 10
   ingredients:
   - {fileID: 11400000, guid: 1d3a11feb0085d9428af2f9cf2b4ed06, type: 2}
