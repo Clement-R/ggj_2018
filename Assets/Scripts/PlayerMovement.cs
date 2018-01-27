@@ -54,14 +54,6 @@ public class PlayerMovement : MonoBehaviour {
         _playerId = _sign == -1 ? 1 : 0;
 
         LevelManager.Manager.joueur1Ended += OnRecipeEnd;
-
-        EventManager.StartListening("playerMove", OnPlayerMove);
-    }
-
-    void OnPlayerMove(dynamic obj)
-    {
-        Debug.Log("A player moved !");
-        // UnlockAchievement("You made it " + obj.name + " !");
     }
 
     void OnRecipeEnd(Recettes r)
