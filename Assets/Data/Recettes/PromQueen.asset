@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: PromQueen
   m_EditorClassIdentifier: 
   recipeName: The Prom Queen
-  type: 0
+  type: 1
   sprite: {fileID: 0}
   score: 10
   ingredients:

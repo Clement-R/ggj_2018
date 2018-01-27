@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour {
     private string _actualStireCombination = "";
 
     private bool _canLightItUp = true;
-
+    private bool _pause = false;
     private bool _defaultFlip;
 
     private void Start()
@@ -70,6 +70,13 @@ public class PlayerMovement : MonoBehaviour {
         {
             LevelManager.Manager.joueur2Ended += OnRecipeEnd;
         }
+
+        EventManager.StartListening("TogglePause", OnPause);
+    }
+
+    void OnPause(object obj)
+    {
+        _pause = !_pause;
     }
 
     void OnRecipeEnd(Recettes r)
@@ -81,41 +88,13 @@ public class PlayerMovement : MonoBehaviour {
 
     void Update ()
     {
-        if(Input.GetAxisRaw(axisMove) > 0.5 && _canMove)
+        if(!_pause)
         {
-            StartCoroutine(Move(1 * (int) _sign));
-        }
-        else if (Input.GetAxisRaw(axisMove) < -0.5 && _canMove)
-        {
-            StartCoroutine(Move(-1 * (int)_sign));
-        }
-        else if(Input.GetAxisRaw(axisMove) > -0.5 && Input.GetAxisRaw(axisMove) < 0.5 && !_canMove)
-        {
-            _canMove = true;
-        }
-        
-        if (Input.GetAxisRaw(axisHigh) > 0.5 && _actualPositionIndex != 0 && _canMoveHigh)
-        {
-            StartCoroutine(MoveHigh(-1));
-        }
-        else if (Input.GetAxisRaw(axisHigh) < -0.5 && _actualPositionIndex != 0 && _canMoveHigh)
-        {
-            StartCoroutine(MoveHigh(1));
-        }
-        else if(Input.GetAxisRaw(axisHigh) > -0.5 && Input.GetAxisRaw(axisHigh) < 0.5 && !_canMoveHigh)
-        {
-            _canMoveHigh = true;
-        }
-
-        if(Input.GetButtonDown(validationKey) && _actualPositionIndex != 0)
-        {
-            print("Take a bottle");
-            bool success = AddIngredient();
-
-            if(success)
+            if (Input.GetAxisRaw(axisMove) > 0.5 && _canMove)
             {
-                // TODO : play feedback
+                StartCoroutine(Move(1 * (int)_sign));
             }
+<<<<<<< HEAD
             else
             {
                 EventManager.TriggerEvent("WrongBottle", new { type = _playerId });
@@ -126,144 +105,184 @@ public class PlayerMovement : MonoBehaviour {
             print("Validation time");
             bool success = LevelManager.Manager.Valider(_playerId);
             if(success)
+=======
+            else if (Input.GetAxisRaw(axisMove) < -0.5 && _canMove)
+>>>>>>> 6c0b8f74c61dbd3dbdc0eadc9aee73ee6933642d
             {
-                EventManager.TriggerEvent("ServeDrink", new { type = "Drink"});
+                StartCoroutine(Move(-1 * (int)_sign));
             }
-        }
-
-        if (LevelManager.Manager.GetNextIngredient(_playerId) != null)
-        {
-            string ingredientName = LevelManager.Manager.GetNextIngredient(_playerId).name;
-
-            if ((ingredientName == "stire" || ingredientName == "reverse_stire") && _actualPositionIndex == 0 && !_isInStireStance)
+            else if (Input.GetAxisRaw(axisMove) > -0.5 && Input.GetAxisRaw(axisMove) < 0.5 && !_canMove)
             {
-                print("Go to stire stance");
-                _timestampStireBlock = Time.time;
-                _isInStireStance = true;
+                _canMove = true;
             }
 
-            if (ingredientName == "shake" && _actualPositionIndex == 0 && !_isInShakeStance)
+            if (Input.GetAxisRaw(axisHigh) > 0.5 && _actualPositionIndex != 0 && _canMoveHigh)
             {
-                print("Go to shake stance");
-                _timestampShakeBlock = Time.time;
-                _isInShakeStance = true;
+                StartCoroutine(MoveHigh(-1));
             }
-        }
+            else if (Input.GetAxisRaw(axisHigh) < -0.5 && _actualPositionIndex != 0 && _canMoveHigh)
+            {
+                StartCoroutine(MoveHigh(1));
+            }
+            else if (Input.GetAxisRaw(axisHigh) > -0.5 && Input.GetAxisRaw(axisHigh) < 0.5 && !_canMoveHigh)
+            {
+                _canMoveHigh = true;
+            }
 
-        // Check if we're the first to be in shake stance
-        if (_timestampShakeBlock >= otherPlayer.GetComponent<PlayerMovement>()._timestampShakeBlock && _isInShakeStance)
-        {
-            _canMoveHigh = false;
-            _canMove = false;
+            if (Input.GetButtonDown(validationKey) && _actualPositionIndex != 0)
+            {
+                print("Take a bottle");
+                bool success = AddIngredient();
 
-            // Detect shake movement, the player must go between 0.5 and -0.5 between each movement
-            if (Input.GetAxisRaw("DPad_YAxis_1") > 0.5 && _detectShakeValue)
-            {
-                _actualShakeCombination += "U";
-                _detectShakeValue = false;
-            }
-            else if (Input.GetAxisRaw("DPad_YAxis_1") < -0.5 && _detectShakeValue)
-            {
-                _actualShakeCombination += "D";
-                _detectShakeValue = false;
-            }
-            else if (!_detectShakeValue && Input.GetAxisRaw("DPad_YAxis_1") > -0.5 && Input.GetAxisRaw("DPad_YAxis_1") < 0.5)
-            {
-                _detectShakeValue = true;
-            }
-            
-            // Check if a shake movement has been detected
-            if (_shakeCombination.Contains(_actualShakeCombination))
-            {
-                if (_shakeCombination == _actualShakeCombination)
+                if (success)
                 {
-                    // Shake success
-                    print("Shake is okay !");
-                    EventManager.TriggerEvent("ShakeDrink", new { type = "Shake" });
-                    SuccessShake(false);
+                    // TODO : play feedback
+                }
+            }
+            else if (Input.GetButtonDown(validationKey) && _actualPositionIndex == 0)
+            {
+                print("Validation time");
+                bool success = LevelManager.Manager.Valider(_playerId);
+                if (success)
+                {
+                    EventManager.TriggerEvent("ServeDrink", new { type = "Drink" });
+                }
+            }
+
+            if (LevelManager.Manager.GetNextIngredient(_playerId) != null)
+            {
+                string ingredientName = LevelManager.Manager.GetNextIngredient(_playerId).name;
+
+                if ((ingredientName == "stire" || ingredientName == "reverse_stire") && _actualPositionIndex == 0 && !_isInStireStance)
+                {
+                    print("Go to stire stance");
+                    _timestampStireBlock = Time.time;
+                    _isInStireStance = true;
+                }
+
+                if (ingredientName == "shake" && _actualPositionIndex == 0 && !_isInShakeStance)
+                {
+                    print("Go to shake stance");
+                    _timestampShakeBlock = Time.time;
+                    _isInShakeStance = true;
+                }
+            }
+
+            // Check if we're the first to be in shake stance
+            if (_timestampShakeBlock >= otherPlayer.GetComponent<PlayerMovement>()._timestampShakeBlock && _isInShakeStance)
+            {
+                _canMoveHigh = false;
+                _canMove = false;
+
+                // Detect shake movement, the player must go between 0.5 and -0.5 between each movement
+                if (Input.GetAxisRaw("DPad_YAxis_1") > 0.5 && _detectShakeValue)
+                {
+                    _actualShakeCombination += "U";
+                    _detectShakeValue = false;
+                }
+                else if (Input.GetAxisRaw("DPad_YAxis_1") < -0.5 && _detectShakeValue)
+                {
+                    _actualShakeCombination += "D";
+                    _detectShakeValue = false;
+                }
+                else if (!_detectShakeValue && Input.GetAxisRaw("DPad_YAxis_1") > -0.5 && Input.GetAxisRaw("DPad_YAxis_1") < 0.5)
+                {
+                    _detectShakeValue = true;
+                }
+
+                // Check if a shake movement has been detected
+                if (_shakeCombination.Contains(_actualShakeCombination))
+                {
+                    if (_shakeCombination == _actualShakeCombination)
+                    {
+                        // Shake success
+                        print("Shake is okay !");
+                        EventManager.TriggerEvent("ShakeDrink", new { type = "Shake" });
+                        SuccessShake(false);
+                        _actualShakeCombination = "";
+                        _isInShakeStance = false;
+                    }
+                }
+                else
+                {
+                    // Not good
+                    print("Shake fail");
+                    FailMove();
                     _actualShakeCombination = "";
                     _isInShakeStance = false;
                 }
             }
-            else
-            {
-                // Not good
-                print("Shake fail");
-                FailMove();
-                _actualShakeCombination = "";
-                _isInShakeStance = false;
-            }
-        }
 
-        // Check if we're the first to be in stire stance
-        if (_timestampStireBlock >= otherPlayer.GetComponent<PlayerMovement>()._timestampStireBlock && _isInStireStance)
-        {
-            _canMoveHigh = false;
-            _canMove = false;
+            // Check if we're the first to be in stire stance
+            if (_timestampStireBlock >= otherPlayer.GetComponent<PlayerMovement>()._timestampStireBlock && _isInStireStance)
+            {
+                _canMoveHigh = false;
+                _canMove = false;
 
-            // Detect stire inputs
-            if (Input.GetButtonDown("A_1") )
-            {
-                _actualStireCombination += "A";
-            }
-            else if (Input.GetButtonDown("B_1"))
-            {
-                _actualStireCombination += "B";
-            }
-            else if (Input.GetButtonDown("Y_1"))
-            {
-                _actualStireCombination += "Y";
-            }
-            else if (Input.GetButtonDown("X_1"))
-            {
-                _actualStireCombination += "X";
-            }
-
-            // Check if a stire movement has been detected
-            if (_stireCombination.StartsWith(_actualStireCombination))
-            {
-                if(_stireCombination == _actualStireCombination)
+                // Detect stire inputs
+                if (Input.GetButtonDown("A_1"))
                 {
-                    // Stire success
-                    print("Stire is okay !");
-                    EventManager.TriggerEvent("StireDrink", new { type = "Stire" });
-                    SuccessStire(false);
+                    _actualStireCombination += "A";
+                }
+                else if (Input.GetButtonDown("B_1"))
+                {
+                    _actualStireCombination += "B";
+                }
+                else if (Input.GetButtonDown("Y_1"))
+                {
+                    _actualStireCombination += "Y";
+                }
+                else if (Input.GetButtonDown("X_1"))
+                {
+                    _actualStireCombination += "X";
+                }
+
+                // Check if a stire movement has been detected
+                if (_stireCombination.StartsWith(_actualStireCombination))
+                {
+                    if (_stireCombination == _actualStireCombination)
+                    {
+                        // Stire success
+                        print("Stire is okay !");
+                        EventManager.TriggerEvent("StireDrink", new { type = "Stire" });
+                        SuccessStire(false);
+                        _actualStireCombination = "";
+                        _isInStireStance = false;
+                    }
+
+                    print(_stireCombination);
+                    print(_actualStireCombination);
+                }
+                else if (_stireReverseCombination.StartsWith(_actualStireCombination))
+                {
+                    if (_stireReverseCombination == _actualStireCombination)
+                    {
+                        // Reverse stire success
+                        print("Reverse stire is okay !");
+                        EventManager.TriggerEvent("StireDrink", new { type = "Stire" });
+                        SuccessStire(true);
+                        _actualStireCombination = "";
+                        _isInStireStance = false;
+                    }
+                }
+                else
+                {
+                    // Not good
+                    print("Stire fail");
+                    FailMove();
                     _actualStireCombination = "";
                     _isInStireStance = false;
                 }
+            }
 
-                print(_stireCombination);
-                print(_actualStireCombination);
-            }
-            else if (_stireReverseCombination.StartsWith(_actualStireCombination))
+            // Detect light it up, and add ingredient
+            if (Input.GetAxisRaw(lightItUpKey) > 0.5 && _actualPositionIndex == 0 && _canLightItUp)
             {
-                if (_stireReverseCombination == _actualStireCombination)
-                {
-                    // Reverse stire success
-                    print("Reverse stire is okay !");
-                    EventManager.TriggerEvent("StireDrink", new { type = "Stire" });
-                    SuccessStire(true);
-                    _actualStireCombination = "";
-                    _isInStireStance = false;
-                }
+                print("LIGHT IT UP");
+                EventManager.TriggerEvent("LitDrink", new { type = "Lit" });
+                LevelManager.Manager.AddIngredient(_playerId, LightItUp);
+                StartCoroutine(LightCooldown());
             }
-            else
-            {
-                // Not good
-                print("Stire fail");
-                FailMove();
-                _actualStireCombination = "";
-                _isInStireStance = false;
-            }
-        }
-
-        // Detect light it up, and add ingredient
-        if (Input.GetAxisRaw(lightItUpKey) > 0.5 && _actualPositionIndex == 0 && _canLightItUp)
-        {
-            print("LIGHT IT UP");
-            EventManager.TriggerEvent("LitDrink", new { type = "Lit" });
-            LevelManager.Manager.AddIngredient(_playerId, LightItUp);
-            StartCoroutine(LightCooldown());
         }
     }
 

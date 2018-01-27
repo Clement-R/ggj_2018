@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
+  m_Name: ThirdRail
+  m_EditorClassIdentifier: 
+  recipeName: The Third Rail
+  type: 0
+  sprite: {fileID: 0}
+  score: 10
+  ingredients:
+  - {fileID: 11400000, guid: 1d3a11feb0085d9428af2f9cf2b4ed06, type: 2}
+  - {fileID: 11400000, guid: aee0a5e7030cb6a42bff013940e5e549, type: 2}
+  - {fileID: 11400000, guid: a307c8c2dc0199447a19035cff815cc4, type: 2}
+  - {fileID: 11400000, guid: ecf6d9689893b5d459e31397c639580e, type: 2}
+  - {fileID: 11400000, guid: e58f07719bd42584ab78ddf341a47fd5, type: 2}

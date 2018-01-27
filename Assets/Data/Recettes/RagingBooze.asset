@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Name: RagingBooze
   m_EditorClassIdentifier: 
   recipeName: The Raging Booze
-  type: 0
+  type: 1
+  sprite: {fileID: 0}
   score: 10
   ingredients:
   - {fileID: 11400000, guid: e8c92373c4538bb43955a4b923e6d0c9, type: 2}

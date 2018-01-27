@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: BlueDragoon
   m_EditorClassIdentifier: 
   recipeName: The Blue Dragoon
-  type: 0
+  type: 1
   sprite: {fileID: 0}
   score: 10
   ingredients:
