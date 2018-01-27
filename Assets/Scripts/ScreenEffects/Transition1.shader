@@ -77,7 +77,7 @@
 				else if(_Selector < 2)
 					dist = centered.x+centered.y+_Time.y;
 				else
-					dist = centered.y-centered.x+_Time.y;
+					dist = (centered.y*centered.x)*10+_Time.y;
 				// just invert the colors
 				fixed factor = sin(prog*3.14);
 				//col.rgb = (factor * (1-col.rgb))+((1-factor)*col.rgb);
