@@ -59,6 +59,12 @@ public class PlayerMovement : MonoBehaviour {
         {
             AddIngredient();
         }
+
+        // TODO :
+        if (Input.GetButtonDown("A_1") && _actualPositionIndex == 0)
+        {
+            // AddIngredient();
+        }
     }
 
     private void AddIngredient()
