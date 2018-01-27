@@ -11,8 +11,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
   m_Name: BlackOut
   m_EditorClassIdentifier: 
-  recipeName: 
+  recipeName: The Black Out
   type: 0
   sprite: {fileID: 0}
   score: 10
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}
+  - {fileID: 11400000, guid: a307c8c2dc0199447a19035cff815cc4, type: 2}
+  - {fileID: 11400000, guid: 35a28e0245548b648b59a95c37c022ec, type: 2}
+  - {fileID: 11400000, guid: 27367e21b4eb93f45b398ecd0c0fd11a, type: 2}
+  - {fileID: 11400000, guid: 42760e8e75e3c4c4b87297e187747774, type: 2}
+  - {fileID: 11400000, guid: 28251d57edfc6144eaf7842249167d2a, type: 2}

@@ -11,8 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
   m_Name: Bloodlust
   m_EditorClassIdentifier: 
-  recipeName: 
+  recipeName: The Bloodlust
   type: 0
   sprite: {fileID: 0}
   score: 10
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: 175d9e14872cf5e42b55933cc9b8b301, type: 2}
+  - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}
