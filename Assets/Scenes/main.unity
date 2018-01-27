@@ -216,10 +216,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0234b35e84a6747aafe9a7b9e8af2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightItUp: {fileID: 0}
-  Stire: {fileID: 0}
-  StireReverse: {fileID: 0}
-  Shake: {fileID: 0}
+  lightItUp: {fileID: 11400000, guid: 28251d57edfc6144eaf7842249167d2a, type: 2}
+  Stire: {fileID: 11400000, guid: 073f5fc8d833d12438c7d8694c6e50c9, type: 2}
+  StireReverse: {fileID: 11400000, guid: e58f07719bd42584ab78ddf341a47fd5, type: 2}
+  Shake: {fileID: 11400000, guid: ecf6d9689893b5d459e31397c639580e, type: 2}
   cooldownMove: 0.5
   otherPlayer: {fileID: 187627775}
   positions:
@@ -342,10 +342,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0234b35e84a6747aafe9a7b9e8af2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightItUp: {fileID: 0}
-  Stire: {fileID: 0}
-  StireReverse: {fileID: 0}
-  Shake: {fileID: 0}
+  lightItUp: {fileID: 11400000, guid: 28251d57edfc6144eaf7842249167d2a, type: 2}
+  Stire: {fileID: 11400000, guid: 073f5fc8d833d12438c7d8694c6e50c9, type: 2}
+  StireReverse: {fileID: 11400000, guid: e58f07719bd42584ab78ddf341a47fd5, type: 2}
+  Shake: {fileID: 11400000, guid: ecf6d9689893b5d459e31397c639580e, type: 2}
   cooldownMove: 0.5
   otherPlayer: {fileID: 115345253}
   positions:
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bbc68e4a5032a40993b58bb022f67e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: {fileID: 11400000, guid: a0cd35cd35346d64d807718047656496, type: 2}
+  level: {fileID: 11400000, guid: 532a0e6f6706ab54699f962b5678190b, type: 2}
   currentJoueur1: {fileID: 0}
   currentJoueur2: {fileID: 0}
 --- !u!4 &209050174
