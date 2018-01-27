@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class AchievementsManager : MonoBehaviour {
 
     public GameObject achievementPanel;
+    public Dictionary<string, bool> achievements = new Dictionary<string, bool>();
     Text panelText;
 
     private int _numberOfDrinksServed;
@@ -58,6 +59,24 @@ public class AchievementsManager : MonoBehaviour {
         }
 
         // panelText = achievementPanel.transform.GetChild(0).GetComponent<Text>();
+    }
+
+    void LoadAchievements()
+    {
+        foreach (var achievement in achievements)
+        {
+            /*
+            if (PlayerPrefs.HasKey(achievement.Key))
+            {
+                _numberOfDrinksLitted = PlayerPrefs.GetInt(achievement.Key);
+            }
+            else
+            {
+                _numberOfDrinksLitted = 0;
+                PlayerPrefs.SetInt("NumberOfDrinksLitted", 0);
+            }
+            */
+        }
     }
 
     void OnEnable()
@@ -145,12 +164,14 @@ public class AchievementsManager : MonoBehaviour {
 
     void UnlockAchievement(string title, string description)
     {
-        achievementPanel.SetActive(true);
+        // achievementPanel.SetActive(true);
         // obj.text
         // obj.description
 
+        print(title + " : " + description);
+
         // panelText.text = obj.text;
-        StartCoroutine("hidePanel");
+        // StartCoroutine("hidePanel");
     }
 
     IEnumerator hidePanel()

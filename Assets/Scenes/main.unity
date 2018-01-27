@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: e4d61208ef86ca542b7782f7e3f5bf02, type: 2}
+  ingredient: {fileID: 11400000, guid: 773a324a7592dff4dabec51f2ca0c369, type: 2}
   highPosition: 2
 --- !u!1001 &115345251
 Prefab:
@@ -139,7 +139,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4108408380615792, guid: 54dd4704f5591044492cfa6e32fdc84a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -755
+      value: -740
       objectReference: {fileID: 0}
     - target: {fileID: 4108408380615792, guid: 54dd4704f5591044492cfa6e32fdc84a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -267,6 +267,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+  timeToMove: 0.15
   LightItUp: {fileID: 0}
   Stire: {fileID: 11400000, guid: 073f5fc8d833d12438c7d8694c6e50c9, type: 2}
   StireReverse: {fileID: 11400000, guid: e58f07719bd42584ab78ddf341a47fd5, type: 2}
@@ -305,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: aa64d20869de02f429c796915822096d, type: 2}
+  ingredient: {fileID: 11400000, guid: 27367e21b4eb93f45b398ecd0c0fd11a, type: 2}
   highPosition: 0
 --- !u!1001 &187627773
 Prefab:
@@ -316,7 +317,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4108408380615792, guid: 54dd4704f5591044492cfa6e32fdc84a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 688
+      value: 666
       objectReference: {fileID: 0}
     - target: {fileID: 4108408380615792, guid: 54dd4704f5591044492cfa6e32fdc84a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -344,7 +345,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4108408380615792, guid: 54dd4704f5591044492cfa6e32fdc84a, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1621713674938786, guid: 54dd4704f5591044492cfa6e32fdc84a, type: 2}
       propertyPath: m_Name
@@ -409,6 +410,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  timeToMove: 0.15
   LightItUp: {fileID: 0}
   Stire: {fileID: 11400000, guid: 073f5fc8d833d12438c7d8694c6e50c9, type: 2}
   StireReverse: {fileID: 11400000, guid: e58f07719bd42584ab78ddf341a47fd5, type: 2}
@@ -569,7 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: 1459c0bb372a7fe4993d9096d1e4b5fb, type: 2}
+  ingredient: {fileID: 11400000, guid: 1d3a11feb0085d9428af2f9cf2b4ed06, type: 2}
   highPosition: 1
 --- !u!1 &282050009
 GameObject:
@@ -668,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: e4d61208ef86ca542b7782f7e3f5bf02, type: 2}
+  ingredient: {fileID: 11400000, guid: 12d5ab403e80d69478e7f6f20031c9cd, type: 2}
   highPosition: 2
 --- !u!1 &419602666
 GameObject:
@@ -796,7 +798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: e4d61208ef86ca542b7782f7e3f5bf02, type: 2}
+  ingredient: {fileID: 11400000, guid: 175d9e14872cf5e42b55933cc9b8b301, type: 2}
   highPosition: 2
 --- !u!1001 &458586212
 Prefab:
@@ -892,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: 1459c0bb372a7fe4993d9096d1e4b5fb, type: 2}
+  ingredient: {fileID: 11400000, guid: 35a28e0245548b648b59a95c37c022ec, type: 2}
   highPosition: 1
 --- !u!1001 &556162774
 Prefab:
@@ -1199,7 +1201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: aa64d20869de02f429c796915822096d, type: 2}
+  ingredient: {fileID: 11400000, guid: e8c92373c4538bb43955a4b923e6d0c9, type: 2}
   highPosition: 0
 --- !u!1 &804390351
 GameObject:
@@ -1298,7 +1300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: e4d61208ef86ca542b7782f7e3f5bf02, type: 2}
+  ingredient: {fileID: 11400000, guid: 42760e8e75e3c4c4b87297e187747774, type: 2}
   highPosition: 2
 --- !u!1001 &965473259
 Prefab:
@@ -1496,7 +1498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: 1459c0bb372a7fe4993d9096d1e4b5fb, type: 2}
+  ingredient: {fileID: 11400000, guid: aee0a5e7030cb6a42bff013940e5e549, type: 2}
   highPosition: 1
 --- !u!1 &1278878455
 GameObject:
@@ -2010,7 +2012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: 1459c0bb372a7fe4993d9096d1e4b5fb, type: 2}
+  ingredient: {fileID: 11400000, guid: a307c8c2dc0199447a19035cff815cc4, type: 2}
   highPosition: 1
 --- !u!1 &1665097122 stripped
 GameObject:
@@ -2028,7 +2030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: 1459c0bb372a7fe4993d9096d1e4b5fb, type: 2}
+  ingredient: {fileID: 11400000, guid: b1939f6cc368a004681cdc7207296d95, type: 2}
   highPosition: 1
 --- !u!1001 &1704526817
 Prefab:
@@ -2230,7 +2232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: aa64d20869de02f429c796915822096d, type: 2}
+  ingredient: {fileID: 11400000, guid: b0d6f76637fbab54690569281b9fb51f, type: 2}
   highPosition: 0
 --- !u!1 &1797692236 stripped
 GameObject:
@@ -2248,7 +2250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: aa64d20869de02f429c796915822096d, type: 2}
+  ingredient: {fileID: 11400000, guid: 932e1daf916a12143ac5cc0c92e4c8e8, type: 2}
   highPosition: 0
 --- !u!1001 &1808064811
 Prefab:
@@ -2652,7 +2654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: e4d61208ef86ca542b7782f7e3f5bf02, type: 2}
+  ingredient: {fileID: 11400000, guid: b357757ae64903e4190d5582111fb9e0, type: 2}
   highPosition: 2
 --- !u!4 &1898187671 stripped
 Transform:
@@ -2675,7 +2677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46df46e7f241d8b49a1b84efb821c1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredient: {fileID: 11400000, guid: aa64d20869de02f429c796915822096d, type: 2}
+  ingredient: {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}
   highPosition: 0
 --- !u!1 &1960637006
 GameObject:
