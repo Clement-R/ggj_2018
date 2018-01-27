@@ -23,11 +23,6 @@ public class ScreenEffectsManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("A_1"))
-        {
-            Debug.Log("Reset");
-            Launch();
-        }
         material.SetFloat("_RealTime", Time.time);
 	}
 
