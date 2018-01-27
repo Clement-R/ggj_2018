@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     [Header("Ingredients")]
-    public Ingredients lightItUp;
+    public Ingredients LightItUp;
     public Ingredients Stire;
     public Ingredients StireReverse;
     public Ingredients Shake;
@@ -44,6 +44,8 @@ public class PlayerMovement : MonoBehaviour {
     private string _stireReverseCombination = "XABY";
     private string _actualStireCombination = "";
 
+    private bool _canLightItUp = true;
+
     private void Start()
     {
         _sr = GetComponent<SpriteRenderer>();
@@ -70,20 +72,20 @@ public class PlayerMovement : MonoBehaviour {
         {
             StartCoroutine(Move(-1 * (int)_sign));
         }
-        else
+        else if(Input.GetAxisRaw(axisMove) > -0.5 && Input.GetAxisRaw(axisMove) < 0.5 && !_canMove)
         {
             _canMove = true;
         }
         
-        if (Input.GetAxisRaw(axisHigh) > 0.5 && _canMoveHigh && _actualPositionIndex != 0)
+        if (Input.GetAxisRaw(axisHigh) > 0.5 && _actualPositionIndex != 0 && _canMoveHigh)
         {
             StartCoroutine(MoveHigh(-1));
         }
-        else if (Input.GetAxisRaw(axisHigh) < -0.5 && _canMoveHigh && _actualPositionIndex != 0)
+        else if (Input.GetAxisRaw(axisHigh) < -0.5 && _actualPositionIndex != 0 && _canMoveHigh)
         {
             StartCoroutine(MoveHigh(1));
         }
-        else
+        else if(Input.GetAxisRaw(axisHigh) > -0.5 && Input.GetAxisRaw(axisHigh) < 0.5 && !_canMoveHigh)
         {
             _canMoveHigh = true;
         }
@@ -214,12 +216,20 @@ public class PlayerMovement : MonoBehaviour {
             }
         }
 
-        // TODO : detect light it up, and add null ingredient if it's not done well
-        if (Input.GetAxisRaw(lightItUpKey) > 0.5 && _actualPositionIndex == 0)
+        // Detect light it up, and add ingredient
+        if (Input.GetAxisRaw(lightItUpKey) > 0.5 && _actualPositionIndex == 0 && _canLightItUp)
         {
             print("LIGHT IT UP");
-            // AddIngredient();
+            LevelManager.Manager.AddIngredient(_playerId, LightItUp);
+            StartCoroutine(LightCooldown());
         }
+    }
+
+    private IEnumerator LightCooldown()
+    {
+        _canLightItUp = false;
+        yield return new WaitForSeconds(1f);
+        _canLightItUp = true;
     }
 
     private void SuccessStire(bool reverse)
@@ -282,9 +292,13 @@ public class PlayerMovement : MonoBehaviour {
 
         print(_actualPositionHigh);
 
+        yield return null;
+
+        /*
         yield return new WaitForSeconds(cooldownMove);
 
         _canMoveHigh = true;
+        */
     }
 
     IEnumerator Move(int direction)
@@ -316,8 +330,12 @@ public class PlayerMovement : MonoBehaviour {
             _sr.sprite = idleSprite;
         }
 
+        yield return null;
+
+        /*
         yield return new WaitForSeconds(cooldownMove);
         
         _canMove = true;
+        */
     }
 }
