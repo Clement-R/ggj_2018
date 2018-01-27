@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour {
     public string axisHigh;
     public string validationKey;
     public string lightItUpKey;
-
+    
     private int _actualPositionIndex = 0;
     private int _actualPositionHigh = 0;
     private float _sign = 0;
@@ -59,15 +59,22 @@ public class PlayerMovement : MonoBehaviour {
         _sr = GetComponent<SpriteRenderer>();
         _sign = Mathf.Sign(positions[1].position.x - positions[0].position.x);
         _playerId = _sign == -1 ? 1 : 0;
-
+        
         _defaultFlip = _sr.flipX;
 
-        LevelManager.Manager.joueur1Ended += OnRecipeEnd;
+        if(_playerId == 0)
+        {
+            LevelManager.Manager.joueur1Ended += OnRecipeEnd;
+        }
+        else
+        {
+            LevelManager.Manager.joueur2Ended += OnRecipeEnd;
+        }
     }
 
     void OnRecipeEnd(Recettes r)
     {
-        print(r.name);
+        // TODO : MORE FX
     }
 
     // TODO : Block player in shake or stire stance if actual recipe is ordered and next ingredient is a stire or shake
@@ -103,19 +110,30 @@ public class PlayerMovement : MonoBehaviour {
         if(Input.GetButtonDown(validationKey) && _actualPositionIndex != 0)
         {
             print("Take a bottle");
-            AddIngredient();
-            EventManager.TriggerEvent("ServeDrink", new { });
+            bool success = AddIngredient();
+
+            if(success)
+            {
+                // TODO : play feedback
+            }
         }
-        else if(Input.GetButtonDown(validationKey) && _actualPositionIndex != 0)
+        else if(Input.GetButtonDown(validationKey) && _actualPositionIndex == 0)
         {
             print("Validation time");
-            LevelManager.Manager.Valider(_playerId);
+            bool success = LevelManager.Manager.Valider(_playerId);
+            print(success);
+            if(success)
+            {
+                EventManager.TriggerEvent("ServeDrink", new { });
+            }
+
+            
         }
 
         if (LevelManager.Manager.GetNextIngredient(_playerId) != null)
         {
             string ingredientName = LevelManager.Manager.GetNextIngredient(_playerId).name;
-            
+
             if ((ingredientName == "stire" || ingredientName == "reverse_stire") && _actualPositionIndex == 0 && !_isInStireStance)
             {
                 print("Go to stire stance");
@@ -123,7 +141,7 @@ public class PlayerMovement : MonoBehaviour {
                 _isInStireStance = true;
             }
 
-            if(ingredientName == "shake" && _actualPositionIndex == 0 && !_isInShakeStance)
+            if (ingredientName == "shake" && _actualPositionIndex == 0 && !_isInShakeStance)
             {
                 print("Go to shake stance");
                 _timestampShakeBlock = Time.time;
@@ -274,14 +292,12 @@ public class PlayerMovement : MonoBehaviour {
         LevelManager.Manager.AddIngredient(_playerId, null);
     }
 
-    private void AddIngredient()
+    private bool AddIngredient()
     {
         Ingredients ingredient = null;
 
         float x = positions[_actualPositionIndex].position.x;
-
-        print(x);
-
+        
         // Get bottle's Ingredient at position
         foreach (var bottle in GameObject.FindGameObjectsWithTag("Bottle"))
         {
@@ -293,7 +309,7 @@ public class PlayerMovement : MonoBehaviour {
             }
         }
 
-        // bool success = LevelManager.Manager.AddIngredient(_playerId, ingredient);
+        return LevelManager.Manager.AddIngredient(_playerId, ingredient);
     }
     
     IEnumerator MoveHigh(int direction)
@@ -373,11 +389,5 @@ public class PlayerMovement : MonoBehaviour {
             transform.position = Vector2.Lerp(transform.position, newPos, ac.Evaluate(t / timeToMove));
             yield return null;
         }
-
-        /*
-        yield return new WaitForSeconds(cooldownMove);
-        
-        _canMove = true;
-        */
     }
 }

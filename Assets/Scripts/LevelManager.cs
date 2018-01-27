@@ -58,7 +58,7 @@ public class LevelManager : MonoBehaviour {
                 currentJ1Original = level.recetteJoueur1[0];
                 level.recetteJoueur1.RemoveAt(0);
             }
-            else
+            else if(type == Type.Random)
             {
                 r = allRecipes[Random.Range(0, allRecipes.Length)];
                 currentJ1Original = r;
@@ -76,7 +76,7 @@ public class LevelManager : MonoBehaviour {
                 currentJ2Original = level.recetteJoueur2[0];
                 level.recetteJoueur2.RemoveAt(0);
             }
-            else
+            else if (type == Type.Random)
             {
                 r = allRecipes[Random.Range(0, allRecipes.Length)];
                 currentJ2Original = r;
@@ -171,6 +171,7 @@ public class LevelManager : MonoBehaviour {
     private void Update()
     {
         elapsedTime += Time.deltaTime;
+        
         if((elapsedTime > level.time || DayFinished()) && finish != null)
         {
             finish.Invoke();
@@ -181,16 +182,27 @@ public class LevelManager : MonoBehaviour {
     {
         if(joueur == 0)
         {
-            return currentJoueur1.GetNextIngredient();
+            if(currentJoueur1 != null)
+            {
+                return currentJoueur1.GetNextIngredient();
+            }
+
+            return null;
         }
         else
         {
-            return currentJoueur2.GetNextIngredient();
+            if (currentJoueur2 != null)
+            {
+                return currentJoueur2.GetNextIngredient();
+            }
+
+            return null;
         }
     }
 
     public bool Valider(int player)
     {
+        print(player);
         if (player == 0 && currentJoueur1.IsGood())
         {
             Debug.Log("J1 validé!");
