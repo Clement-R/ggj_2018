@@ -5,6 +5,7 @@ using UnityEngine;
 public class BottleBehavior : MonoBehaviour {
 
     public Ingredients ingredient;
+    public int highPosition;
 
     private SpriteRenderer _sr;
 

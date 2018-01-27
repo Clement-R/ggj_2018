@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
+    public float cooldownMove = 0.5f;
     public GameObject otherPlayer;
     public Transform[] positions;
     public Sprite[] highPositionsSprites = new Sprite[3];
+    public Sprite idleSprite;
     public string axisMove;
     public string axisHigh;
+    public string validationKey;
 
     private int _actualPositionIndex = 0;
     private int _actualPositionHigh = 0;
@@ -16,11 +19,20 @@ public class PlayerMovement : MonoBehaviour {
     private bool _canMove = true;
     private bool _canMoveHigh = true;
     private SpriteRenderer _sr;
+    private int _playerId;
 
     private void Start()
     {
         _sr = GetComponent<SpriteRenderer>();
         _sign = Mathf.Sign(positions[1].position.x - positions[0].position.x);
+        _playerId = _sign == -1 ? 0 : 1;
+
+        LevelManager.Manager.joueur1Ended += OnRecipeEnd;
+    }
+
+    void OnRecipeEnd(Recettes r)
+    {
+        print(r.name);
     }
 
     void Update ()
@@ -42,6 +54,29 @@ public class PlayerMovement : MonoBehaviour {
         {
             StartCoroutine(MoveHigh(1));
         }
+
+        if(Input.GetButtonDown(validationKey) && _actualPositionIndex != 0)
+        {
+            AddIngredient();
+        }
+    }
+
+    private void AddIngredient()
+    {
+        Ingredients ingredient = null;
+
+        // Get bottle's Ingredient at position
+        foreach (var bottle in GameObject.FindGameObjectsWithTag("Bottle"))
+        {
+            if(_actualPositionHigh == bottle.GetComponent<BottleBehavior>().highPosition && transform.position.x == bottle.transform.position.x)
+            {
+                print(bottle.GetComponent<BottleBehavior>().name);
+                ingredient = bottle.GetComponent<BottleBehavior>().ingredient;
+                break;
+            }
+        }
+
+        bool success = LevelManager.Manager.AddIngredient(_playerId, ingredient);
     }
 
     IEnumerator MoveHigh(int direction)
@@ -64,7 +99,7 @@ public class PlayerMovement : MonoBehaviour {
 
         print(_actualPositionHigh);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(cooldownMove);
 
         _canMoveHigh = true;
     }
@@ -73,8 +108,6 @@ public class PlayerMovement : MonoBehaviour {
     {
         _canMove = false;
         
-        // TODO : Check if can move to this direction, not blocked by other player
-
         switch (direction)
         {
             case 1:
@@ -94,14 +127,13 @@ public class PlayerMovement : MonoBehaviour {
         
         _actualPositionIndex = Mathf.Clamp(_actualPositionIndex, 0, positions.Length - 1);
         transform.position = new Vector3(positions[_actualPositionIndex].position.x, transform.position.y, transform.position.z);
-
-        // TODO : Change for idle sprite
+        
         if (_actualPositionIndex == 0)
         {
-
+            _sr.sprite = idleSprite;
         }
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(cooldownMove);
         
         _canMove = true;
     }
