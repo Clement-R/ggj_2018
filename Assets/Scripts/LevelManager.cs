@@ -180,6 +180,11 @@ public class LevelManager : MonoBehaviour {
         Init();
     }
 
+    public void Ended()
+    {
+
+    }
+
     public void Init()
     {
         
@@ -196,10 +201,19 @@ public class LevelManager : MonoBehaviour {
         currentJoueur2 = GetNext(1);
     }
 
+    public bool DayFinished()
+    {
+        if(type == Type.Normal && currentJoueur1 == null && currentJoueur2 == null && level.recetteJoueur1.Count == 0 && level.recetteJoueur2.Count == 0)
+        {
+            return true;
+        }
+        return false;
+    }
+
     private void Update()
     {
         elapsedTime += Time.deltaTime;
-        if(elapsedTime > level.time && finish != null)
+        if((elapsedTime > level.time || DayFinished()) && finish != null)
         {
             finish.Invoke();
         }
