@@ -49,31 +49,39 @@ public class LevelManager : MonoBehaviour {
 
     Recettes GetNext(int player)
     {
-        if(player == 0 && level.recetteJoueur1 != null && level.recetteJoueur1.Count > 0)
+        if(player == 0)
         {
-            Recettes r;
-            if (type == Type.Random)
-            {
-                r = allRecipes[Random.Range(0, allRecipes.Length)];
-            }
-            else
+            Recettes r = null;
+            if(type == Type.Normal && level.recetteJoueur1 != null && level.recetteJoueur1.Count > 0)
             {
                 r = Instantiate<Recettes>(level.recetteJoueur1[0]);
                 currentJ1Original = level.recetteJoueur1[0];
                 level.recetteJoueur1.RemoveAt(0);
             }
+            else
+            {
+                r = allRecipes[Random.Range(0, allRecipes.Length)];
+                currentJ1Original = r;
+                r = Instantiate<Recettes>(r);
+                Debug.Log("New Recipe: " + r.name);
+            }
             return r;
         }
-        if (player == 1 && level.recetteJoueur2 != null && level.recetteJoueur2.Count > 0)
+        if (player == 1)
         {
-            Recettes r;
-            if (type == Type.Random) {
-                r = allRecipes[Random.Range(0, allRecipes.Length)];
-            }
-            else {
+            Recettes r = null;
+            if (type == Type.Normal && level.recetteJoueur2 != null && level.recetteJoueur2.Count > 0)
+            {
                 r = Instantiate<Recettes>(level.recetteJoueur2[0]);
                 currentJ2Original = level.recetteJoueur2[0];
                 level.recetteJoueur2.RemoveAt(0);
+            }
+            else
+            {
+                r = allRecipes[Random.Range(0, allRecipes.Length)];
+                currentJ2Original = r;
+                r = Instantiate<Recettes>(r);
+                Debug.Log("New Recipe: " + r.name);
             }
             return r;
         }
@@ -102,15 +110,15 @@ public class LevelManager : MonoBehaviour {
                         {
                             level.time += 1.5f;
                         }
+                        currentJoueur1 = GetNext(0);
+                        if (joueur1Ended != null)
+                        {
+                            joueur1Ended.Invoke(currentJoueur1);
+                        }
                     }
                     else
                     {
                         Debug.Log("J1 Raté");
-                    }
-                    currentJoueur1 = GetNext(0);
-                    if (joueur1Ended != null)
-                    {
-                        joueur1Ended.Invoke(currentJoueur1);
                     }
                 }
             }
@@ -134,15 +142,15 @@ public class LevelManager : MonoBehaviour {
                         {
                             level.time += 1.5f;
                         }
+                        currentJoueur2 = GetNext(1);
+                        if (joueur2Ended != null)
+                        {
+                           joueur2Ended.Invoke(currentJoueur2);
+                        }
                     }
                     else
                     {
                         Debug.Log("J2 Raté");
-                    }
-                    currentJoueur2 = GetNext(1);
-                    if (joueur2Ended != null)
-                    {
-                       joueur2Ended.Invoke(currentJoueur2);
                     }
                 }
             }
@@ -164,7 +172,23 @@ public class LevelManager : MonoBehaviour {
     private void Awake()
     {
         manager = this;
-        if(type == Type.Random)
+
+        Debug.Log("Init LevelManager");
+        
+        Resources.LoadAll<Recettes>("Assets/");
+        allRecipes = Resources.FindObjectsOfTypeAll<Recettes>();
+        Init();
+    }
+
+    public void Ended()
+    {
+
+    }
+
+    public void Init()
+    {
+        
+        if (type == Type.Random || level == null)
         {
             level = ScriptableObject.CreateInstance<Level>();
             level.time = 10f;
@@ -173,16 +197,23 @@ public class LevelManager : MonoBehaviour {
         {
             level = Instantiate<Level>(level);
         }
-        Resources.LoadAll<Recettes>("Assets/");
-        allRecipes = Resources.FindObjectsOfTypeAll<Recettes>();
         currentJoueur1 = GetNext(0);
         currentJoueur2 = GetNext(1);
+    }
+
+    public bool DayFinished()
+    {
+        if(type == Type.Normal && currentJoueur1 == null && currentJoueur2 == null && level.recetteJoueur1.Count == 0 && level.recetteJoueur2.Count == 0)
+        {
+            return true;
+        }
+        return false;
     }
 
     private void Update()
     {
         elapsedTime += Time.deltaTime;
-        if(elapsedTime > level.time && finish != null)
+        if((elapsedTime > level.time || DayFinished()) && finish != null)
         {
             finish.Invoke();
         }
