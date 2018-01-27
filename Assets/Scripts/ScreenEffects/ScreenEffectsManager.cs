@@ -32,7 +32,7 @@ public class ScreenEffectsManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("X_1"))
+        /*if (Input.GetButtonDown("X_1"))
         {
             //Launch();
             UnityEngine.SceneManagement.SceneManager.LoadScene("main_menu");
@@ -47,7 +47,7 @@ public class ScreenEffectsManager : MonoBehaviour {
             }
             scanline.SetAlpha(1);
 
-        }
+        }*/
         material.SetFloat("_RealTime", Time.time);
         if (disgression)
         {
