@@ -6,7 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
 
-	public void LaunchTimeAttack()
+    private void Start()
+    {
+        Scanline scanline = Camera.main.GetComponent<Scanline>();
+        if (scanline)
+        {
+            scanline.SetAlpha(1);
+        }
+    }
+
+    public void LaunchStory()
+    {
+        Story.story.LaunchNext();
+    }
+
+    public void LaunchTimeAttack()
     {
         ScreenEffectsManager.manager.Launch();
         AsyncOperation op = SceneManager.LoadSceneAsync("main");

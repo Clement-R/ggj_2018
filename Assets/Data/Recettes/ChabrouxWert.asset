@@ -11,8 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
   m_Name: ChabrouxWert
   m_EditorClassIdentifier: 
-  recipeName: 
+  recipeName: The Chabroux-Wert
   type: 0
   sprite: {fileID: 0}
   score: 10
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: 12d5ab403e80d69478e7f6f20031c9cd, type: 2}
+  - {fileID: 11400000, guid: ecf6d9689893b5d459e31397c639580e, type: 2}
+  - {fileID: 11400000, guid: 28251d57edfc6144eaf7842249167d2a, type: 2}
+  - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}

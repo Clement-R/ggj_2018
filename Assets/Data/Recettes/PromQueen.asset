@@ -11,8 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
   m_Name: PromQueen
   m_EditorClassIdentifier: 
-  recipeName: 
+  recipeName: The Prom Queen
   type: 0
   sprite: {fileID: 0}
   score: 10
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: b357757ae64903e4190d5582111fb9e0, type: 2}
+  - {fileID: 11400000, guid: 12d5ab403e80d69478e7f6f20031c9cd, type: 2}
+  - {fileID: 11400000, guid: aee0a5e7030cb6a42bff013940e5e549, type: 2}
+  - {fileID: 11400000, guid: 42760e8e75e3c4c4b87297e187747774, type: 2}
+  - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}

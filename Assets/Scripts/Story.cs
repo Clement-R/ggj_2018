@@ -4,12 +4,20 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Story : MonoBehaviour {
+    public static Story story = null;
 
     public List<Level> levels;
     int next = 0;
 
-    private void Awake()
+    private void Start()
     {
+        if(story != null && story != this)
+        {
+            DestroyImmediate(this.gameObject);
+            return;
+        }
+        Debug.Log("Story");
+        story = this;
         DontDestroyOnLoad(this);
     }
 
