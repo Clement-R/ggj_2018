@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Transition1
-  m_Shader: {fileID: 4800000, guid: 11384ade3e5c4154797a5836668759a2, type: 3}
+  m_Name: Scanline
+  m_Shader: {fileID: 4800000, guid: 011d3e439ae200b4db641471d231accf, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -55,31 +55,29 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _BandLength: 0.08
+    - _Alpha: 0
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Distorsion: 1
     - _DstBlend: 0
-    - _Duration: 2
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _LineSize: 0.002
     - _Metallic: 0
     - _Mode: 0
+    - _Move: 0.001
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RealTime: 39.84223
-    - _Selector: 1
+    - _ScanLineSize: 0.0004
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Speed: 0.002
     - _SrcBlend: 1
-    - _TimeBegin: 14.264685
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 0.10110294, g: 0.8088235, b: 0.6416438, a: 1}
-    - _Color2: {r: 0.41252163, g: 0.8014706, b: 0.41520402, a: 1}
-    - _Color3: {r: 0.85294116, g: 0.068987906, b: 0.4420415, a: 1}
+    - _Color1: {r: 0.375, g: 0, b: 0.3336205, a: 0}
+    - _Color2: {r: 0.06268793, g: 0.16176468, b: 0.044009514, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
