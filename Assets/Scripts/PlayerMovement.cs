@@ -4,6 +4,9 @@ using UnityEngine;
 using pkm.EventManager;
 
 public class PlayerMovement : MonoBehaviour {
+    [Header("Move animation")]
+    public AnimationCurve ac;
+    public float timeToMove = 0.15f;
 
     [Header("Ingredients")]
     public Ingredients LightItUp;
@@ -59,8 +62,6 @@ public class PlayerMovement : MonoBehaviour {
     void OnRecipeEnd(Recettes r)
     {
         print(r.name);
-
-        
     }
 
     // TODO : Block player in shake or stire stance if actual recipe is ordered and next ingredient is a stire or shake
@@ -296,12 +297,6 @@ public class PlayerMovement : MonoBehaviour {
         print(_actualPositionHigh);
 
         yield return null;
-
-        /*
-        yield return new WaitForSeconds(cooldownMove);
-
-        _canMoveHigh = true;
-        */
     }
 
     IEnumerator Move(int direction)
@@ -326,14 +321,24 @@ public class PlayerMovement : MonoBehaviour {
         }
         
         _actualPositionIndex = Mathf.Clamp(_actualPositionIndex, 0, positions.Length - 1);
-        transform.position = new Vector3(positions[_actualPositionIndex].position.x, transform.position.y, transform.position.z);
-        
+        _sr.sprite = highPositionsSprites[_actualPositionHigh];
+
+        // transform.position = new Vector3(positions[_actualPositionIndex].position.x, transform.position.y, transform.position.z);
+        Vector3 newPos = new Vector3(positions[_actualPositionIndex].position.x, transform.position.y, transform.position.z);
+
         if (_actualPositionIndex == 0)
         {
             _sr.sprite = idleSprite;
         }
 
-        yield return null;
+        float t = 0f;
+        
+        while (t < 1)
+        {
+            t += Time.unscaledDeltaTime / timeToMove;
+            transform.position = Vector2.Lerp(transform.position, newPos, ac.Evaluate(t / timeToMove));
+            yield return null;
+        }
 
         /*
         yield return new WaitForSeconds(cooldownMove);

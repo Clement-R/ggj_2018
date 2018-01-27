@@ -231,6 +231,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0234b35e84a6747aafe9a7b9e8af2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ac:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.29506087
+      value: 0.20980975
+      inSlope: 1.2478232
+      outSlope: 1.2478232
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.5000509
+      value: 0.50007635
+      inSlope: 1.4999509
+      outSlope: 1.4999509
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.7370288
+      value: 0.8289062
+      inSlope: 1.1628866
+      outSlope: 1.1628866
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   LightItUp: {fileID: 0}
   Stire: {fileID: 11400000, guid: 073f5fc8d833d12438c7d8694c6e50c9, type: 2}
   StireReverse: {fileID: 11400000, guid: e58f07719bd42584ab78ddf341a47fd5, type: 2}
@@ -245,9 +281,9 @@ MonoBehaviour:
   - {fileID: 1571242300}
   - {fileID: 1704526818}
   highPositionsSprites:
-  - {fileID: 21300000, guid: 7032b8ffc5de3e3439b06f90c4c04239, type: 3}
-  - {fileID: 21300000, guid: 766312c03b152034b81ebc74037acd04, type: 3}
-  - {fileID: 21300000, guid: 2c32e6cf99f210d44aaeb38ffa9b543f, type: 3}
+  - {fileID: 21300000, guid: b5fc93dee3ad2804d9f41d0ff577f206, type: 3}
+  - {fileID: 21300000, guid: a430ea1861bc4184dbcb58726f3db142, type: 3}
+  - {fileID: 21300000, guid: d83e034b4e8641b4bae0035181818383, type: 3}
   idleSprite: {fileID: 21300000, guid: 8b1524c18571ca24f84c07178c0fc364, type: 3}
   axisMove: L_XAxis_1
   axisHigh: L_YAxis_1
@@ -367,6 +403,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0234b35e84a6747aafe9a7b9e8af2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ac:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   LightItUp: {fileID: 0}
   Stire: {fileID: 11400000, guid: 073f5fc8d833d12438c7d8694c6e50c9, type: 2}
   StireReverse: {fileID: 11400000, guid: e58f07719bd42584ab78ddf341a47fd5, type: 2}
@@ -416,7 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bbc68e4a5032a40993b58bb022f67e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: {fileID: 11400000, guid: 532a0e6f6706ab54699f962b5678190b, type: 2}
+  level: {fileID: 11400000, guid: a0cd35cd35346d64d807718047656496, type: 2}
   currentJoueur1: {fileID: 0}
   currentJoueur2: {fileID: 0}
   type: 0
@@ -562,7 +604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 34.700012, y: -30.5}
+  m_AnchoredPosition: {x: 34.69995, y: -30.5}
   m_SizeDelta: {x: 69.399994, y: 60.100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282050011
