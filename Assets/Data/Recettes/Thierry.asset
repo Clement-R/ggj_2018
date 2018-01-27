@@ -11,8 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
   m_Name: Thierry
   m_EditorClassIdentifier: 
-  recipeName: 
+  recipeName: The Thierry
   type: 0
   sprite: {fileID: 0}
   score: 10
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: 1d3a11feb0085d9428af2f9cf2b4ed06, type: 2}
+  - {fileID: 11400000, guid: 175d9e14872cf5e42b55933cc9b8b301, type: 2}
+  - {fileID: 11400000, guid: 35a28e0245548b648b59a95c37c022ec, type: 2}
+  - {fileID: 11400000, guid: 28251d57edfc6144eaf7842249167d2a, type: 2}

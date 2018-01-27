@@ -11,8 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
   m_Name: Pradens
   m_EditorClassIdentifier: 
-  recipeName: 
+  recipeName: The Pradens
   type: 0
   sprite: {fileID: 0}
   score: 10
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: b357757ae64903e4190d5582111fb9e0, type: 2}
+  - {fileID: 11400000, guid: b0d6f76637fbab54690569281b9fb51f, type: 2}
+  - {fileID: 11400000, guid: e58f07719bd42584ab78ddf341a47fd5, type: 2}
