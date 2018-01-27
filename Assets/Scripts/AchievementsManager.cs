@@ -39,6 +39,42 @@ public class AchievementsManager : MonoBehaviour {
             PlayerPrefs.SetInt("NumberOfDrinksLitted", 0);
             PlayerPrefs.SetInt("NumberOfDrinksShaken", 0);
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            _numberOfDrinksServed = 20;
+            CheckAchievements();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            _numberOfDrinksServed = 40;
+            CheckAchievements();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            _numberOfDrinksServed = 60;
+            CheckAchievements();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            _numberOfDrinksShaken = 10;
+            CheckAchievements();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            _numberOfDrinksStirred = 10;
+            CheckAchievements();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            _numberOfDrinksLitted = 10;
+            CheckAchievements();
+        }
     }
 
     void Start ()
