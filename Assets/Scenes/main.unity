@@ -228,6 +228,7 @@ MonoBehaviour:
   axisMove: L_XAxis_1
   axisHigh: L_YAxis_1
   validationKey: LB_1
+  lightItUpKey: TriggersL_1
 --- !u!1 &185858124 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1572721019045304, guid: cbf23f42cbb43654f8bf9b54fc2db88c,
@@ -344,6 +345,7 @@ MonoBehaviour:
   axisMove: R_XAxis_1
   axisHigh: R_YAxis_1
   validationKey: RB_1
+  lightItUpKey: TriggersR_1
 --- !u!1 &209050172
 GameObject:
   m_ObjectHideFlags: 0

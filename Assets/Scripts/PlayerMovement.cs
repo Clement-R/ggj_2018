@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
     public string axisMove;
     public string axisHigh;
     public string validationKey;
+    public string lightItUpKey;
 
     private int _actualPositionIndex = 0;
     private int _actualPositionHigh = 0;
@@ -57,12 +58,26 @@ public class PlayerMovement : MonoBehaviour {
 
         if(Input.GetButtonDown(validationKey) && _actualPositionIndex != 0)
         {
+            print("VALIDATION TIME");
             AddIngredient();
         }
 
-        // TODO :
+        // TODO : detect stire movement, and add null ingredient if it's not done well
         if (Input.GetButtonDown("A_1") && _actualPositionIndex == 0)
         {
+            // AddIngredient();
+        }
+
+        // TODO : detect shake movement, and add null ingredient if it's not done well
+        if (Input.GetButtonDown("DPad_XAxis_1") && _actualPositionIndex == 0)
+        {
+            // AddIngredient();
+        }
+
+        // TODO : detect light it up, and add null ingredient if it's not done well
+        if (Input.GetAxisRaw(lightItUpKey) > 0.5 && _actualPositionIndex == 0)
+        {
+            print("LIGHT IT UP");
             // AddIngredient();
         }
     }

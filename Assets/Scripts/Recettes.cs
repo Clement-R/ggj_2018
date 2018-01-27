@@ -9,6 +9,7 @@ public class Recettes : ScriptableObject {
         Ordered, Balec
     };
 
+    public string recipeName;
     public Type type;
     bool good = true;
 
