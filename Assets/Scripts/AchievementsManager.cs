@@ -200,6 +200,7 @@ public class AchievementsManager : MonoBehaviour {
                         break;
                 }
                 break;
+
             case "Lit":
                 switch (_numberOfDrinksLitted)
                 {
@@ -208,6 +209,7 @@ public class AchievementsManager : MonoBehaviour {
                         break;
                 }
                 break;
+
             case "Shake":
                 switch (_numberOfDrinksShaken)
                 {
@@ -216,7 +218,8 @@ public class AchievementsManager : MonoBehaviour {
                         break;
                 }
                 break;
-            case "Serve":
+
+            case "Drink":
                 switch (_numberOfDrinksServed)
                 {
                     case 1:
