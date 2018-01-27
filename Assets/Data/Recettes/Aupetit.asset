@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
   m_Name: Aupetit
   m_EditorClassIdentifier: 
-  recipeName: Aupetit
+  recipeName: The Aupetit
   type: 0
   sprite: {fileID: 0}
   score: 10
