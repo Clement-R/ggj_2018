@@ -100,27 +100,6 @@ public class LevelManager : MonoBehaviour {
             if(currentJoueur1 != null)
             {
                 achieved = currentJoueur1.ConsumeIngredient(ingredient);
-                if (currentJoueur1.IsFinished())
-                {
-                    if (currentJoueur1.IsGood())
-                    {
-                        Debug.Log("J1 validé!");
-                        score += currentJoueur1.score;
-                        if(type == Type.Random)
-                        {
-                            level.time += 1.5f;
-                        }
-                        currentJoueur1 = GetNext(0);
-                        if (joueur1Ended != null)
-                        {
-                            joueur1Ended.Invoke(currentJoueur1);
-                        }
-                    }
-                    else
-                    {
-                        Debug.Log("J1 Raté");
-                    }
-                }
             }
         }
         if (player == 1)
@@ -132,27 +111,6 @@ public class LevelManager : MonoBehaviour {
             if (currentJoueur2 != null)
             {
                 achieved = currentJoueur2.ConsumeIngredient(ingredient);
-                if (currentJoueur2.IsFinished())
-                {
-                    if (currentJoueur2.IsGood())
-                    {
-                        Debug.Log("J2 Validé!");
-                        score += currentJoueur2.score;
-                        if (type == Type.Random)
-                        {
-                            level.time += 1.5f;
-                        }
-                        currentJoueur2 = GetNext(1);
-                        if (joueur2Ended != null)
-                        {
-                           joueur2Ended.Invoke(currentJoueur2);
-                        }
-                    }
-                    else
-                    {
-                        Debug.Log("J2 Raté");
-                    }
-                }
             }
         }
         if (!achieved)
@@ -229,5 +187,40 @@ public class LevelManager : MonoBehaviour {
         {
             return currentJoueur2.GetNextIngredient();
         }
+    }
+
+    public bool Valider(int player)
+    {
+        if (player == 0 && currentJoueur1.IsGood())
+        {
+            Debug.Log("J1 validé!");
+            score += currentJoueur1.score;
+            if (type == Type.Random)
+            {
+                level.time += 1.5f;
+            }
+            currentJoueur1 = GetNext(0);
+            if (joueur1Ended != null)
+            {
+                joueur1Ended.Invoke(currentJoueur1);
+            }
+            return true;
+        }
+        if (player == 1 && currentJoueur2.IsGood())
+        {
+            Debug.Log("J2 Validé!");
+            score += currentJoueur2.score;
+            if (type == Type.Random)
+            {
+                level.time += 1.5f;
+            }
+            currentJoueur2 = GetNext(1);
+            if (joueur2Ended != null)
+            {
+                joueur2Ended.Invoke(currentJoueur2);
+            }
+            return true;
+        }
+        return false;
     }
 }
