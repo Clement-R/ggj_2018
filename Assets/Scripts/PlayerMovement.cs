@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using pkm.EventManager;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -53,11 +54,21 @@ public class PlayerMovement : MonoBehaviour {
         _playerId = _sign == -1 ? 1 : 0;
 
         LevelManager.Manager.joueur1Ended += OnRecipeEnd;
+
+        EventManager.StartListening("playerMove", OnPlayerMove);
+    }
+
+    void OnPlayerMove(dynamic obj)
+    {
+        Debug.Log("A player moved !");
+        // UnlockAchievement("You made it " + obj.name + " !");
     }
 
     void OnRecipeEnd(Recettes r)
     {
         print(r.name);
+
+        
     }
 
     // TODO : Block player in shake or stire stance if actual recipe is ordered and next ingredient is a stire or shake
@@ -138,7 +149,7 @@ public class PlayerMovement : MonoBehaviour {
             }
             
             // Check if a shake movement has been detected
-            if (_shakeCombination.StartsWith(_actualShakeCombination))
+            if (_shakeCombination.Contains(_actualShakeCombination))
             {
                 if (_shakeCombination == _actualShakeCombination)
                 {
