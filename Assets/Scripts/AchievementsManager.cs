@@ -43,37 +43,37 @@ public class AchievementsManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             _numberOfDrinksServed = 20;
-            CheckAchievements();
+            CheckAchievements("Drink");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             _numberOfDrinksServed = 40;
-            CheckAchievements();
+            CheckAchievements("Drink");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             _numberOfDrinksServed = 60;
-            CheckAchievements();
+            CheckAchievements("Drink");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             _numberOfDrinksShaken = 10;
-            CheckAchievements();
+            CheckAchievements("Shake");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             _numberOfDrinksStirred = 10;
-            CheckAchievements();
+            CheckAchievements("Stire");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             _numberOfDrinksLitted = 10;
-            CheckAchievements();
+            CheckAchievements("Lit");
         }
     }
 
