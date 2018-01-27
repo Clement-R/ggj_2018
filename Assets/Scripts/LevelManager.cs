@@ -202,10 +202,8 @@ public class LevelManager : MonoBehaviour {
 
     public bool Valider(int player)
     {
-        print(player);
         if (player == 0 && currentJoueur1.IsGood())
         {
-            Debug.Log("J1 validé!");
             score += currentJoueur1.score;
             if (type == Type.Random)
             {

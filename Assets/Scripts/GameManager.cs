@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
         if(!_dayEnd)
         {
             _dayEnd = true;
-            print("Day eneded !");
+            print("Day ended !");
         }
     }
 }

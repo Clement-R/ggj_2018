@@ -15,4 +15,8 @@ MonoBehaviour:
   type: 0
   sprite: {fileID: 21300000, guid: 7032b8ffc5de3e3439b06f90c4c04239, type: 3}
   score: 10
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: 12d5ab403e80d69478e7f6f20031c9cd, type: 2}
+  - {fileID: 11400000, guid: b0d6f76637fbab54690569281b9fb51f, type: 2}
+  - {fileID: 11400000, guid: 42760e8e75e3c4c4b87297e187747774, type: 2}
+  - {fileID: 11400000, guid: 073f5fc8d833d12438c7d8694c6e50c9, type: 2}

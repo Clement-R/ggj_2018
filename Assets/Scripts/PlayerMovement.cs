@@ -121,13 +121,10 @@ public class PlayerMovement : MonoBehaviour {
         {
             print("Validation time");
             bool success = LevelManager.Manager.Valider(_playerId);
-            print(success);
             if(success)
             {
                 EventManager.TriggerEvent("ServeDrink", new { });
             }
-
-            
         }
 
         if (LevelManager.Manager.GetNextIngredient(_playerId) != null)
@@ -230,6 +227,9 @@ public class PlayerMovement : MonoBehaviour {
                     _actualStireCombination = "";
                     _isInStireStance = false;
                 }
+
+                print(_stireCombination);
+                print(_actualStireCombination);
             }
             else if (_stireReverseCombination.StartsWith(_actualStireCombination))
             {
@@ -329,8 +329,6 @@ public class PlayerMovement : MonoBehaviour {
         
         _actualPositionHigh = Mathf.Clamp(_actualPositionHigh, 0, 2);
         _sr.sprite = highPositionsSprites[_actualPositionHigh];
-
-        print(_actualPositionHigh);
 
         yield return null;
     }

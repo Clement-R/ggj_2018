@@ -6,14 +6,40 @@ using UnityEngine.UI;
 
 public class AchievementsManager : MonoBehaviour {
 
+    [Header("Drinks")]
+    public Achievement Drinks_1;
+    public Achievement Drinks_20;
+    public Achievement Drinks_40;
+    public Achievement Drinks_60;
+
+    [Header("Shake")]
+    public Achievement Shakes_10;
+    [Header("Stire")]
+    public Achievement Stires_10;
+    [Header("Lit")]
+    public Achievement Lits_10;
+
     public GameObject achievementPanel;
-    public Dictionary<string, bool> achievements = new Dictionary<string, bool>();
+    public Achievement[] achievements;
     Text panelText;
 
     private int _numberOfDrinksServed;
     private int _numberOfDrinksShaken;
     private int _numberOfDrinksStirred;
     private int _numberOfDrinksLitted;
+
+    private bool _panelVisible = false;
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            PlayerPrefs.SetInt("NumberOfDrinks", 0);
+            PlayerPrefs.SetInt("NumberOfDrinksStirred", 0);
+            PlayerPrefs.SetInt("NumberOfDrinksLitted", 0);
+            PlayerPrefs.SetInt("NumberOfDrinksShaken", 0);
+        }
+    }
 
     void Start ()
     {
@@ -58,6 +84,8 @@ public class AchievementsManager : MonoBehaviour {
             PlayerPrefs.SetInt("NumberOfDrinksLitted", 0);
         }
 
+        print(PlayerPrefs.GetInt("NumberOfDrinks"));
+
         // panelText = achievementPanel.transform.GetChild(0).GetComponent<Text>();
     }
 
@@ -90,24 +118,29 @@ public class AchievementsManager : MonoBehaviour {
     void OnLitDrink(dynamic obj)
     {
         _numberOfDrinksLitted++;
+        PlayerPrefs.SetInt("NumberOfDrinksLitted", _numberOfDrinksLitted);
         CheckAchievements();
     }
 
     void OnStireDrink(dynamic obj)
     {
         _numberOfDrinksStirred++;
+        PlayerPrefs.SetInt("NumberOfDrinksStirred", _numberOfDrinksStirred);
         CheckAchievements();
     }
 
     void OnShakeDrink(dynamic obj)
     {
         _numberOfDrinksShaken++;
+        PlayerPrefs.SetInt("NumberOfDrinksShaken", _numberOfDrinksShaken);
         CheckAchievements();
     }
 
     void OnServeDrink(dynamic obj)
     {
         _numberOfDrinksServed++;
+        PlayerPrefs.SetInt("NumberOfDrinks", _numberOfDrinksServed);
+        print(PlayerPrefs.GetInt("NumberOfDrinks"));
         CheckAchievements();
     }
 
@@ -124,59 +157,61 @@ public class AchievementsManager : MonoBehaviour {
         switch(_numberOfDrinksServed)
         {
             case 1:
-                UnlockAchievement("Trainees", "First drink made");
+                UnlockAchievement(Drinks_1);
                 break;
 
             case 20:
-                UnlockAchievement("Canned Heat Connoisseurs", "20 drinks made");  
+                UnlockAchievement(Drinks_20);  
                 break;
 
             case 40:
-                UnlockAchievement("Confirmed Mixologists", "40 drinks made");
+                UnlockAchievement(Drinks_40);
                 break;
 
             case 60:
-                UnlockAchievement("Booze Bishops", "60 drinks made");
+                UnlockAchievement(Drinks_60);
                 break;
         }
 
         switch (_numberOfDrinksShaken)
         {
             case 10:
-                UnlockAchievement("Shaken, not stirred", "Shaken 10 drinks");
+                UnlockAchievement(Shakes_10);
                 break;
         }
 
         switch (_numberOfDrinksStirred)
         {
             case 10:
-                UnlockAchievement("Twirlers", "Stirred 10 drinks");
+                UnlockAchievement(Stires_10);
                 break;
         }
 
         switch (_numberOfDrinksLitted)
         {
             case 10:
-                UnlockAchievement("Arsonists", "Lit 10 drinks on fire");
+                UnlockAchievement(Lits_10);
                 break;
         }
     }
 
-    void UnlockAchievement(string title, string description)
+    void UnlockAchievement(Achievement achievement)
     {
-        // achievementPanel.SetActive(true);
-        // obj.text
-        // obj.description
-
-        print(title + " : " + description);
-
-        // panelText.text = obj.text;
-        // StartCoroutine("hidePanel");
+        if (!_panelVisible)
+        {
+            achievementPanel.GetComponent<AchievementPanelBehavior>().Setup(achievement);
+            achievementPanel.GetComponent<Animator>().SetTrigger("Show");
+            StartCoroutine("hidePanel");
+        }
     }
 
     IEnumerator hidePanel()
     {
+        _panelVisible = true;
+
         yield return new WaitForSeconds(2.0f);
-        achievementPanel.SetActive(false);
+
+        achievementPanel.GetComponent<Animator>().SetTrigger("Hide");
+        _panelVisible = false;
     }
 }

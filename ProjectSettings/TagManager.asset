@@ -42,6 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2606717047
+    locked: 0
+  - name: Bottles
+    uniqueID: 750449151
+    locked: 0
   - name: Player
     uniqueID: 4160301645
     locked: 0
