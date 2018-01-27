@@ -12,6 +12,8 @@ public class ScreenEffectsManager : MonoBehaviour {
     private void Awake()
     {
         material.SetFloat("_TimeBegin", -50000);
+        material.SetFloat("_Selector", (float)Random.Range(0, 3));
+        material.SetFloat("_Distorsion", (float)Random.Range(0, 2));
     }
 
     void Start () {
@@ -43,22 +45,26 @@ public class ScreenEffectsManager : MonoBehaviour {
     {
         material.SetFloat("_TimeBegin", Time.time);
         float duration = material.GetFloat("_Duration");
-        material.SetFloat("_Selector", (float)Random.Range(0, 3));
-        material.SetFloat("_Distorsion", (float)Random.Range(0, 2));
+
         yield return new WaitForSeconds(duration / 2f);
         if(middle != null)
         {
             middle.Invoke();
-            Camera[] c = FindObjectsOfType<Camera>();
-            foreach(Camera cam in c)
+            yield return new WaitForSeconds(0.01f);
+            Camera[] cam = GameObject.FindObjectsOfType<Camera>();
+            Camera c = GetComponent<Camera>();
+            for(int i = cam.Length-1; i >= 0; i--)
             {
-                if(cam != GetComponent<Camera>())
+                if(cam[i] != c)
                 {
-                    Destroy(cam);
+                    DestroyImmediate(cam[i].gameObject);
                 }
             }
             middle = null;
         }
+        yield return new WaitForSeconds(duration / 2f);
+        material.SetFloat("_Selector", (float)Random.Range(0, 3));
+        material.SetFloat("_Distorsion", (float)Random.Range(0, 2));
         //material.SetFloat("_TimeBegin", -duration / 2f);
     }
 }

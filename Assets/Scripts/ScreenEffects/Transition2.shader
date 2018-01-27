@@ -44,6 +44,8 @@
 				o.uv = v.uv;
 				return o;
 			}
+
+
 			
 			sampler2D _MainTex;
 			float4 _Color1;
@@ -65,9 +67,9 @@
 				fixed2 centered = i.uv - fixed2(0.5,0.5);
 				//centered.x += _Time.y;
 				centered.x = centered.x * (_ScreenParams.x/_ScreenParams.y);
-
+				
 				centered = fmod(centered, 0.3);					
-
+					
 				fixed factor = sin(prog*3.14);
 				fixed dist = centered.x + _Time.y;
 				//col.rgb = (factor * (1-col.rgb))+((1-factor)*col.rgb);
