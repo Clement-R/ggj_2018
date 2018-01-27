@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Absinthe
   m_EditorClassIdentifier: 
   name: Absinthe
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: d3afc1c8660606f4c942faf8bb60fd0f, type: 3}

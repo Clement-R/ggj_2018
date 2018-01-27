@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Vodka
   m_EditorClassIdentifier: 
   name: Vodka
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 626fe75ac0bd207409d46060ab8a5078, type: 3}

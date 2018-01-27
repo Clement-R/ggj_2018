@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Vin Rouge
   m_EditorClassIdentifier: 
   name: Vin Rouge
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: f2e181cd101c1a64bb5e5f5a5517f789, type: 3}

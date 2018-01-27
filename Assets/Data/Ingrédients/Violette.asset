@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Violette
   m_EditorClassIdentifier: 
   name: Sirop Violette
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 424526bca2746ff429e58c4f03e14cae, type: 3}
