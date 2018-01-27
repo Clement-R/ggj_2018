@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
+  m_Name: MintyBusiness
+  m_EditorClassIdentifier: 
+  recipeName: The Minty Business
+  type: 0
+  score: 10
+  ingredients:
+  - {fileID: 11400000, guid: b1939f6cc368a004681cdc7207296d95, type: 2}
+  - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}
+  - {fileID: 11400000, guid: e8c92373c4538bb43955a4b923e6d0c9, type: 2}

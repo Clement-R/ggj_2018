@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79c86fa302e4b7c47a5257f8533efbbf, type: 3}
-  m_Name: lol
+  m_Name: Poire
   m_EditorClassIdentifier: 
-  name: Cointreau
-  sprite: {fileID: 21300000, guid: 7032b8ffc5de3e3439b06f90c4c04239, type: 3}
+  name: Poire
+  sprite: {fileID: 0}
