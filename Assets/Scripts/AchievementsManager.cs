@@ -155,21 +155,21 @@ public class AchievementsManager : MonoBehaviour {
     {
         _numberOfDrinksLitted++;
         PlayerPrefs.SetInt("NumberOfDrinksLitted", _numberOfDrinksLitted);
-        CheckAchievements();
+        CheckAchievements(obj.type);
     }
 
     void OnStireDrink(dynamic obj)
     {
         _numberOfDrinksStirred++;
         PlayerPrefs.SetInt("NumberOfDrinksStirred", _numberOfDrinksStirred);
-        CheckAchievements();
+        CheckAchievements(obj.type);
     }
 
     void OnShakeDrink(dynamic obj)
     {
         _numberOfDrinksShaken++;
         PlayerPrefs.SetInt("NumberOfDrinksShaken", _numberOfDrinksShaken);
-        CheckAchievements();
+        CheckAchievements(obj.type);
     }
 
     void OnServeDrink(dynamic obj)
@@ -177,7 +177,7 @@ public class AchievementsManager : MonoBehaviour {
         _numberOfDrinksServed++;
         PlayerPrefs.SetInt("NumberOfDrinks", _numberOfDrinksServed);
         print(PlayerPrefs.GetInt("NumberOfDrinks"));
-        CheckAchievements();
+        CheckAchievements(obj.type);
     }
 
     void OnDisable()
@@ -188,45 +188,53 @@ public class AchievementsManager : MonoBehaviour {
         EventManager.StopListening("ServeDrink", OnServeDrink);
     }
 
-    void CheckAchievements()
+    void CheckAchievements(string type)
     {
-        switch(_numberOfDrinksServed)
+        switch (type)
         {
-            case 1:
-                UnlockAchievement(Drinks_1);
+            case "Stire":
+                switch (_numberOfDrinksStirred)
+                {
+                    case 10:
+                        UnlockAchievement(Stires_10);
+                        break;
+                }
                 break;
-
-            case 20:
-                UnlockAchievement(Drinks_20);  
+            case "Lit":
+                switch (_numberOfDrinksLitted)
+                {
+                    case 10:
+                        UnlockAchievement(Lits_10);
+                        break;
+                }
                 break;
-
-            case 40:
-                UnlockAchievement(Drinks_40);
+            case "Shake":
+                switch (_numberOfDrinksShaken)
+                {
+                    case 10:
+                        UnlockAchievement(Shakes_10);
+                        break;
+                }
                 break;
+            case "Serve":
+                switch (_numberOfDrinksServed)
+                {
+                    case 1:
+                        UnlockAchievement(Drinks_1);
+                        break;
 
-            case 60:
-                UnlockAchievement(Drinks_60);
-                break;
-        }
+                    case 20:
+                        UnlockAchievement(Drinks_20);
+                        break;
 
-        switch (_numberOfDrinksShaken)
-        {
-            case 10:
-                UnlockAchievement(Shakes_10);
-                break;
-        }
+                    case 40:
+                        UnlockAchievement(Drinks_40);
+                        break;
 
-        switch (_numberOfDrinksStirred)
-        {
-            case 10:
-                UnlockAchievement(Stires_10);
-                break;
-        }
-
-        switch (_numberOfDrinksLitted)
-        {
-            case 10:
-                UnlockAchievement(Lits_10);
+                    case 60:
+                        UnlockAchievement(Drinks_60);
+                        break;
+                }
                 break;
         }
     }

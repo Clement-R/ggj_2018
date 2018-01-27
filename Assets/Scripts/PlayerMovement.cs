@@ -123,7 +123,7 @@ public class PlayerMovement : MonoBehaviour {
             bool success = LevelManager.Manager.Valider(_playerId);
             if(success)
             {
-                EventManager.TriggerEvent("ServeDrink", new { });
+                EventManager.TriggerEvent("ServeDrink", new { type = "Drink"});
             }
         }
 
@@ -175,7 +175,7 @@ public class PlayerMovement : MonoBehaviour {
                 {
                     // Shake success
                     print("Shake is okay !");
-                    EventManager.TriggerEvent("ShakeDrink", new { });
+                    EventManager.TriggerEvent("ShakeDrink", new { type = "Shake" });
                     SuccessShake(false);
                     _actualShakeCombination = "";
                     _isInShakeStance = false;
@@ -222,7 +222,7 @@ public class PlayerMovement : MonoBehaviour {
                 {
                     // Stire success
                     print("Stire is okay !");
-                    EventManager.TriggerEvent("StireDrink", new { });
+                    EventManager.TriggerEvent("StireDrink", new { type = "Stire" });
                     SuccessStire(false);
                     _actualStireCombination = "";
                     _isInStireStance = false;
@@ -237,7 +237,7 @@ public class PlayerMovement : MonoBehaviour {
                 {
                     // Reverse stire success
                     print("Reverse stire is okay !");
-                    EventManager.TriggerEvent("StireDrink", new { });
+                    EventManager.TriggerEvent("StireDrink", new { type = "Stire" });
                     SuccessStire(true);
                     _actualStireCombination = "";
                     _isInStireStance = false;
@@ -257,7 +257,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetAxisRaw(lightItUpKey) > 0.5 && _actualPositionIndex == 0 && _canLightItUp)
         {
             print("LIGHT IT UP");
-            EventManager.TriggerEvent("LitDrink", new { });
+            EventManager.TriggerEvent("LitDrink", new { type = "Lit" });
             LevelManager.Manager.AddIngredient(_playerId, LightItUp);
             StartCoroutine(LightCooldown());
         }
