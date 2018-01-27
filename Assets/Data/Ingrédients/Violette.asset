@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c86fa302e4b7c47a5257f8533efbbf, type: 3}
   m_Name: Violette
   m_EditorClassIdentifier: 
-  name: Unknown
+  name: Sirop Violette
   sprite: {fileID: 0}
