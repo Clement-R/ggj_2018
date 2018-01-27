@@ -1443,6 +1443,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreMedium: 0
   scoreHigh: 0
+  resultLow: {fileID: 21300000, guid: bff7667be50f7c947b97bd93d9d9f0b5, type: 3}
+  resultMedium: {fileID: 21300000, guid: 6fa493c4e2dc7e04886a6f6ace8c7825, type: 3}
+  resultHigh: {fileID: 21300000, guid: 8b1524c18571ca24f84c07178c0fc364, type: 3}
 --- !u!1 &735642030
 GameObject:
   m_ObjectHideFlags: 0

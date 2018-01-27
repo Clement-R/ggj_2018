@@ -30,15 +30,15 @@ public class EndMenuBehavior : MonoBehaviour {
         
         if(LevelManager.Manager.Score < scoreMedium)
         {
-            transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = null;
+            transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = resultLow;
         }
         else if(LevelManager.Manager.Score >= scoreMedium && LevelManager.Manager.Score < scoreHigh)
         {
-            transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = null;
+            transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = resultMedium;
         }
         else
         {
-            transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = null;
+            transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = resultHigh;
         }
         
         _isVisible = true;
