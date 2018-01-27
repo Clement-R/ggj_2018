@@ -32,6 +32,10 @@ public class LevelManager : MonoBehaviour {
     public event System.Action finish;
 
     int score = 0;
+    public int Score
+    {
+        get { return score; }
+    }
 
     Recettes GetNext(int player)
     {
@@ -129,4 +133,15 @@ public class LevelManager : MonoBehaviour {
         }
     }
 
+    public Ingredients GetNextIngredient(int joueur)
+    {
+        if(joueur == 0)
+        {
+            return currentJoueur1.GetNextIngredient();
+        }
+        else
+        {
+            return currentJoueur2.GetNextIngredient();
+        }
+    }
 }

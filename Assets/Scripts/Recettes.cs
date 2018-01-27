@@ -58,4 +58,13 @@ public class Recettes : ScriptableObject {
         return ingredients.Count == 0 || !good;
     }
 
+    public Ingredients GetNextIngredient()
+    {
+        if(ingredients.Count>0 && type == Type.Ordered)
+        {
+            return ingredients[0];
+        }
+        return null;
+    }
+
 }
