@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Ssssexy Sangria
   type: 0
+  sprite: {fileID: 0}
   score: 10
   ingredients:
-  - {fileID: 11400000, guid: b357757ae64903e4190d5582111fb9e0, type: 2}
   - {fileID: 11400000, guid: aee0a5e7030cb6a42bff013940e5e549, type: 2}
   - {fileID: 11400000, guid: 27367e21b4eb93f45b398ecd0c0fd11a, type: 2}

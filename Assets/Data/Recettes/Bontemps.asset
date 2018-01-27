@@ -11,8 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
   m_Name: Bontemps
   m_EditorClassIdentifier: 
-  recipeName: 
+  recipeName: The Bontemps
   type: 0
   sprite: {fileID: 0}
   score: 10
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: e8c92373c4538bb43955a4b923e6d0c9, type: 2}
+  - {fileID: 11400000, guid: b0d6f76637fbab54690569281b9fb51f, type: 2}
+  - {fileID: 11400000, guid: 28251d57edfc6144eaf7842249167d2a, type: 2}
+  - {fileID: 11400000, guid: 1d3a11feb0085d9428af2f9cf2b4ed06, type: 2}
+  - {fileID: 11400000, guid: b357757ae64903e4190d5582111fb9e0, type: 2}

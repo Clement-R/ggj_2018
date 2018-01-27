@@ -11,8 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
   m_Name: BlueDragoon
   m_EditorClassIdentifier: 
-  recipeName: 
+  recipeName: The Blue Dragoon
   type: 0
+  sprite: {fileID: 0}
   score: 10
   ingredients:
   - {fileID: 11400000, guid: b1939f6cc368a004681cdc7207296d95, type: 2}

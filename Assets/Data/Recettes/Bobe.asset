@@ -11,8 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce62d5dc71ed0242a7ad86ab8394982, type: 3}
   m_Name: Bobe
   m_EditorClassIdentifier: 
-  recipeName: 
+  recipeName: The Bobe
   type: 0
   sprite: {fileID: 0}
   score: 10
-  ingredients: []
+  ingredients:
+  - {fileID: 11400000, guid: b1939f6cc368a004681cdc7207296d95, type: 2}
+  - {fileID: 11400000, guid: 932e1daf916a12143ac5cc0c92e4c8e8, type: 2}
+  - {fileID: 11400000, guid: e8c92373c4538bb43955a4b923e6d0c9, type: 2}
+  - {fileID: 11400000, guid: a307c8c2dc0199447a19035cff815cc4, type: 2}
