@@ -14,15 +14,6 @@ public class GameManager : MonoBehaviour {
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            EventManager.TriggerEvent("ToggleEnd", new { });
-        }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            EventManager.TriggerEvent("ToggleEndTimeAttack", new { });
-        }
-        
         if(LevelManager.Manager.RecipesDone >= 8)
         {
             AkSoundEngine.SetState("Public_Chaleur", "Chaud");
