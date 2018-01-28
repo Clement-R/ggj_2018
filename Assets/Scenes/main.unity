@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -1921,12 +1922,12 @@ Prefab:
     - target: {fileID: 224177005390096378, guid: cbac93935d15e8948b3492a768586593,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 702
+      value: 662
       objectReference: {fileID: 0}
     - target: {fileID: 224177005390096378, guid: cbac93935d15e8948b3492a768586593,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 324
+      value: 355
       objectReference: {fileID: 0}
     - target: {fileID: 224177005390096378, guid: cbac93935d15e8948b3492a768586593,
         type: 2}
@@ -3112,12 +3113,12 @@ Prefab:
     - target: {fileID: 224177005390096378, guid: cbac93935d15e8948b3492a768586593,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -709
+      value: -750
       objectReference: {fileID: 0}
     - target: {fileID: 224177005390096378, guid: cbac93935d15e8948b3492a768586593,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 324
+      value: 355
       objectReference: {fileID: 0}
     - target: {fileID: 224177005390096378, guid: cbac93935d15e8948b3492a768586593,
         type: 2}
@@ -3159,21 +3160,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 224177005390096378, guid: cbac93935d15e8948b3492a768586593,
+    - target: {fileID: 114460968116983570, guid: cbac93935d15e8948b3492a768586593,
         type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.99947506
-      objectReference: {fileID: 0}
-    - target: {fileID: 224177005390096378, guid: cbac93935d15e8948b3492a768586593,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.99947506
-      objectReference: {fileID: 0}
-    - target: {fileID: 224177005390096378, guid: cbac93935d15e8948b3492a768586593,
-        type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.99947506
-      objectReference: {fileID: 0}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 7ea3ece8c143e47469bc15575c50887d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbac93935d15e8948b3492a768586593, type: 2}
   m_IsPrefabParent: 0
