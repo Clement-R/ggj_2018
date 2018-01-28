@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 50
   recetteJoueur1:
-  - {fileID: 11400000, guid: cb487c18cfb8a644084d430f6fefb6a7, type: 2}
-  - {fileID: 11400000, guid: a523a297249441a419b1b33b31034ec6, type: 2}
   - {fileID: 11400000, guid: 09c41766d7d45f54093a7d4036db35e2, type: 2}
+  - {fileID: 11400000, guid: a523a297249441a419b1b33b31034ec6, type: 2}
+  - {fileID: 11400000, guid: cb487c18cfb8a644084d430f6fefb6a7, type: 2}
   - {fileID: 11400000, guid: dace537a59baaaa4e816a50bb525bbfb, type: 2}
   recetteJoueur2:
   - {fileID: 11400000, guid: c113761eeae688448b7b43740f291cfd, type: 2}

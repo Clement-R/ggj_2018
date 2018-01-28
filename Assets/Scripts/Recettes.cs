@@ -22,7 +22,7 @@ public class Recettes : ScriptableObject {
     {
         if(type == Type.Ordered)
         {
-            if(ingredients.Count>0 && ingredients[0].name == ingredient.name)
+            if(ingredients.Count>0 && ingredient != null && ingredients[0].name == ingredient.name)
             {
                 ingredients.RemoveAt(0);
                 return true;
@@ -37,7 +37,7 @@ public class Recettes : ScriptableObject {
         {
             foreach(Ingredients i in ingredients)
             {
-                if(i.name == ingredient.name)
+                if(ingredient != null && i.name == ingredient.name)
                 {
                     ingredients.Remove(i);
                     return true;
