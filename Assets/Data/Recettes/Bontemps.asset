@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Bontemps
   type: 0
   sprite: {fileID: 0}
-  score: 60
+  score: 50
   ingredients:
   - {fileID: 11400000, guid: 175d9e14872cf5e42b55933cc9b8b301, type: 2}
   - {fileID: 11400000, guid: b0d6f76637fbab54690569281b9fb51f, type: 2}

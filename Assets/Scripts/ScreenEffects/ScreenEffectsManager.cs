@@ -8,6 +8,7 @@ public class ScreenEffectsManager : MonoBehaviour {
 
     public Material material;
     public event System.Action middle;
+    public event System.Action finished;
     public Scanline scanline;
     float alphaScanline = 1f;
     bool disgression = false;
@@ -100,6 +101,11 @@ public class ScreenEffectsManager : MonoBehaviour {
             middle = null;
         }
         yield return new WaitForSeconds(duration / 2f);
+        if(finished != null)
+        {
+            finished.Invoke();
+            finished = null;
+        }
         material.SetFloat("_Selector", (float)Random.Range(0, 3));
         material.SetFloat("_Distorsion", (float)Random.Range(0, 2));
         //material.SetFloat("_TimeBegin", -duration / 2f);

@@ -308,11 +308,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 11400000, guid: a0cd35cd35346d64d807718047656496, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 742de827eb5652e4184c19b729ea49e3, type: 2}
+  - {fileID: 11400000, guid: cf9e6cc4e6ad9024fadf68e88458bf8f, type: 2}
+  - {fileID: 11400000, guid: 59666480740dd4942b44ddadfb982117, type: 2}
   next: 0
 --- !u!4 &1983848578
 Transform:
