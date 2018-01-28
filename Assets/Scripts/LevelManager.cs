@@ -191,10 +191,6 @@ public class LevelManager : MonoBehaviour {
     private void Update()
     {
         elapsedTime += Time.deltaTime;
-        if (Input.GetButtonDown("A_1"))
-        {
-            Time.timeScale = 0;
-        }
         if((elapsedTime > level.time || DayFinished()) && finish != null)
         {
             finish.Invoke();
