@@ -57,6 +57,15 @@ TagManager:
   - name: Lights
     uniqueID: 2092676563
     locked: 0
+  - name: Foule 1
+    uniqueID: 2332323187
+    locked: 0
+  - name: FOG
+    uniqueID: 1943392989
+    locked: 0
+  - name: Foule 2
+    uniqueID: 3274576097
+    locked: 0
   - name: UI
     uniqueID: 4013822951
     locked: 0

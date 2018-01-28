@@ -195,6 +195,11 @@ public class LevelManager : MonoBehaviour {
         {
             finish.Invoke();
         }
+
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            Manager.score = 100;
+        }
     }
 
     public Ingredients GetNextIngredient(int joueur)
