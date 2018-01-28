@@ -2778,7 +2778,7 @@ MonoBehaviour:
   LJ1: {fileID: 1463541089}
   LJ2: {fileID: 1960637006}
   FailColor: {r: 1, g: 0, b: 0, a: 1}
-  WinColor: {r: 0, g: 0, b: 0, a: 0}
+  WinColor: {r: 0, g: 1, b: 0, a: 1}
   ReactColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1571242299
 Prefab:

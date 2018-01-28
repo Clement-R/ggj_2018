@@ -37,7 +37,6 @@ public class LightManager : MonoBehaviour {
         if (obj.type == 0)
         {
             print("J Gauche Fail");
-            Mathf.PingPong(Time.time, 1);
             LJ1.GetComponent<SpriteRenderer>().color = FailColor;
             StartCoroutine(GoToColor());
         }
