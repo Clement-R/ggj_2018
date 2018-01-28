@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Bloodlust
   type: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: b3c04c5b5072d744fa18460f99d6757a, type: 3}
   score: 20
   ingredients:
   - {fileID: 11400000, guid: 175d9e14872cf5e42b55933cc9b8b301, type: 2}
