@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Jak And Dexter
   type: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 5aa37e325c80d6c4abba81e27dc974b0, type: 3}
   score: 20
   ingredients:
   - {fileID: 11400000, guid: 12d5ab403e80d69478e7f6f20031c9cd, type: 2}

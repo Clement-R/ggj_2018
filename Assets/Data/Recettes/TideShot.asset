@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Tide Shot
   type: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: e9a09186f6998b34b922b2a2f1b6f5be, type: 3}
   score: 20
   ingredients:
   - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}
