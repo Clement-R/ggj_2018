@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Curacao
   m_EditorClassIdentifier: 
   name: Curacao
-  sprite: {fileID: 21300000, guid: 31f5bcd1cfecfb54dbd39261c61eb07b, type: 3}
+  sprite: {fileID: 21300000, guid: bd3c20331a696854d90a5528965a8ff9, type: 3}

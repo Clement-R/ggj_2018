@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Chartreuse
   m_EditorClassIdentifier: 
   name: Chartreuse
-  sprite: {fileID: 21300000, guid: 726984c6e5b64cf4392d554cef9e582a, type: 3}
+  sprite: {fileID: 21300000, guid: c6c05d34990a0ec469a7d4fdc899bcd1, type: 3}
