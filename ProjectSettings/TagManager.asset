@@ -48,6 +48,9 @@ TagManager:
   - name: Bottles
     uniqueID: 750449151
     locked: 0
+  - name: Lights Behind
+    uniqueID: 2292477263
+    locked: 0
   - name: Player
     uniqueID: 4160301645
     locked: 0
