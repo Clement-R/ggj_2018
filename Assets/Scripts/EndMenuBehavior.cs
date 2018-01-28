@@ -16,6 +16,14 @@ public class EndMenuBehavior : MonoBehaviour {
     public Sprite resultMedium;
     public Sprite resultHigh;
 
+    [Header("Coins sprites")]
+    public Sprite coinLow;
+    public Sprite coinMedium;
+    public Sprite coinHigh;
+
+    public Sprite failSprite;
+    public Sprite winSprite;
+
     private bool _isVisible = false;
 
     
@@ -44,14 +52,20 @@ public class EndMenuBehavior : MonoBehaviour {
         
         if(LevelManager.Manager.Score < scoreMedium)
         {
+            transform.GetChild(0).GetChild(5).GetComponent<Image>().sprite = failSprite;
+            transform.GetChild(0).GetChild(2).GetComponent<Image>().sprite = coinLow;
             transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = resultLow;
         }
         else if(LevelManager.Manager.Score >= scoreMedium && LevelManager.Manager.Score < scoreHigh)
         {
+            transform.GetChild(0).GetChild(5).GetComponent<Image>().sprite = winSprite;
+            transform.GetChild(0).GetChild(2).GetComponent<Image>().sprite = coinMedium;
             transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = resultMedium;
         }
         else
         {
+            transform.GetChild(0).GetChild(5).GetComponent<Image>().sprite = winSprite;
+            transform.GetChild(0).GetChild(2).GetComponent<Image>().sprite = coinHigh;
             transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = resultHigh;
         }
 

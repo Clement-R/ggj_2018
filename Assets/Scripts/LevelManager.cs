@@ -212,16 +212,6 @@ public class LevelManager : MonoBehaviour {
         {
             finish.Invoke();
         }
-
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            LevelManager.Manager.recipesDone = 3;
-        }
-        else if (Input.GetKeyDown(KeyCode.L))
-        {
-            LevelManager.Manager.recipesDone = 8;
-        }
     }
 
     public Ingredients GetNextIngredient(int joueur)
