@@ -65,23 +65,46 @@ public class EndMenuBehavior : MonoBehaviour {
         if(_isVisible)
         {
             // Manager players inputs
-            if (Input.GetButtonDown("Back_1"))
+            if(LevelManager.Manager.type == LevelManager.Type.Normal)
             {
-                ScreenEffectsManager.SwitchToScene("main_menu");
+                if (Input.GetButtonDown("Back_1"))
+                {
+                    ScreenEffectsManager.SwitchToScene("main_menu");
+                }
+
+                if (Input.GetButtonDown("Start_1"))
+                {
+                    if (LevelManager.Manager.Score < scoreMedium)
+                    {
+                        ScreenEffectsManager.SwitchToScene(SceneManager.GetActiveScene().name);
+                    }
+                    else
+                    {
+                        Story.story.LaunchNext();
+                    }
+
+                    ScreenEffectsManager.SwitchToScene(SceneManager.GetActiveScene().name);
+                }
             }
-
-            if (Input.GetButtonDown("Start_1"))
+            else
             {
-                if (LevelManager.Manager.Score < scoreMedium)
+                if (Input.GetButtonDown("Back_1"))
                 {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                }
-                else
-                {
-                    Story.story.LaunchNext();
+                    ScreenEffectsManager.SwitchToScene("main_menu");
                 }
 
-                ScreenEffectsManager.SwitchToScene(SceneManager.GetActiveScene().name);
+                if (Input.GetButtonDown("Start_1"))
+                {
+                    ScreenEffectsManager.manager.Launch();
+                    AsyncOperation op = SceneManager.LoadSceneAsync("main");
+                    op.allowSceneActivation = false;
+                    ScreenEffectsManager.manager.middle += () =>
+                    {
+                        LevelManager.Manager.type = LevelManager.Type.Random;
+                        LevelManager.Manager.Init();
+                        op.allowSceneActivation = true;
+                    };
+                }
             }
         }
     }
@@ -109,6 +132,14 @@ public class EndMenuBehavior : MonoBehaviour {
 
     public void Retry()
     {
-        ScreenEffectsManager.SwitchToScene(SceneManager.GetActiveScene().name);
+        ScreenEffectsManager.manager.Launch();
+        AsyncOperation op = SceneManager.LoadSceneAsync("main");
+        op.allowSceneActivation = false;
+        ScreenEffectsManager.manager.middle += () =>
+        {
+            LevelManager.Manager.type = LevelManager.Type.Random;
+            LevelManager.Manager.Init();
+            op.allowSceneActivation = true;
+        };
     }
 }
