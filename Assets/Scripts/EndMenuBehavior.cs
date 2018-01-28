@@ -22,6 +22,7 @@ public class EndMenuBehavior : MonoBehaviour {
     public GameObject timeAttackMenu;
     public GameObject timeAttackFirstSelected;
     public LeaderBoard leaderBoard;
+    public InputField nameInput;
 
 	void Start ()
     {
@@ -74,12 +75,29 @@ public class EndMenuBehavior : MonoBehaviour {
         }
     }
 
-    public void LeaderboardRegister(string name)
+    public void LeaderboardRegister()
     {
+        Debug.Log(nameInput.text);
         Dictionary<string, string> args = new Dictionary<string, string>();
-        args.Add(name, LevelManager.Manager.Score.ToString());
+        args.Add("username", nameInput.text);
+        args.Add("score", LevelManager.Manager.Score.ToString());
 
         leaderBoard.POST("http://scarounet.pythonanywhere.com/scores", args, () => { });
     }
 
+    public void QuitToMenu()
+    {
+        ScreenEffectsManager.SwitchToScene("main_menu");
+        Story.story.next = 0;
+    }
+
+    public void Continue()
+    {
+        Story.story.LaunchNext();
+    }
+
+    public void Retry()
+    {
+        ScreenEffectsManager.SwitchToScene(SceneManager.GetActiveScene().name);
+    }
 }

@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour {
         {
             EventManager.TriggerEvent("ToggleEnd", new { });
         }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            EventManager.TriggerEvent("ToggleEndTimeAttack", new { });
+        }
     }
 
     void DayEnd()
@@ -27,8 +31,14 @@ public class GameManager : MonoBehaviour {
             print("Day ended !");
 
             _dayEnd = true;
-
-            EventManager.TriggerEvent("ToggleEnd", new { } );
+            if(LevelManager.Manager.type == LevelManager.Type.Normal)
+            {
+                EventManager.TriggerEvent("ToggleEnd", new { } );
+            }
+            else
+            {
+                EventManager.TriggerEvent("ToggleEndTimeAttack", new { });
+            }
         }
     }
 }

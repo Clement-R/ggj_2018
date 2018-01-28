@@ -7,7 +7,7 @@ public class Story : MonoBehaviour {
     public static Story story = null;
 
     public List<Level> levels;
-    int next = 0;
+    public int next = 0;
 
     private void Start()
     {
