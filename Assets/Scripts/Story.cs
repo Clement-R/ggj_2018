@@ -21,6 +21,12 @@ public class Story : MonoBehaviour {
         DontDestroyOnLoad(this);
     }
 
+    public void BackToMainMenu()
+    {
+        next = levels.Count;
+        LaunchNext();
+    }
+
     public void LaunchNext()
     {
         AsyncOperation op;
