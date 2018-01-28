@@ -119,10 +119,6 @@ public class AchievementsManager : MonoBehaviour {
             _numberOfDrinksLitted = 0;
             PlayerPrefs.SetInt("NumberOfDrinksLitted", 0);
         }
-
-        print(PlayerPrefs.GetInt("NumberOfDrinks"));
-
-        // panelText = achievementPanel.transform.GetChild(0).GetComponent<Text>();
     }
 
     void LoadAchievements()

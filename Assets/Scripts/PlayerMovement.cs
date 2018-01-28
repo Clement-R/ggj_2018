@@ -72,6 +72,7 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         EventManager.StartListening("TogglePause", OnPause);
+        EventManager.StartListening("ToggleEnd", OnPause);
     }
 
     void OnPause(object obj)
@@ -83,9 +84,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         // TODO : MORE FX
     }
-
-    // TODO : Block player in shake or stire stance if actual recipe is ordered and next ingredient is a stire or shake
-
+    
     void Update ()
     {
         if(!_pause)
@@ -125,6 +124,10 @@ public class PlayerMovement : MonoBehaviour {
                 {
                     // TODO : play feedback
                 }
+                else
+                {
+                    EventManager.TriggerEvent("WrongBottle", new { type = _playerId });
+                }
             }
             else if (Input.GetButtonDown(validationKey) && _actualPositionIndex == 0)
             {
@@ -143,6 +146,9 @@ public class PlayerMovement : MonoBehaviour {
                 if ((ingredientName == "stire" || ingredientName == "reverse_stire") && _actualPositionIndex == 0 && !_isInStireStance)
                 {
                     print("Go to stire stance");
+
+                    // TODO : First stire frame
+
                     _timestampStireBlock = Time.time;
                     _isInStireStance = true;
                 }
@@ -150,6 +156,9 @@ public class PlayerMovement : MonoBehaviour {
                 if (ingredientName == "shake" && _actualPositionIndex == 0 && !_isInShakeStance)
                 {
                     print("Go to shake stance");
+
+                    // TODO : First shake frame
+
                     _timestampShakeBlock = Time.time;
                     _isInShakeStance = true;
                 }
@@ -165,11 +174,17 @@ public class PlayerMovement : MonoBehaviour {
                 if (Input.GetAxisRaw("DPad_YAxis_1") > 0.5 && _detectShakeValue)
                 {
                     _actualShakeCombination += "U";
+
+                    // TODO : Go to next frame of the shake anim
+
                     _detectShakeValue = false;
                 }
                 else if (Input.GetAxisRaw("DPad_YAxis_1") < -0.5 && _detectShakeValue)
                 {
                     _actualShakeCombination += "D";
+
+                    // TODO : Go to next frame of the shake anim
+
                     _detectShakeValue = false;
                 }
                 else if (!_detectShakeValue && Input.GetAxisRaw("DPad_YAxis_1") > -0.5 && Input.GetAxisRaw("DPad_YAxis_1") < 0.5)
@@ -188,6 +203,9 @@ public class PlayerMovement : MonoBehaviour {
                         SuccessShake(false);
                         _actualShakeCombination = "";
                         _isInShakeStance = false;
+
+                        // TODO : Go to idle stance
+
                     }
                 }
                 else
@@ -197,6 +215,8 @@ public class PlayerMovement : MonoBehaviour {
                     FailMove();
                     _actualShakeCombination = "";
                     _isInShakeStance = false;
+
+                    // TODO : Go to idle stance
                 }
             }
 
@@ -209,18 +229,22 @@ public class PlayerMovement : MonoBehaviour {
                 // Detect stire inputs
                 if (Input.GetButtonDown("A_1"))
                 {
+                    // TODO : Go to next frame of stire animation
                     _actualStireCombination += "A";
                 }
                 else if (Input.GetButtonDown("B_1"))
                 {
+                    // TODO : Go to next frame of stire animation
                     _actualStireCombination += "B";
                 }
                 else if (Input.GetButtonDown("Y_1"))
                 {
+                    // TODO : Go to next frame of stire animation
                     _actualStireCombination += "Y";
                 }
                 else if (Input.GetButtonDown("X_1"))
                 {
+                    // TODO : Go to next frame of stire animation
                     _actualStireCombination += "X";
                 }
 
@@ -250,6 +274,8 @@ public class PlayerMovement : MonoBehaviour {
                         SuccessStire(true);
                         _actualStireCombination = "";
                         _isInStireStance = false;
+
+                        // TODO : Go to idle stance
                     }
                 }
                 else
@@ -259,6 +285,8 @@ public class PlayerMovement : MonoBehaviour {
                     FailMove();
                     _actualStireCombination = "";
                     _isInStireStance = false;
+
+                    // TODO : Go to idle stance
                 }
             }
 

@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Flaming Russian
   type: 0
   sprite: {fileID: 0}
-  score: 10
+  score: 20
   ingredients:
   - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}
   - {fileID: 11400000, guid: 28251d57edfc6144eaf7842249167d2a, type: 2}

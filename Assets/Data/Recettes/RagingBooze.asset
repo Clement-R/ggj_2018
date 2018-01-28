@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Raging Booze
   type: 1
   sprite: {fileID: 0}
-  score: 10
+  score: 40
   ingredients:
   - {fileID: 11400000, guid: e8c92373c4538bb43955a4b923e6d0c9, type: 2}
   - {fileID: 11400000, guid: b357757ae64903e4190d5582111fb9e0, type: 2}

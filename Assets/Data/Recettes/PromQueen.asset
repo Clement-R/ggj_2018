@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Prom Queen
   type: 1
   sprite: {fileID: 0}
-  score: 10
+  score: 50
   ingredients:
   - {fileID: 11400000, guid: b357757ae64903e4190d5582111fb9e0, type: 2}
   - {fileID: 11400000, guid: 12d5ab403e80d69478e7f6f20031c9cd, type: 2}
