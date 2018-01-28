@@ -127,7 +127,7 @@ public class LevelManager : MonoBehaviour {
         }
         if (!achieved)
         {
-            if(player == 0)
+            if(player == 0 && currentJoueur1 != null)
             {
                 currentJoueur1 = Instantiate<Recettes>(currentJ1Original);
                 if(ingredientMissed != null)
@@ -135,7 +135,7 @@ public class LevelManager : MonoBehaviour {
                     ingredientMissed.Invoke(0);
                 }
             }
-            else
+            else if(player == 1 && currentJoueur2 != null)
             {
                 currentJoueur2 = Instantiate<Recettes>(currentJ2Original);
                 if (ingredientMissed != null)

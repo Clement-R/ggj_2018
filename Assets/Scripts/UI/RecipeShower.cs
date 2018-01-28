@@ -46,6 +46,11 @@ public class RecipeShower : MonoBehaviour {
             image.sprite = LevelManager.Manager.currentJoueur2.sprite;
             title.text = LevelManager.Manager.currentJoueur2.recipeName;
         }
+        else
+        {
+            image.sprite = null;
+            title.text = null;
+        }
     }
 
     void added(int p)
