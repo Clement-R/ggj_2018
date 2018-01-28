@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using pkm.EventManager;
 
 public class EndMenuBehavior : MonoBehaviour {
+
+    public float scoreMedium;
+    public float scoreHigh;
+
+    private bool _isVisible = false;
 
 	void Start ()
     {
@@ -16,10 +22,37 @@ public class EndMenuBehavior : MonoBehaviour {
         transform.GetChild(0).gameObject.SetActive(true);
 
         transform.GetChild(0).GetChild(1).GetComponent<Text>().text = LevelManager.Manager.Score.ToString();
+        
+        if(LevelManager.Manager.Score < scoreMedium)
+        {
+            transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = null;
+        }
+        else if(LevelManager.Manager.Score >= scoreMedium && LevelManager.Manager.Score < scoreHigh)
+        {
+            transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = null;
+        }
+        else
+        {
+            transform.GetChild(0).GetChild(3).GetComponent<SpriteRenderer>().sprite = null;
+        }
+        
+        _isVisible = true;
     }
 	
 	void Update ()
     {
-		// TODO : Manager players inputs
-	}
+        if(_isVisible)
+        {
+            // Manager players inputs
+            if (Input.GetButtonDown("Back_1"))
+            {
+                SceneManager.LoadScene("main_menu");
+            }
+
+            if (Input.GetButtonDown("Start_1"))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
+    }
 }
