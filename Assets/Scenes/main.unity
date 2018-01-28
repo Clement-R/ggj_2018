@@ -2448,6 +2448,22 @@ Prefab:
       propertyPath: playerID
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114822258111020716, guid: cbac93935d15e8948b3492a768586593,
+        type: 2}
+      propertyPath: playerID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95447228533011238, guid: cbac93935d15e8948b3492a768586593,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a749bbee866ffb94bb0d5f5d1f983a1b, type: 2}
+    - target: {fileID: 212920051702120406, guid: cbac93935d15e8948b3492a768586593,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0d2457b85b17d144d9e660a945503194,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbac93935d15e8948b3492a768586593, type: 2}
   m_IsPrefabParent: 0
