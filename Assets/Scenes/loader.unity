@@ -142,9 +142,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
-  defaultPoolSize: 16384
-  lowerPoolSize: 8192
-  streamingPoolSize: 4096
+  defaultPoolSize: 163840
+  lowerPoolSize: 81920
+  streamingPoolSize: 40960
   preparePoolSize: 0
   memoryCutoffThreshold: 0.95
   monitorPoolSize: 128
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 11400000, guid: 742de827eb5652e4184c19b729ea49e3, type: 2}
+  - {fileID: 11400000, guid: 532a0e6f6706ab54699f962b5678190b, type: 2}
   - {fileID: 11400000, guid: cf9e6cc4e6ad9024fadf68e88458bf8f, type: 2}
   - {fileID: 11400000, guid: 59666480740dd4942b44ddadfb982117, type: 2}
   next: 0
