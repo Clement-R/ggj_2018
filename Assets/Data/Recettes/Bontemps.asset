@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Bontemps
   type: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 9588ee75b18407a43bcb2d6d93493add, type: 3}
   score: 50
   ingredients:
   - {fileID: 11400000, guid: 175d9e14872cf5e42b55933cc9b8b301, type: 2}

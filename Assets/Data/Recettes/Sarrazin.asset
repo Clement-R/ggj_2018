@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Sarrazin
   type: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 64bcaa99d7e0db0448b6df3e6eec0743, type: 3}
   score: 60
   ingredients:
   - {fileID: 11400000, guid: 12d5ab403e80d69478e7f6f20031c9cd, type: 2}

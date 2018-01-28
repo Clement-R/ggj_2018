@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Forest Thump
   type: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 81061f6e02713344d955a1f163b1c1ee, type: 3}
   score: 30
   ingredients:
   - {fileID: 11400000, guid: 932e1daf916a12143ac5cc0c92e4c8e8, type: 2}

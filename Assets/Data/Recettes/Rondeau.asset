@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Rondeau
   type: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: c4fd85c206aa52f43af62ab48a1b45b1, type: 3}
   score: 50
   ingredients:
   - {fileID: 11400000, guid: 1d3a11feb0085d9428af2f9cf2b4ed06, type: 2}

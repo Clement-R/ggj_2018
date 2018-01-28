@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Hawkeye
   type: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 995c50de5f5889b48b9a3b9292fdbd78, type: 3}
   score: 30
   ingredients:
   - {fileID: 11400000, guid: b357757ae64903e4190d5582111fb9e0, type: 2}

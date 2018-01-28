@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: 
   type: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 11a31ea9e2226924aaeee7a1ab478ade, type: 3}
   score: 10
   ingredients:
   - {fileID: 11400000, guid: 28251d57edfc6144eaf7842249167d2a, type: 2}
