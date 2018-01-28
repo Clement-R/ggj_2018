@@ -40,13 +40,7 @@ public class MenuManager : MonoBehaviour {
 
     public void LaunchCredits()
     {
-        ScreenEffectsManager.manager.Launch();
-        AsyncOperation op = SceneManager.LoadSceneAsync("credits");
-        op.allowSceneActivation = false;
-        ScreenEffectsManager.manager.middle += () =>
-        {
-            op.allowSceneActivation = true;
-        };
+        ScreenEffectsManager.SwitchToScene("credits");
     }
 
     public void Quit()
