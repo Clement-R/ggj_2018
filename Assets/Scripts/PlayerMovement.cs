@@ -4,6 +4,12 @@ using UnityEngine;
 using pkm.EventManager;
 
 public class PlayerMovement : MonoBehaviour {
+    [Header("Stances")]
+    public Sprite stireStance;
+    public Sprite shakeStance;
+
+    public Sprite[] stirSprites;
+
     [Header("Move animation")]
     public AnimationCurve ac;
     public float timeToMove = 0.15f;
@@ -54,6 +60,8 @@ public class PlayerMovement : MonoBehaviour {
     private bool _pause = false;
     private bool _defaultFlip;
 
+    private Animator _animController;
+
     private void Start()
     {
         _sr = GetComponent<SpriteRenderer>();
@@ -62,7 +70,9 @@ public class PlayerMovement : MonoBehaviour {
         
         _defaultFlip = _sr.flipX;
 
-        if(_playerId == 0)
+        _animController = GetComponent<Animator>();
+
+        if (_playerId == 0)
         {
             LevelManager.Manager.joueur1Ended += OnRecipeEnd;
         }
@@ -89,6 +99,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         if(!_pause)
         {
+            // Horizontal movement
             if (Input.GetAxisRaw(axisMove) > 0.5 && _canMove)
             {
                 StartCoroutine(Move(1 * (int)_sign));
@@ -102,6 +113,7 @@ public class PlayerMovement : MonoBehaviour {
                 _canMove = true;
             }
 
+            // Vertical movement
             if (Input.GetAxisRaw(axisHigh) > 0.5 && _actualPositionIndex != 0 && _canMoveHigh)
             {
                 StartCoroutine(MoveHigh(-1));
@@ -115,9 +127,9 @@ public class PlayerMovement : MonoBehaviour {
                 _canMoveHigh = true;
             }
 
+            // Take a bottle or validate drink
             if (Input.GetButtonDown(validationKey) && _actualPositionIndex != 0)
             {
-                print("Take a bottle");
                 bool success = AddIngredient();
 
                 if (success)
@@ -137,17 +149,22 @@ public class PlayerMovement : MonoBehaviour {
                 {
                     EventManager.TriggerEvent("ServeDrink", new { type = "Drink" });
                 }
+
+                print("Go to idle stance");
+                _animController.Play("Idle");
             }
 
+            // 
             if (LevelManager.Manager.GetNextIngredient(_playerId) != null)
             {
                 string ingredientName = LevelManager.Manager.GetNextIngredient(_playerId).name;
-
+                
                 if ((ingredientName == "stire" || ingredientName == "reverse_stire") && _actualPositionIndex == 0 && !_isInStireStance)
                 {
                     print("Go to stire stance");
 
                     // TODO : First stire frame
+                    _animController.Play("StireIdle");
 
                     _timestampStireBlock = Time.time;
                     _isInStireStance = true;
@@ -158,6 +175,7 @@ public class PlayerMovement : MonoBehaviour {
                     print("Go to shake stance");
 
                     // TODO : First shake frame
+                    _animController.Play("ShakeIdle");
 
                     _timestampShakeBlock = Time.time;
                     _isInShakeStance = true;
@@ -176,6 +194,7 @@ public class PlayerMovement : MonoBehaviour {
                     _actualShakeCombination += "U";
 
                     // TODO : Go to next frame of the shake anim
+                    _animController.Play("Shake");
 
                     _detectShakeValue = false;
                 }
@@ -183,7 +202,8 @@ public class PlayerMovement : MonoBehaviour {
                 {
                     _actualShakeCombination += "D";
 
-                    // TODO : Go to next frame of the shake anim
+                    // TODO : Play shake anim
+                    _animController.Play("Shake");
 
                     _detectShakeValue = false;
                 }
@@ -205,7 +225,8 @@ public class PlayerMovement : MonoBehaviour {
                         _isInShakeStance = false;
 
                         // TODO : Go to idle stance
-
+                        print("Go to idle stance");
+                        _animController.Play("Idle");
                     }
                 }
                 else
@@ -217,6 +238,8 @@ public class PlayerMovement : MonoBehaviour {
                     _isInShakeStance = false;
 
                     // TODO : Go to idle stance
+                    print("Go to idle stance");
+                    _animController.Play("Idle");
                 }
             }
 
@@ -230,21 +253,25 @@ public class PlayerMovement : MonoBehaviour {
                 if (Input.GetButtonDown("A_1"))
                 {
                     // TODO : Go to next frame of stire animation
+                    _animController.Play("Stire");
                     _actualStireCombination += "A";
                 }
                 else if (Input.GetButtonDown("B_1"))
                 {
                     // TODO : Go to next frame of stire animation
+                    _animController.Play("Stire");
                     _actualStireCombination += "B";
                 }
                 else if (Input.GetButtonDown("Y_1"))
                 {
                     // TODO : Go to next frame of stire animation
+                    _animController.Play("Stire");
                     _actualStireCombination += "Y";
                 }
                 else if (Input.GetButtonDown("X_1"))
                 {
                     // TODO : Go to next frame of stire animation
+                    _animController.Play("Stire");
                     _actualStireCombination += "X";
                 }
 
@@ -259,10 +286,11 @@ public class PlayerMovement : MonoBehaviour {
                         SuccessStire(false);
                         _actualStireCombination = "";
                         _isInStireStance = false;
-                    }
 
-                    print(_stireCombination);
-                    print(_actualStireCombination);
+                        // TODO : Go to idle stance
+                        print("Go to idle stance");
+                        _animController.Play("Idle");
+                    }
                 }
                 else if (_stireReverseCombination.StartsWith(_actualStireCombination))
                 {
@@ -276,6 +304,8 @@ public class PlayerMovement : MonoBehaviour {
                         _isInStireStance = false;
 
                         // TODO : Go to idle stance
+                        print("Go to idle stance");
+                        _animController.Play("Idle");
                     }
                 }
                 else
@@ -287,6 +317,8 @@ public class PlayerMovement : MonoBehaviour {
                     _isInStireStance = false;
 
                     // TODO : Go to idle stance
+                    print("Go to idle stance");
+                    _animController.Play("Idle");
                 }
             }
 
@@ -310,7 +342,10 @@ public class PlayerMovement : MonoBehaviour {
 
     private void SuccessStire(bool reverse)
     {
-        if(reverse)
+        print("Go to idle stance");
+        _animController.Play("Idle");
+
+        if (reverse)
         {
             LevelManager.Manager.AddIngredient(_playerId, StireReverse);
         }
@@ -322,6 +357,9 @@ public class PlayerMovement : MonoBehaviour {
 
     private void SuccessShake(bool reverse)
     {
+        print("Go to idle stance");
+        _animController.Play("Idle");
+
         LevelManager.Manager.AddIngredient(_playerId, Shake);
     }
 
@@ -366,7 +404,21 @@ public class PlayerMovement : MonoBehaviour {
         }
         
         _actualPositionHigh = Mathf.Clamp(_actualPositionHigh, 0, 2);
-        _sr.sprite = highPositionsSprites[_actualPositionHigh];
+
+        switch (_actualPositionHigh)
+        {
+            case 0:
+                _animController.Play("Move0");
+                break;
+
+            case 1:
+                _animController.Play("Move1");
+                break;
+
+            case 2:
+                _animController.Play("Move2");
+                break;
+        }
 
         yield return null;
     }
@@ -401,7 +453,31 @@ public class PlayerMovement : MonoBehaviour {
         }
         
         _actualPositionIndex = Mathf.Clamp(_actualPositionIndex, 0, positions.Length - 1);
-        _sr.sprite = highPositionsSprites[_actualPositionHigh];
+
+        switch(_actualPositionIndex)
+        {
+            case 0:
+                print("Go to idle stance");
+                _animController.Play("Idle");
+                break;
+
+            default:
+                switch (_actualPositionHigh)
+                {
+                    case 0:
+                        _animController.Play("Move0");
+                        break;
+
+                    case 1:
+                        _animController.Play("Move1");
+                        break;
+
+                    case 2:
+                        _animController.Play("Move2");
+                        break;
+                }
+                break;
+        }
         
         float x = positions[_actualPositionIndex].position.x;
         x = _actualPositionIndex == 0 ? x : x - (110f * _sign);
@@ -409,7 +485,6 @@ public class PlayerMovement : MonoBehaviour {
 
         if (_actualPositionIndex == 0)
         {
-            _sr.sprite = idleSprite;
             _sr.flipX = _defaultFlip;
         }
         else

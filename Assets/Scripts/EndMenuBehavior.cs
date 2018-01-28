@@ -54,6 +54,8 @@ public class EndMenuBehavior : MonoBehaviour {
         {
             transform.GetChild(0).GetChild(3).GetComponent<Image>().sprite = resultHigh;
         }
+
+        // TODO : Show retry or next following score
         
         _isVisible = true;
     }
@@ -70,6 +72,15 @@ public class EndMenuBehavior : MonoBehaviour {
 
             if (Input.GetButtonDown("Start_1"))
             {
+                if (LevelManager.Manager.Score < scoreMedium)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }
+                else
+                {
+                    Story.story.LaunchNext();
+                }
+
                 ScreenEffectsManager.SwitchToScene(SceneManager.GetActiveScene().name);
             }
         }
