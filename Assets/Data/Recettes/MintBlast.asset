@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Mint Blast
   type: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 70c0f2275a47f924c8ee0aee97ca7b85, type: 3}
   score: 40
   ingredients:
   - {fileID: 11400000, guid: b1939f6cc368a004681cdc7207296d95, type: 2}

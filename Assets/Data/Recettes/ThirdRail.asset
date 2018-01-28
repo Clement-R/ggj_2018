@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Third Rail
   type: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 78bbe4886c0a06e4b991e7334fe5e10e, type: 3}
   score: 50
   ingredients:
   - {fileID: 11400000, guid: 1d3a11feb0085d9428af2f9cf2b4ed06, type: 2}

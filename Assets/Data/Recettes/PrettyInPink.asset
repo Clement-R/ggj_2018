@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The Pretty In Pink
   type: 1
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: bedb01416b9ab4945a30e8a90b77f807, type: 3}
   score: 30
   ingredients:
   - {fileID: 11400000, guid: 35a28e0245548b648b59a95c37c022ec, type: 2}
