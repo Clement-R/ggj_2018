@@ -20,7 +20,6 @@ public class LevelManager : MonoBehaviour {
 
     public Level level;
 
-    
     float elapsedTime = 0f;
 
     Recettes currentJ1Original = null;

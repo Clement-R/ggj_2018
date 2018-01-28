@@ -19,8 +19,14 @@ public class EndMenuBehavior : MonoBehaviour {
 
 	void Start ()
     {
-        EventManager.StartListening("TogglePause", OnEnd);
-	}
+        EventManager.StartListening("ToggleEnd", OnEnd);
+        EventManager.StartListening("ToggleEndTimeAttack", OnTimeAttackEnd);
+    }
+
+    void OnTimeAttackEnd(dynamic obj)
+    {
+        
+    }
 
     void OnEnd(object obj)
     {

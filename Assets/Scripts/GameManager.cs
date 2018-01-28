@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
     {
         if(Input.GetKeyDown(KeyCode.P))
         {
-            EventManager.TriggerEvent("TogglePause", new { });
+            EventManager.TriggerEvent("ToggleEnd", new { });
         }
     }
 
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
 
             _dayEnd = true;
 
-            EventManager.TriggerEvent("TogglePause", new { } );
+            EventManager.TriggerEvent("ToggleEnd", new { } );
         }
     }
 }
