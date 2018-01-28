@@ -47,12 +47,19 @@ public class Story : MonoBehaviour {
         op.allowSceneActivation = false;
         ScreenEffectsManager.manager.middle += () =>
         {
-            LevelManager.Manager.type = LevelManager.Type.Normal;
-            LevelManager.Manager.level = levels[next];
-            LevelManager.Manager.Init();
-            LevelManager.Manager.finish += LaunchNext;
-            next++;
             op.allowSceneActivation = true;
         };
+        ScreenEffectsManager.manager.finished += () =>
+        {
+            next++;
+            Debug.Log(next);
+        };
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        LevelManager.Manager.type = LevelManager.Type.Normal;
+        LevelManager.Manager.level = levels[next];
+        LevelManager.Manager.Init();
     }
 }
