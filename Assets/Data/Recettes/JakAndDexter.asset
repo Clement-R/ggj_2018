@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: JakAndDexter
   m_EditorClassIdentifier: 
   recipeName: The Jak And Dexter
-  type: 0
+  type: 1
   sprite: {fileID: 0}
   score: 10
   ingredients:

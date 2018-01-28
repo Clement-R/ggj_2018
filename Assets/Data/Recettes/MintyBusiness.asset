@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Name: MintyBusiness
   m_EditorClassIdentifier: 
   recipeName: The Minty Business
-  type: 0
+  type: 1
+  sprite: {fileID: 0}
   score: 10
   ingredients:
   - {fileID: 11400000, guid: b1939f6cc368a004681cdc7207296d95, type: 2}

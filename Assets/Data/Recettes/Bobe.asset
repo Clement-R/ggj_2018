@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Bobe
   m_EditorClassIdentifier: 
   recipeName: The Bobe
-  type: 0
+  type: 1
   sprite: {fileID: 0}
   score: 10
   ingredients:
