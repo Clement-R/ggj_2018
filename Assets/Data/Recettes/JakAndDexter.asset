@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Jak And Dexter
   type: 1
   sprite: {fileID: 0}
-  score: 10
+  score: 20
   ingredients:
   - {fileID: 11400000, guid: 12d5ab403e80d69478e7f6f20031c9cd, type: 2}
   - {fileID: 11400000, guid: 42760e8e75e3c4c4b87297e187747774, type: 2}

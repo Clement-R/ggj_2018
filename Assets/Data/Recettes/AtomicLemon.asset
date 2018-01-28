@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Atomic Lemon
   type: 0
   sprite: {fileID: 21300000, guid: 777aadfc23236ae409b675eca9cedc45, type: 3}
-  score: 10
+  score: 30
   ingredients:
   - {fileID: 11400000, guid: 12d5ab403e80d69478e7f6f20031c9cd, type: 2}
   - {fileID: 11400000, guid: b0d6f76637fbab54690569281b9fb51f, type: 2}
