@@ -95,11 +95,6 @@
 				<MusicPlaylistContainer Name="musique" ID="{1141771D-0703-41AA-A39C-EF344CB28209}" ShortID="904176752">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="100.5"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-2</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -180,7 +175,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>2.5047</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -190,7 +185,7 @@
 																	</Point>
 																	<Point>
 																		<XPos>6.02515</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>

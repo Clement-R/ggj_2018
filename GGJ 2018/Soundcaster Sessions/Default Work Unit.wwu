@@ -34,7 +34,7 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="stop_shake" ID="{C82F170E-22BC-48F1-AC37-803C21B2D16D}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<ObjectRef Name="stir" ID="{5E4BBC77-3B25-4C30-AEF1-9F0368197F65}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
@@ -62,20 +62,12 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="stir" ID="{5E4BBC77-3B25-4C30-AEF1-9F0368197F65}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="succes_recipe" ID="{62FD82E4-6C28-45B0-AA65-CFA59924519E}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<ObjectRef Name="drink_serve" ID="{62FD82E4-6C28-45B0-AA65-CFA59924519E}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
 							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="apparition_recipe" ID="{4B1A829E-4CE0-4389-ACC8-5D4FFA82C530}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
 							<Position X="4" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="stop_stir" ID="{62B35714-52C4-498B-9C2A-730EA8BA63A2}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
-							<Position X="4" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Recipe_Fail" ID="{EB27BD6C-705D-44DC-8504-62E974400D17}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
@@ -125,7 +117,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Chaud" ID="{2B7519AD-309C-4CD8-B164-F97171232D4F}"/>
+						<CurrentStateRef Name="Froid" ID="{6EDE4753-8220-40B4-A05A-94FFB93039C4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="mrc1" ID="{AA55FA1F-0CAB-4971-AFDE-A131251F42CD}"/>

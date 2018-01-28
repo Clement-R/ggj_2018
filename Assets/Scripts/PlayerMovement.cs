@@ -132,6 +132,8 @@ public class PlayerMovement : MonoBehaviour {
             {
                 bool success = AddIngredient();
 
+                AkSoundEngine.PostEvent("grab", gameObject);
+
                 if (success)
                 {
                     // TODO : play feedback
@@ -144,17 +146,33 @@ public class PlayerMovement : MonoBehaviour {
             else if (Input.GetButtonDown(validationKey) && _actualPositionIndex == 0)
             {
                 print("Validation time");
+                AkSoundEngine.PostEvent("drink_serve", gameObject);
+
                 bool success = LevelManager.Manager.Valider(_playerId);
                 if (success)
                 {
                     EventManager.TriggerEvent("ServeDrink", new { type = "Drink" });
+
+                    if(_playerId == 0)
+                    {
+                        if (LevelManager.Manager.currentJoueur1 != null)
+                        {
+                            AkSoundEngine.PostEvent("apparition_recipe", gameObject);
+                        }
+                    }
+                    else
+                    {
+                        if (LevelManager.Manager.currentJoueur2 != null)
+                        {
+                            AkSoundEngine.PostEvent("apparition_recipe", gameObject);
+                        }
+                    }
                 }
 
                 print("Go to idle stance");
                 _animController.Play("Idle");
             }
-
-            // 
+            
             if (LevelManager.Manager.GetNextIngredient(_playerId) != null)
             {
                 string ingredientName = LevelManager.Manager.GetNextIngredient(_playerId).name;
@@ -192,7 +210,7 @@ public class PlayerMovement : MonoBehaviour {
                 if (Input.GetAxisRaw("DPad_YAxis_1") > 0.5 && _detectShakeValue)
                 {
                     _actualShakeCombination += "U";
-
+                    AkSoundEngine.PostEvent("shake", gameObject);
                     // TODO : Go to next frame of the shake anim
                     _animController.Play("Shake");
 
@@ -201,7 +219,7 @@ public class PlayerMovement : MonoBehaviour {
                 else if (Input.GetAxisRaw("DPad_YAxis_1") < -0.5 && _detectShakeValue)
                 {
                     _actualShakeCombination += "D";
-
+                    AkSoundEngine.PostEvent("shake", gameObject);
                     // TODO : Play shake anim
                     _animController.Play("Shake");
 
@@ -252,26 +270,26 @@ public class PlayerMovement : MonoBehaviour {
                 // Detect stire inputs
                 if (Input.GetButtonDown("A_1"))
                 {
-                    // TODO : Go to next frame of stire animation
                     _animController.Play("Stire");
+                    AkSoundEngine.PostEvent("stir", gameObject);
                     _actualStireCombination += "A";
                 }
                 else if (Input.GetButtonDown("B_1"))
                 {
-                    // TODO : Go to next frame of stire animation
                     _animController.Play("Stire");
+                    AkSoundEngine.PostEvent("stir", gameObject);
                     _actualStireCombination += "B";
                 }
                 else if (Input.GetButtonDown("Y_1"))
                 {
-                    // TODO : Go to next frame of stire animation
                     _animController.Play("Stire");
+                    AkSoundEngine.PostEvent("stir", gameObject);
                     _actualStireCombination += "Y";
                 }
                 else if (Input.GetButtonDown("X_1"))
                 {
-                    // TODO : Go to next frame of stire animation
                     _animController.Play("Stire");
+                    AkSoundEngine.PostEvent("stir", gameObject);
                     _actualStireCombination += "X";
                 }
 
@@ -325,7 +343,7 @@ public class PlayerMovement : MonoBehaviour {
             // Detect light it up, and add ingredient
             if (Input.GetAxisRaw(lightItUpKey) > 0.5 && _actualPositionIndex == 0 && _canLightItUp)
             {
-                print("LIGHT IT UP");
+                AkSoundEngine.PostEvent("fire", gameObject);
                 EventManager.TriggerEvent("LitDrink", new { type = "Lit" });
                 LevelManager.Manager.AddIngredient(_playerId, LightItUp);
                 StartCoroutine(LightCooldown());

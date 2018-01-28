@@ -21,11 +21,14 @@
 			<ShortName>New_SoundBank</ShortName>
 			<Path>New_SoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2308127485" Name="alcool_finish" ObjectPath="\Events\Default Work Unit\alcool_finish"/>
 				<Event Id="2981377429" Name="ambiance" ObjectPath="\Events\Default Work Unit\ambiance"/>
 				<Event Id="3763082595" Name="apparition_recipe" ObjectPath="\Events\Default Work Unit\apparition_recipe"/>
+				<Event Id="1690644437" Name="drink_serve" ObjectPath="\Events\Default Work Unit\drink_serve"/>
 				<Event Id="2454497651" Name="end_pause" ObjectPath="\Events\Default Work Unit\end_pause" MaxAttenuation="0.000000"/>
 				<Event Id="2678880713" Name="fire" ObjectPath="\Events\Default Work Unit\fire"/>
 				<Event Id="2449969375" Name="glass" ObjectPath="\Events\Default Work Unit\glass"/>
+				<Event Id="906520831" Name="grab" ObjectPath="\Events\Default Work Unit\grab"/>
 				<Event Id="2607556080" Name="menu" ObjectPath="\Events\Default Work Unit\menu"/>
 				<Event Id="3063554414" Name="menu_back" ObjectPath="\Events\Default Work Unit\menu_back"/>
 				<Event Id="4203375351" Name="menu_select" ObjectPath="\Events\Default Work Unit\menu_select"/>
@@ -41,7 +44,6 @@
 				<Event Id="2333729290" Name="stop_shake" ObjectPath="\Events\Default Work Unit\stop_shake" MaxAttenuation="0.000000"/>
 				<Event Id="261232384" Name="stop_stir" ObjectPath="\Events\Default Work Unit\stop_stir" MaxAttenuation="0.000000"/>
 				<Event Id="626838023" Name="succes" ObjectPath="\Events\Default Work Unit\succes" MaxAttenuation="0.000000"/>
-				<Event Id="626996420" Name="succes_recipe" ObjectPath="\Events\Default Work Unit\succes_recipe"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="8071170" Language="SFX">
@@ -178,7 +180,7 @@
 				</File>
 				<File Id="168504978" Language="SFX">
 					<ShortName>shake loop.wav</ShortName>
-					<Path>SFX\shake loop_1C9C67B2.wem</Path>
+					<Path>SFX\shake loop_CF88FB9F.wem</Path>
 				</File>
 				<File Id="185425062" Language="SFX">
 					<ShortName>AK_Factory_IR\Rooms\AK Hamburg Echo Chamber.wav</ShortName>
@@ -266,7 +268,7 @@
 				</File>
 				<File Id="318157176" Language="SFX">
 					<ShortName>stir1.wav</ShortName>
-					<Path>SFX\stir1_1C9C67B2.wem</Path>
+					<Path>SFX\stir1_084CAF77.wem</Path>
 				</File>
 				<File Id="320335358" Language="SFX">
 					<ShortName>glass 1.wav</ShortName>
@@ -282,7 +284,7 @@
 				</File>
 				<File Id="345588360" Language="SFX">
 					<ShortName>stir2.wav</ShortName>
-					<Path>SFX\stir2_1C9C67B2.wem</Path>
+					<Path>SFX\stir2_205D7056.wem</Path>
 				</File>
 				<File Id="345749945" Language="SFX">
 					<ShortName>mrc3.wav</ShortName>
@@ -502,7 +504,7 @@
 				</File>
 				<File Id="686942828" Language="SFX">
 					<ShortName>glaconloop2.wav</ShortName>
-					<Path>SFX\glaconloop2_F17FB28C.wem</Path>
+					<Path>SFX\glaconloop2_FDB47651.wem</Path>
 				</File>
 				<File Id="689379105" Language="SFX">
 					<ShortName>AK_Factory_IR\Halls\AK Berlin Teldex.wav</ShortName>
@@ -518,7 +520,7 @@
 				</File>
 				<File Id="709265911" Language="SFX">
 					<ShortName>shake loop 2.wav</ShortName>
-					<Path>SFX\shake loop 2_1C9C67B2.wem</Path>
+					<Path>SFX\shake loop 2_46588A63.wem</Path>
 				</File>
 				<File Id="711600817" Language="SFX">
 					<ShortName>/boxmodel.wav</ShortName>
@@ -558,7 +560,7 @@
 				</File>
 				<File Id="750238559" Language="SFX">
 					<ShortName>shake loop 3.wav</ShortName>
-					<Path>SFX\shake loop 3_1C9C67B2.wem</Path>
+					<Path>SFX\shake loop 3_6305446B.wem</Path>
 				</File>
 				<File Id="757112749" Language="SFX">
 					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_DistantSlaps.wav</ShortName>
@@ -630,7 +632,7 @@
 				</File>
 				<File Id="828077476" Language="SFX">
 					<ShortName>glaconloop3.wav</ShortName>
-					<Path>SFX\glaconloop3_F17FB28C.wem</Path>
+					<Path>SFX\glaconloop3_83994AA3.wem</Path>
 				</File>
 				<File Id="828807711" Language="SFX">
 					<ShortName>AK_Factory_IR\Rooms\AK Blue Noise Room 02.wav</ShortName>
@@ -722,11 +724,15 @@
 				</File>
 				<File Id="986367958" Language="SFX">
 					<ShortName>glaconsloop.wav</ShortName>
-					<Path>SFX\glaconsloop_F17FB28C.wem</Path>
+					<Path>SFX\glaconsloop_93BFE2FB.wem</Path>
 				</File>
 				<File Id="990812942" Language="SFX">
 					<ShortName>charlie puth remix 80-01.wav</ShortName>
 					<Path>SFX\charlie puth remix 80-01_F17FB28C.wem</Path>
+				</File>
+				<File Id="999130964" Language="SFX">
+					<ShortName>grab1.wav</ShortName>
+					<Path>SFX\grab1_1B6A103E.wem</Path>
 				</File>
 				<File Id="1002455079" Language="SFX">
 					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 02.wav</ShortName>

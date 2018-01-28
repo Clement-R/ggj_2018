@@ -3,9 +3,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	251412229	shot			\Default Work Unit\shot	
 	261232384	stop_stir			\Default Work Unit\stop_stir	
 	626838023	succes			\Default Work Unit\succes	
-	626996420	succes_recipe			\Default Work Unit\succes_recipe	
 	688218825	stir			\Default Work Unit\stir	
+	906520831	grab			\Default Work Unit\grab	
 	1659936851	restart_game			\Default Work Unit\restart_game	
+	1690644437	drink_serve			\Default Work Unit\drink_serve	
+	2308127485	alcool_finish			\Default Work Unit\alcool_finish	
 	2333729290	stop_shake			\Default Work Unit\stop_shake	
 	2449969375	glass			\Default Work Unit\glass	
 	2454497651	end_pause			\Default Work Unit\end_pause	
@@ -510,16 +512,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	98627056	Public_Chaud	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_chaud_13_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud		1012476
 	128335835	Public_Chaud	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_chaud_10_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud		967028
 	133032431	DJ_Transition_chier_30	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Transition_chier_30_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\DJ_Transition_chier_30		1910672
-	168504978	shake loop	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\shake loop_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shake\shake loop		958528
+	168504978	shake loop	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\shake loop_CF88FB9F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shake\shake loop		147192
 	241335340	Recipe_Fail	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Recipe_Fail_8B4757C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Recipe_Fail		575708
 	241459180	Cursor_Select	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Cursor_Select_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cursor_Select		43432
 	269668124	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_22_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		1124084
 	285178446	glass 2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glass 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glass\glass 2		311360
 	302765304	Drink_serve_5	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Drink_serve_5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\drink_serve\Drink_serve_5		180932
 	304207026	Public_Chaud_mrc1	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Public_Chaud_mrc1_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc1-03\Public_Chaud_mrc1		1152384
-	318157176	stir1	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\stir1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\stir\stir1		1246336
+	318157176	stir1	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\stir1_084CAF77.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\stir\stir1		35452
 	320335358	glass 1	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glass 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glass\glass 1		344128
-	345588360	stir2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\stir2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\stir\stir2		2359360
+	345588360	stir2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\stir2_205D7056.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\stir\stir2		60772
 	345749945	mrc3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\mrc3_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\mrc3		16318496
 	364552778	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_26_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		803472
 	411581490	Drink_serve_4	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Drink_serve_4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\drink_serve\Drink_serve_4		426816
@@ -537,18 +539,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	652916030	pour1short	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\pour1short_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\pour1short		96320
 	675803030	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_15_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		1014344
 	679777165	Public_Froid	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_Froid_21_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Froid		882356
-	686942828	glaconloop2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glaconloop2_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glacon\glaconloop2		688192
+	686942828	glaconloop2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glaconloop2_FDB47651.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glacon\glaconloop2		128288
 	698364743	Drink_serve_6	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Drink_serve_6_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\drink_serve\Drink_serve_6		390580
-	709265911	shake loop 2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\shake loop 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shake\shake loop 2		1005632
+	709265911	shake loop 2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\shake loop 2_46588A63.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shake\shake loop 2		215096
 	730694304	Public_Chaud	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_chaud_14_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud		1257448
 	736316533	DJ_EndGame	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_EndGame_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\DJ_EndGame		592772
 	749632793	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_23_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		1144840
 	750036927	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_27_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		1036180
-	750238559	shake loop 3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\shake loop 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shake\shake loop 3		441408
+	750238559	shake loop 3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\shake loop 3_6305446B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shake\shake loop 3		179420
 	810781598	mrc2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\mrc2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\mrc2		18092376
 	814533814	Public_Chaud	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_chaud_11_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud		967028
 	820946279	Public_Froid	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_Froid_17_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Froid		1088176
-	828077476	glaconloop3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glaconloop3_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glacon\glaconloop3		1818688
+	828077476	glaconloop3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glaconloop3_83994AA3.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glacon\glaconloop3		214684
 	834279979	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_28_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		918744
 	836670967	pour3short	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\pour3short_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\pour3short		88128
 	882264863	Public_Froid	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_Froid_18_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Froid		1085572
@@ -556,8 +558,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	935758069	Public_Chaud_mrc2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Public_Chaud_mrc2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Chaud_mrc2		6091652
 	967156497	pour4short	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\pour4short_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\pour4short		109632
 	983392952	Commande_recue	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\116779__domrodrig__ringing-bell-happy_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Commande_recue		551016
-	986367958	glaconsloop	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glaconsloop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glacon\glaconsloop		217152
+	986367958	glaconsloop	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glaconsloop_93BFE2FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glacon\glaconsloop		58430
 	990812942	charlie puth remix 80-01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\charlie puth remix 80-01_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\menu\music menu\charlie puth remix 80-01		14817664
+	999130964	grab1	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\grab1_1B6A103E.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\grab1		24304
 	1007831171	Public_Froid	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_Froid_19_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Froid		1265160
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size

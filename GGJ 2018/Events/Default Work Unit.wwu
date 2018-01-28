@@ -212,7 +212,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="succes_recipe" ID="{62FD82E4-6C28-45B0-AA65-CFA59924519E}">
+				<Event Name="drink_serve" ID="{62FD82E4-6C28-45B0-AA65-CFA59924519E}">
 					<ChildrenList>
 						<Action Name="" ID="{2B49B5A4-75E5-4AC5-AD76-BC2C8AAFC696}" ShortID="9656277">
 							<PropertyList>
@@ -381,6 +381,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="stir" ID="{6C7FFB10-C2B3-466B-9672-B45F6D9A4A21}" WorkUnitID="{0DB5E969-14A8-47F3-AB02-197BDB6CB5DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="alcool_finish" ID="{E52C3317-D070-47A7-80E7-D7A0D8719107}">
+					<ChildrenList>
+						<Action Name="" ID="{7E92F89C-0A0E-4509-BE7E-59E1078B168A}" ShortID="824697825">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="alcool_finish" ID="{D236B7D0-99E6-430A-B3ED-3ECEFEA8CD4D}" WorkUnitID="{0DB5E969-14A8-47F3-AB02-197BDB6CB5DF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="grab" ID="{D49A30DB-7BC2-46E4-8FB9-72D883B8E791}">
+					<ChildrenList>
+						<Action Name="" ID="{6CB61CC2-0885-4F2D-9C11-E52EDBCE8AF4}" ShortID="339454941">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="grab1" ID="{380BD234-004B-407C-A345-9C1184548F85}" WorkUnitID="{0DB5E969-14A8-47F3-AB02-197BDB6CB5DF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

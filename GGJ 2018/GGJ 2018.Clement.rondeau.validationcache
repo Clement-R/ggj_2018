@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="80">
-	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3748133026" DateHigh="30644286"/>
+	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3315702356" DateHigh="30644290"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1741076723" DateHigh="30627801"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1741176994" DateHigh="30627801"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Attenuations\Default Work Unit.wwu" DateLow="3908624057" DateHigh="30644184"/>
@@ -22,7 +22,7 @@
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="2029225370" DateHigh="30627801"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="2029240410" DateHigh="30627801"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Effects\Factory McDSP Effects.wwu" DateLow="1954136878" DateHigh="30627801"/>
-	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Events\Default Work Unit.wwu" DateLow="3748002949" DateHigh="30644286"/>
+	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Events\Default Work Unit.wwu" DateLow="3707853090" DateHigh="30644289"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Game Parameters\Default Work Unit.wwu" DateLow="3908137772" DateHigh="30644184"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1741066707" DateHigh="30627801"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\GGJ 2018.Clement.rondeau.wsettings" DateLow="4046055701" DateHigh="30644286"/>
@@ -35,7 +35,7 @@
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Queries\Default Work Unit.wwu" DateLow="3908393458" DateHigh="30644184"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Queries\Factory Queries.wwu" DateLow="1740846126" DateHigh="30627801"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\SoundBanks\Default Work Unit.wwu" DateLow="4130090355" DateHigh="30644279"/>
-	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Soundcaster Sessions\Default Work Unit.wwu" DateLow="721854961" DateHigh="30644284"/>
+	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3315852864" DateHigh="30644290"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\States\Default Work Unit.wwu" DateLow="3634472664" DateHigh="30644209"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Switches\Default Work Unit.wwu" DateLow="133982430" DateHigh="30644187"/>
 	<ValidationCacheItem File="C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\Triggers\Default Work Unit.wwu" DateLow="3908438565" DateHigh="30644184"/>

@@ -13,11 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALCOOL_FINISH = 2308127485U;
         static const AkUniqueID AMBIANCE = 2981377429U;
         static const AkUniqueID APPARITION_RECIPE = 3763082595U;
+        static const AkUniqueID DRINK_SERVE = 1690644437U;
         static const AkUniqueID END_PAUSE = 2454497651U;
         static const AkUniqueID FIRE = 2678880713U;
         static const AkUniqueID GLASS = 2449969375U;
+        static const AkUniqueID GRAB = 906520831U;
         static const AkUniqueID MENU = 2607556080U;
         static const AkUniqueID MENU_BACK = 3063554414U;
         static const AkUniqueID MENU_SELECT = 4203375351U;
@@ -33,7 +36,6 @@ namespace AK
         static const AkUniqueID STOP_SHAKE = 2333729290U;
         static const AkUniqueID STOP_STIR = 261232384U;
         static const AkUniqueID SUCCES = 626838023U;
-        static const AkUniqueID SUCCES_RECIPE = 626996420U;
     } // namespace EVENTS
 
     namespace STATES

@@ -16,9 +16,19 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{55B1F195-EC2E-4EF9-B497-4169D5C8B603}'
-    m_lastTimePsrt1: 31259781
-    m_lastTimePart2: -1999280554
+    m_lastTimePsrt1: -8890078
+    m_lastTimePart2: -1999280552
     List:
+    - Name: alcool_finish
+      Path: Default Work Unit\alcool_finish
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: alcool_finish
+        ObjectType: 3
+      ID: -1986839811
+      Guid: 17332ce570d0a74780e7d7a0d8719107
+      maxAttenuation: 0
     - Name: ambiance
       Path: Default Work Unit\ambiance
       PathAndIcons:
@@ -38,6 +48,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: -531884701
       Guid: 9e821a4be04c8943acc85d4ffa82c530
+      maxAttenuation: 0
+    - Name: drink_serve
+      Path: Default Work Unit\drink_serve
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: drink_serve
+        ObjectType: 3
+      ID: 1690644437
+      Guid: e482fd62286cb045aa65cfa59924519e
       maxAttenuation: 0
     - Name: end_pause
       Path: Default Work Unit\end_pause
@@ -68,6 +88,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1844997921
       Guid: 7069bd9ed8c10d48b0b47040ebd42bdd
+      maxAttenuation: 0
+    - Name: grab
+      Path: Default Work Unit\grab
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: grab
+        ObjectType: 3
+      ID: 906520831
+      Guid: db309ad4c27be4468fb972d883b8e791
       maxAttenuation: 0
     - Name: menu
       Path: Default Work Unit\menu
@@ -218,16 +248,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: 626838023
       Guid: 0a35f238450f9d4796e7031553b7a616
-      maxAttenuation: 0
-    - Name: succes_recipe
-      Path: Default Work Unit\succes_recipe
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: succes_recipe
-        ObjectType: 3
-      ID: 626996420
-      Guid: e482fd62286cb045aa65cfa59924519e
       maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -439,9 +459,9 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
-  defaultPoolSize: 16384
-  lowerPoolSize: 8192
-  streamingPoolSize: 4096
+  defaultPoolSize: 81920
+  lowerPoolSize: 40960
+  streamingPoolSize: 20480
   preparePoolSize: 0
   memoryCutoffThreshold: 0.95
   callbackManagerBufferSize: 4

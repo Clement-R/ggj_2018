@@ -10,11 +10,18 @@
 				<Property Name="Event Action List\{43731345-925C-456E-8296-9E6DC80C3FE7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4B1A829E-4CE0-4389-ACC8-5D4FFA82C530}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4E750EBE-09F9-4D67-9161-53B51038C227}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5E4BBC77-3B25-4C30-AEF1-9F0368197F65}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{62392CD9-034B-4A24-A3AA-1C92D0DE42FA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{62B35714-52C4-498B-9C2A-730EA8BA63A2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{62FD82E4-6C28-45B0-AA65-CFA59924519E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{680DA6DA-B078-4293-8BDB-A23BA1437D22}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6E0CA1E2-A224-4BF4-9063-DD069036033F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7D5DA974-BFF4-4827-B509-2131D70BE72D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{87DE5C07-8216-4E30-94B5-2CDB7C2A7B61}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9EBD6970-C1D8-480D-B0B4-7040EBD42BDD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C82F170E-22BC-48F1-AC37-803C21B2D16D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D49A30DB-7BC2-46E4-8FB9-72D883B8E791}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E52C3317-D070-47A7-80E7-D7A0D8719107}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F8EED129-26B6-4154-AA94-8E5D9377599E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -40,6 +47,7 @@
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value=""/>
+				<Property Name="Music Transition List\{1141771D-0703-41AA-A39C-EF344CB28209}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
