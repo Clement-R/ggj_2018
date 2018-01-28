@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using pkm.EventManager;
 
 public class LevelManager : MonoBehaviour {
 
@@ -225,6 +226,7 @@ public class LevelManager : MonoBehaviour {
 
     public bool Valider(int player)
     {
+        EventManager.TriggerEvent("ReciepeWin", new { type = player });
         if (player == 0 && currentJoueur1.IsGood())
         {
             score += currentJoueur1.score;
@@ -254,6 +256,7 @@ public class LevelManager : MonoBehaviour {
             }
             return true;
         }
+        
         return false;
     }
 }
