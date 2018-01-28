@@ -7,7 +7,7 @@ public class Story : MonoBehaviour {
     public static Story story = null;
 
     public List<Level> levels;
-    int next = 0;
+    public int next = 0;
 
     private void Start()
     {
@@ -19,6 +19,12 @@ public class Story : MonoBehaviour {
         Debug.Log("Story");
         story = this;
         DontDestroyOnLoad(this);
+    }
+
+    public void BackToMainMenu()
+    {
+        next = levels.Count;
+        LaunchNext();
     }
 
     public void LaunchNext()

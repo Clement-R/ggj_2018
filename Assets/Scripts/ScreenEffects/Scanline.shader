@@ -56,12 +56,15 @@
 			fixed4 frag (v2f i) : SV_Target
 			{
 				fixed timer = _Time.y*_Speed;
-				fixed scanline = fmod(i.uv.y+timer*_Speed, _LineSize*2);
-				fixed4 col = tex2D(_MainTex, i.uv+_Alpha*fixed2((scanline<_LineSize?_Move:-_Move),0));
+				fixed lineSize = (_LineSize/_ScreenParams.y);
+				fixed scanline = fmod(i.uv.y+timer*_Speed, lineSize*2);
+				fixed Move = (_Move/_ScreenParams.x);
+				fixed4 col = tex2D(_MainTex, i.uv+_Alpha*fixed2((scanline<lineSize?Move:-Move),0));
 				// just invert the colors
 				//col.rgb = 1 - col.rgb;
-				fixed scanline2 = fmod(i.uv.y+_Time*_Speed, _ScanLineSize*2);
-				return _Alpha*(scanline2<_ScanLineSize?col-_Color1:col-_Color2)+(1-_Alpha)*col;
+				fixed scanLineSize = (_ScanLineSize/_ScreenParams.y);
+				fixed scanline2 = fmod(i.uv.y+_Time*_Speed, scanLineSize*2);
+				return _Alpha*(scanline2<scanLineSize?col-_Color1:col-_Color2)+(1-_Alpha)*col;
 			}
 			ENDCG
 		}

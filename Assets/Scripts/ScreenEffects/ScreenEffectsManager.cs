@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScreenEffectsManager : MonoBehaviour {
     public static ScreenEffectsManager manager = null;
@@ -102,5 +103,17 @@ public class ScreenEffectsManager : MonoBehaviour {
         material.SetFloat("_Selector", (float)Random.Range(0, 3));
         material.SetFloat("_Distorsion", (float)Random.Range(0, 2));
         //material.SetFloat("_TimeBegin", -duration / 2f);
+    }
+
+    public static void SwitchToScene(string name)
+    {
+        ScreenEffectsManager.manager.Launch();
+
+        AsyncOperation op = SceneManager.LoadSceneAsync(name);
+        op.allowSceneActivation = false;
+        ScreenEffectsManager.manager.middle += () =>
+        {
+            op.allowSceneActivation = true;
+        };
     }
 }

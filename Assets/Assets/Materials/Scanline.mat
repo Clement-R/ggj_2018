@@ -63,16 +63,16 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _LineSize: 0.002
+    - _LineSize: 1
     - _Metallic: 0
     - _Mode: 0
-    - _Move: 0.001
+    - _Move: 0.4
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _ScanLineSize: 0.0004
+    - _ScanLineSize: 0.333
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 0.002
+    - _Speed: 0.01
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1

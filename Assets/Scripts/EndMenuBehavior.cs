@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using pkm.EventManager;
 
 public class EndMenuBehavior : MonoBehaviour {
@@ -17,6 +18,12 @@ public class EndMenuBehavior : MonoBehaviour {
 
     private bool _isVisible = false;
 
+    
+    public GameObject timeAttackMenu;
+    public GameObject timeAttackFirstSelected;
+    public LeaderBoard leaderBoard;
+    public InputField nameInput;
+
 	void Start ()
     {
         EventManager.StartListening("ToggleEnd", OnEnd);
@@ -25,7 +32,8 @@ public class EndMenuBehavior : MonoBehaviour {
 
     void OnTimeAttackEnd(dynamic obj)
     {
-        
+        timeAttackMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(timeAttackFirstSelected);
     }
 
     void OnEnd(object obj)
@@ -59,7 +67,7 @@ public class EndMenuBehavior : MonoBehaviour {
             // Manager players inputs
             if (Input.GetButtonDown("Back_1"))
             {
-                SceneManager.LoadScene("main_menu");
+                ScreenEffectsManager.SwitchToScene("main_menu");
             }
 
             if (Input.GetButtonDown("Start_1"))
@@ -72,7 +80,35 @@ public class EndMenuBehavior : MonoBehaviour {
                 {
                     Story.story.LaunchNext();
                 }
+
+                ScreenEffectsManager.SwitchToScene(SceneManager.GetActiveScene().name);
             }
         }
+    }
+
+    public void LeaderboardRegister()
+    {
+        Debug.Log(nameInput.text);
+        Dictionary<string, string> args = new Dictionary<string, string>();
+        args.Add("username", nameInput.text);
+        args.Add("score", LevelManager.Manager.Score.ToString());
+
+        leaderBoard.POST("http://scarounet.pythonanywhere.com/scores", args, () => { });
+    }
+
+    public void QuitToMenu()
+    {
+        ScreenEffectsManager.SwitchToScene("main_menu");
+        Story.story.next = 0;
+    }
+
+    public void Continue()
+    {
+        Story.story.LaunchNext();
+    }
+
+    public void Retry()
+    {
+        ScreenEffectsManager.SwitchToScene(SceneManager.GetActiveScene().name);
     }
 }
