@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9C60F8E0-DF91-49A7-A37E-442A89D2A720}" SchemaVersion="80">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{9C60F8E0-DF91-49A7-A37E-442A89D2A720}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{74394E66-A021-4BD5-B3C9-E196FBE62208}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="music_switch" ID="{87DE5C07-8216-4E30-94B5-2CDB7C2A7B61}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="shake" ID="{0EDB5025-7941-4A11-99AC-9AFD322559BD}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="menu_back" ID="{680DA6DA-B078-4293-8BDB-A23BA1437D22}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="menu_validation_game" ID="{1CE4CF69-F09A-4FDB-B97C-D7704D1B78EC}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="pause" ID="{62392CD9-034B-4A24-A3AA-1C92D0DE42FA}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="menu" ID="{6E0CA1E2-A224-4BF4-9063-DD069036033F}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="0" Y="6"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ambiance" ID="{F8EED129-26B6-4154-AA94-8E5D9377599E}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_shake" ID="{C82F170E-22BC-48F1-AC37-803C21B2D16D}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="menu_select" ID="{131B6E88-F254-4ED3-8DDE-9BC8A1285057}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="restart_menu" ID="{7D5DA974-BFF4-4827-B509-2131D70BE72D}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="end_pause" ID="{4E750EBE-09F9-4D67-9161-53B51038C227}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="fire" ID="{FE1A7BE3-664A-4379-9A31-EA1C43CF81C0}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="shot" ID="{065A7908-CB48-42AF-AB2E-136FB9F913B2}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="glass" ID="{9EBD6970-C1D8-480D-B0B4-7040EBD42BDD}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stir" ID="{5E4BBC77-3B25-4C30-AEF1-9F0368197F65}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="succes_recipe" ID="{62FD82E4-6C28-45B0-AA65-CFA59924519E}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="apparition_recipe" ID="{4B1A829E-4CE0-4389-ACC8-5D4FFA82C530}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="stop_stir" ID="{62B35714-52C4-498B-9C2A-730EA8BA63A2}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Recipe_Fail" ID="{EB27BD6C-705D-44DC-8504-62E974400D17}" WorkUnitID="{55B1F195-EC2E-4EF9-B497-4169D5C8B603}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Turbulence" ID="{EDA87B19-73AA-40A0-9F19-2073606DB710}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Month" ID="{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_RPM" ID="{A34890AB-B9D5-4526-A64D-5290C43EF2DC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fury" ID="{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Size" ID="{1329EBEF-A193-472E-A38C-64668B494879}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Storm" ID="{E93F8CDB-06D1-4737-ACAF-7CD44BBED783}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Presence" ID="{E3B7811A-7B2F-490F-B44F-5FE51B468041}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
+							<Value>6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Freefall" ID="{2F2DFE37-4F9E-4D94-83D8-53CCA39781AD}"/>
+							<Value>75</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SS_Air_Fear" ID="{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Chaud" ID="{2B7519AD-309C-4CD8-B164-F97171232D4F}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="mrc1" ID="{AA55FA1F-0CAB-4971-AFDE-A131251F42CD}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

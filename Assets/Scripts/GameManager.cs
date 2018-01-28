@@ -22,6 +22,15 @@ public class GameManager : MonoBehaviour {
         {
             EventManager.TriggerEvent("ToggleEndTimeAttack", new { });
         }
+        
+        if(LevelManager.Manager.RecipesDone >= 8)
+        {
+            AkSoundEngine.SetState("Public_Chaleur", "Chaud");
+        }
+        else if (LevelManager.Manager.RecipesDone >= 3)
+        {
+            AkSoundEngine.SetState("Public_Chaleur", "Bof");
+        }
     }
 
     void DayEnd()

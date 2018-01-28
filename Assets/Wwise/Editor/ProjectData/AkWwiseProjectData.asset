@@ -1,0 +1,447 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4f27c45a09d3d4a8a0494dfa8a35d3, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{55B1F195-EC2E-4EF9-B497-4169D5C8B603}'
+    m_lastTimePsrt1: 31259781
+    m_lastTimePart2: -1999280554
+    List:
+    - Name: ambiance
+      Path: Default Work Unit\ambiance
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ambiance
+        ObjectType: 3
+      ID: -1313589867
+      Guid: 29d1eef8b6265441aa948e5d9377599e
+      maxAttenuation: 0
+    - Name: apparition_recipe
+      Path: Default Work Unit\apparition_recipe
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: apparition_recipe
+        ObjectType: 3
+      ID: -531884701
+      Guid: 9e821a4be04c8943acc85d4ffa82c530
+      maxAttenuation: 0
+    - Name: end_pause
+      Path: Default Work Unit\end_pause
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: end_pause
+        ObjectType: 3
+      ID: -1840469645
+      Guid: be0e754ef909674d916153b51038c227
+      maxAttenuation: 0
+    - Name: fire
+      Path: Default Work Unit\fire
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: fire
+        ObjectType: 3
+      ID: -1616086583
+      Guid: e37b1afe4a6679439a31ea1c43cf81c0
+      maxAttenuation: 0
+    - Name: glass
+      Path: Default Work Unit\glass
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: glass
+        ObjectType: 3
+      ID: -1844997921
+      Guid: 7069bd9ed8c10d48b0b47040ebd42bdd
+      maxAttenuation: 0
+    - Name: menu
+      Path: Default Work Unit\menu
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu
+        ObjectType: 3
+      ID: -1687411216
+      Guid: e2a10c6e24a2f44b9063dd069036033f
+      maxAttenuation: 0
+    - Name: menu_back
+      Path: Default Work Unit\menu_back
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu_back
+        ObjectType: 3
+      ID: -1231412882
+      Guid: daa60d6878b093428bdba23ba1437d22
+      maxAttenuation: 0
+    - Name: menu_select
+      Path: Default Work Unit\menu_select
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu_select
+        ObjectType: 3
+      ID: -91591945
+      Guid: 886e1b1354f2d34e8dde9bc8a1285057
+      maxAttenuation: 0
+    - Name: menu_validation_game
+      Path: Default Work Unit\menu_validation_game
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menu_validation_game
+        ObjectType: 3
+      ID: -1635087361
+      Guid: 69cfe41c9af0db4fb97cd7704d1b78ec
+      maxAttenuation: 0
+    - Name: music_switch
+      Path: Default Work Unit\music_switch
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music_switch
+        ObjectType: 3
+      ID: -1570097955
+      Guid: 075cde871682304e94b52cdb7c2a7b61
+      maxAttenuation: 0
+    - Name: pause
+      Path: Default Work Unit\pause
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: pause
+        ObjectType: 3
+      ID: -1202379803
+      Guid: d92c39624b03244aa3aa1c92d0de42fa
+      maxAttenuation: 0
+    - Name: Recipe_Fail
+      Path: Default Work Unit\Recipe_Fail
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Recipe_Fail
+        ObjectType: 3
+      ID: 186964326
+      Guid: 6cbd27eb5d70dc44850462e974400d17
+      maxAttenuation: 0
+    - Name: restart_game
+      Path: Default Work Unit\restart_game
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: restart_game
+        ObjectType: 3
+      ID: 1659936851
+      Guid: 451373435c926e4582969e6dc80c3fe7
+      maxAttenuation: 0
+    - Name: restart_menu
+      Path: Default Work Unit\restart_menu
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: restart_menu
+        ObjectType: 3
+      ID: -728573772
+      Guid: 74a95d7df4bf2748b5092131d70be72d
+      maxAttenuation: 0
+    - Name: shake
+      Path: Default Work Unit\shake
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: shake
+        ObjectType: 3
+      ID: -1190635623
+      Guid: 2550db0e4179114a99ac9afd322559bd
+      maxAttenuation: 0
+    - Name: shot
+      Path: Default Work Unit\shot
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: shot
+        ObjectType: 3
+      ID: 251412229
+      Guid: 08795a0648cbaf42ab2e136fb9f913b2
+      maxAttenuation: 0
+    - Name: stir
+      Path: Default Work Unit\stir
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: stir
+        ObjectType: 3
+      ID: 688218825
+      Guid: 77bc4b5e253b304caef19f0368197f65
+      maxAttenuation: 0
+    - Name: stop_shake
+      Path: Default Work Unit\stop_shake
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: stop_shake
+        ObjectType: 3
+      ID: -1961238006
+      Guid: 0e172fc8bc22f148ac37803c21b2d16d
+      maxAttenuation: 0
+    - Name: stop_stir
+      Path: Default Work Unit\stop_stir
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: stop_stir
+        ObjectType: 3
+      ID: 261232384
+      Guid: 1457b362c4528b499c2a730ea8ba63a2
+      maxAttenuation: 0
+    - Name: succes
+      Path: Default Work Unit\succes
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: succes
+        ObjectType: 3
+      ID: 626838023
+      Guid: 0a35f238450f9d4796e7031553b7a616
+      maxAttenuation: 0
+    - Name: succes_recipe
+      Path: Default Work Unit\succes_recipe
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: succes_recipe
+        ObjectType: 3
+      ID: 626996420
+      Guid: e482fd62286cb045aa65cfa59924519e
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{D555DF14-5F53-4EB6-A15E-938AE757DBAE}'
+    m_lastTimePsrt1: -1174595008
+    m_lastTimePart2: -1999280602
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{FD9EB835-3365-4F55-A52A-B5F5CA4D876B}'
+    m_lastTimePsrt1: -82270504
+    m_lastTimePart2: -1999280632
+    List:
+    - Name: Public_Chaleur
+      Path: Default Work Unit\Public_Chaleur
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Public_Chaleur
+        ObjectType: 9
+      ID: -1430562591
+      Guid: 451624bf41280f41bcb12894751fffb7
+      values:
+      - Bof
+      - Chaud
+      - Froid
+      - None
+      ValueIcons:
+      - ElementName: Bof
+        ObjectType: 8
+      - ElementName: Chaud
+        ObjectType: 8
+      - ElementName: Froid
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: 1eb999200a64e2169ba4214edb3ba32c
+      ValueGuids:
+      - bytes: 56831ec565b2044cb17d8519c5b33d55
+      - bytes: ad19752b9c30d84cb164f97171232d4f
+      - bytes: 5347de6e2082b440a05a94ffb93039c4
+      - bytes: 2663608016b30046bd4a16550d2e1f0e
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{DCEF4299-F18F-4C5D-A69E-2F21B90DC47C}'
+    m_lastTimePsrt1: 712206558
+    m_lastTimePart2: -1999280654
+    List:
+    - Name: music
+      Path: Default Work Unit\music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music
+        ObjectType: 11
+      ID: -303024426
+      Guid: 5df1ea1e801d7948986192feeca1b4bf
+      values:
+      - mrc1
+      - mrc2
+      - mrc3
+      ValueIcons:
+      - ElementName: mrc1
+        ObjectType: 10
+      - ElementName: mrc2
+        ObjectType: 10
+      - ElementName: mrc3
+        ObjectType: 10
+      valueIDs: cc6547a6cf6547a6ce6547a6
+      ValueGuids:
+      - bytes: 1ffa55aaab0c7149afdea131251f42cd
+      - bytes: 0185c7a60c1ed34d91840ff3db169228
+      - bytes: d9bb781006ec4a43b0f38f4204f5019a
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{990B9136-93D4-4E19-A01E-8862726D5F97}'
+    m_lastTimePsrt1: 413347187
+    m_lastTimePart2: -1999280561
+    List:
+    - Name: New_SoundBank
+      Path: Default Work Unit\New_SoundBank
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New_SoundBank
+        ObjectType: 7
+      ID: -222937841
+      Guid: a323d53378c4ee4b8dae31bb2ad426b9
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{E1A1E62E-B07C-4E3A-A9A2-55AFE4275AA3}'
+    m_lastTimePsrt1: 191394604
+    m_lastTimePart2: -1999280656
+    List: []
+  - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
+    ParentPhysicalPath: 
+    Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
+    m_lastTimePsrt1: -1975676461
+    m_lastTimePart2: -1999297040
+    List:
+    - Name: SS_Air_Fear
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Fear
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Fear
+        ObjectType: 13
+      ID: 1351367891
+      Guid: 59062ef746431c4ea1b1dab46a05101e
+    - Name: SS_Air_Freefall
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Freefall
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Freefall
+        ObjectType: 13
+      ID: -1292209176
+      Guid: 37fe2d2f9e4f944d83d853cca39781ad
+    - Name: SS_Air_Fury
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Fury
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Fury
+        ObjectType: 13
+      ID: 1029930033
+      Guid: dc79aea23acaba4696529986c322a87b
+    - Name: SS_Air_Month
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Month
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Month
+        ObjectType: 13
+      ID: -1646418679
+      Guid: 45b4e209a3c47f44b3ca818a1d925ef7
+    - Name: SS_Air_Presence
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Presence
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Presence
+        ObjectType: 13
+      ID: -447042342
+      Guid: 1a81b7e32f7b0f49b44f5fe51b468041
+    - Name: SS_Air_RPM
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_RPM
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_RPM
+        ObjectType: 13
+      ID: 822163944
+      Guid: ab9048a3d5b92645a64d5290c43ef2dc
+    - Name: SS_Air_Size
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Size
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Size
+        ObjectType: 13
+      ID: -1220270574
+      Guid: efeb291393a12e47a38c64668b494879
+    - Name: SS_Air_Storm
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Storm
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Storm
+        ObjectType: 13
+      ID: -579304704
+      Guid: db8c3fe9d1063747acaf7cd44bbed783
+    - Name: SS_Air_TimeOfDay
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_TimeOfDay
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_TimeOfDay
+        ObjectType: 13
+      ID: -1091570167
+      Guid: 2ca76f537e8c8b4cae03ef34fdadc314
+    - Name: SS_Air_Turbulence
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Turbulence
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Turbulence
+        ObjectType: 13
+      ID: -134719478
+      Guid: 197ba8edaa73a0409f192073606db710
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{0B66384D-0D2C-4411-B78B-8E21658BA129}'
+    m_lastTimePsrt1: 191695397
+    m_lastTimePart2: -1999280656
+    List: []
+  ExpandedItems:
+  - /GGJ 2018
+  - /GGJ 2018/SoundBanks
+  - /GGJ 2018/SoundBanks/Default Work Unit
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 16384
+  lowerPoolSize: 8192
+  streamingPoolSize: 4096
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4

@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
+	<RootPaths>
+		<ProjectRoot>C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4072029455" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\New_SoundBank</ObjectPath>
+			<ShortName>New_SoundBank</ShortName>
+			<Path>New_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2981377429" Name="ambiance" ObjectPath="\Events\Default Work Unit\ambiance"/>
+				<Event Id="3763082595" Name="apparition_recipe" ObjectPath="\Events\Default Work Unit\apparition_recipe"/>
+				<Event Id="2454497651" Name="end_pause" ObjectPath="\Events\Default Work Unit\end_pause" MaxAttenuation="0.000000"/>
+				<Event Id="2678880713" Name="fire" ObjectPath="\Events\Default Work Unit\fire"/>
+				<Event Id="2449969375" Name="glass" ObjectPath="\Events\Default Work Unit\glass"/>
+				<Event Id="2607556080" Name="menu" ObjectPath="\Events\Default Work Unit\menu"/>
+				<Event Id="3063554414" Name="menu_back" ObjectPath="\Events\Default Work Unit\menu_back"/>
+				<Event Id="4203375351" Name="menu_select" ObjectPath="\Events\Default Work Unit\menu_select"/>
+				<Event Id="2659879935" Name="menu_validation_game" ObjectPath="\Events\Default Work Unit\menu_validation_game"/>
+				<Event Id="2724869341" Name="music_switch" ObjectPath="\Events\Default Work Unit\music_switch"/>
+				<Event Id="3092587493" Name="pause" ObjectPath="\Events\Default Work Unit\pause"/>
+				<Event Id="186964326" Name="Recipe_Fail" ObjectPath="\Events\Default Work Unit\Recipe_Fail"/>
+				<Event Id="1659936851" Name="restart_game" ObjectPath="\Events\Default Work Unit\restart_game" MaxAttenuation="0.000000"/>
+				<Event Id="3566393524" Name="restart_menu" ObjectPath="\Events\Default Work Unit\restart_menu"/>
+				<Event Id="3104331673" Name="shake" ObjectPath="\Events\Default Work Unit\shake"/>
+				<Event Id="251412229" Name="shot" ObjectPath="\Events\Default Work Unit\shot"/>
+				<Event Id="688218825" Name="stir" ObjectPath="\Events\Default Work Unit\stir"/>
+				<Event Id="2333729290" Name="stop_shake" ObjectPath="\Events\Default Work Unit\stop_shake" MaxAttenuation="0.000000"/>
+				<Event Id="261232384" Name="stop_stir" ObjectPath="\Events\Default Work Unit\stop_stir" MaxAttenuation="0.000000"/>
+				<Event Id="626838023" Name="succes" ObjectPath="\Events\Default Work Unit\succes" MaxAttenuation="0.000000"/>
+				<Event Id="626996420" Name="succes_recipe" ObjectPath="\Events\Default Work Unit\succes_recipe"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="8071170" Language="SFX">
+					<ShortName>AK_Factory_IR\Churches\AK St-Katharinen.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_964036AA.wem</Path>
+				</File>
+				<File Id="13000250" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Volksdorfer Wald.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Volksdorfer Wald_C721C0A9.wem</Path>
+				</File>
+				<File Id="13019290" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Transport\AE_Ford_TransitVanRear.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Ford_TransitVanRear_3B24F85A.wem</Path>
+				</File>
+				<File Id="13682022" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Transport\AE_Train_BlueAngel.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Train_BlueAngel_D97F12CD.wem</Path>
+				</File>
+				<File Id="22125023" Language="SFX">
+					<ShortName>pour8short.wav</ShortName>
+					<Path>SFX\pour8short_1C9C67B2.wem</Path>
+				</File>
+				<File Id="28968810" Language="SFX">
+					<ShortName>City Streets.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\City Streets_B99B8E72.wem</Path>
+				</File>
+				<File Id="30489455" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_WideOpen.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_WideOpen_F480BA48.wem</Path>
+				</File>
+				<File Id="31744546" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Transport\AE_Honda_Element.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Honda_Element_C8EBFFC8.wem</Path>
+				</File>
+				<File Id="42240585" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LongSixWideEchoes.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LongSixWideEchoes_A5DD755F.wem</Path>
+				</File>
+				<File Id="46969464" Language="SFX">
+					<ShortName>AK_Factory_IR\Large Spaces\AK Stair Way Hall.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Stair Way Hall_85477ADC.wem</Path>
+				</File>
+				<File Id="48953918" Language="SFX">
+					<ShortName>mrc1-03.wav</ShortName>
+					<Path>SFX\mrc1-03_F17FB28C.wem</Path>
+				</File>
+				<File Id="49204470" Language="SFX">
+					<ShortName>AMB_INT_Party_50_people.wav</ShortName>
+					<Path>SFX\AMB_INT_Party_50_people_F17FB28C.wem</Path>
+				</File>
+				<File Id="52904399" Language="SFX">
+					<ShortName>firecocktail.wav</ShortName>
+					<Path>SFX\firecocktail_1C9C67B2.wem</Path>
+				</File>
+				<File Id="58281665" Language="SFX">
+					<ShortName>DJ_Public_chaud_12.wav</ShortName>
+					<Path>SFX\DJ_Public_chaud_12_F17FB28C.wem</Path>
+				</File>
+				<File Id="58924823" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_AlleyIntimate.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_AlleyIntimate_D26BEF4E.wem</Path>
+				</File>
+				<File Id="60907913" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_Attic_02.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Attic_02_F60CFD39.wem</Path>
+				</File>
+				<File Id="71612166" Language="SFX">
+					<ShortName>Cavern.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Cavern_98991E9E.wem</Path>
+				</File>
+				<File Id="75421461" Language="SFX">
+					<ShortName>Metallic Hall.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Metallic Hall_2093BA28.wem</Path>
+				</File>
+				<File Id="83356018" Language="SFX">
+					<ShortName>AMB_INT_Party_50_people.wav</ShortName>
+					<Path>SFX\AMB_INT_Party_50_people_8F38F0FD.wem</Path>
+				</File>
+				<File Id="88530504" Language="SFX">
+					<ShortName>AK_Factory_IR\Halls\AK Berlin Stadtbad.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Stadtbad_C5C0ABDE.wem</Path>
+				</File>
+				<File Id="90947857" Language="SFX">
+					<ShortName>Pour3.wav</ShortName>
+					<Path>SFX\Pour3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="92795692" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LongNoEchoes.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LongNoEchoes_0ACA2939.wem</Path>
+				</File>
+				<File Id="95168818" Language="SFX">
+					<ShortName>Medium Metal Room.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Medium Metal Room_1160A2DC.wem</Path>
+				</File>
+				<File Id="98627056" Language="SFX">
+					<ShortName>DJ_Public_chaud_13.wav</ShortName>
+					<Path>SFX\DJ_Public_chaud_13_F17FB28C.wem</Path>
+				</File>
+				<File Id="99990636" Language="SFX">
+					<ShortName>AK_Factory_IR\Churches\AK St-Katharinen.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_23628307.wem</Path>
+				</File>
+				<File Id="101091315" Language="SFX">
+					<ShortName>AK_Factory_IR\Churches\AK St-Katharinen.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_DCE9E589.wem</Path>
+				</File>
+				<File Id="103650773" Language="SFX">
+					<ShortName>Auditorium.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Auditorium_5A7AD8D2.wem</Path>
+				</File>
+				<File Id="128335835" Language="SFX">
+					<ShortName>DJ_Public_chaud_10.wav</ShortName>
+					<Path>SFX\DJ_Public_chaud_10_F17FB28C.wem</Path>
+				</File>
+				<File Id="133032431" Language="SFX">
+					<ShortName>DJ_Transition_chier_30.wav</ShortName>
+					<Path>SFX\DJ_Transition_chier_30_F17FB28C.wem</Path>
+				</File>
+				<File Id="145606015" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_Bedroom.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Bedroom_2C11C86C.wem</Path>
+				</File>
+				<File Id="152920738" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_F1295373.wem</Path>
+				</File>
+				<File Id="161915250" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_7836889F.wem</Path>
+				</File>
+				<File Id="162018684" Language="SFX">
+					<ShortName>AK_Factory_IR\Halls\AK Berlin Teldex.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_67BBAE66.wem</Path>
+				</File>
+				<File Id="168504978" Language="SFX">
+					<ShortName>shake loop.wav</ShortName>
+					<Path>SFX\shake loop_1C9C67B2.wem</Path>
+				</File>
+				<File Id="185425062" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Hamburg Echo Chamber.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Echo Chamber_79B96FE9.wem</Path>
+				</File>
+				<File Id="191326382" Language="SFX">
+					<ShortName>Forest.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Forest_914E6796.wem</Path>
+				</File>
+				<File Id="195840689" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 02.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 02_B639B2CE.wem</Path>
+				</File>
+				<File Id="198373678" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_LongDeepAlley.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_LongDeepAlley_00AD0D88.wem</Path>
+				</File>
+				<File Id="209885183" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_PheeeewEcho_02.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_PheeeewEcho_02_F719FEF0.wem</Path>
+				</File>
+				<File Id="211286947" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_3B59BEE5.wem</Path>
+				</File>
+				<File Id="217396452" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Transport\AE_Honda_ElementRear.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Honda_ElementRear_768C82C6.wem</Path>
+				</File>
+				<File Id="237532661" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Hamburg Karl Schneider Halle.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Karl Schneider Halle_CC689982.wem</Path>
+				</File>
+				<File Id="238341605" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Blue Noise Room 02.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 02_DA69E80A.wem</Path>
+				</File>
+				<File Id="240375163" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_BetweenTrees.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_BetweenTrees_4953BEF6.wem</Path>
+				</File>
+				<File Id="241335340" Language="SFX">
+					<ShortName>Recipe_Fail.wav</ShortName>
+					<Path>SFX\Recipe_Fail_8B4757C4.wem</Path>
+				</File>
+				<File Id="241459180" Language="SFX">
+					<ShortName>Cursor_Select.wav</ShortName>
+					<Path>SFX\Cursor_Select_1C9C67B2.wem</Path>
+				</File>
+				<File Id="269668124" Language="SFX">
+					<ShortName>DJ_AVOUS_22.wav</ShortName>
+					<Path>SFX\DJ_AVOUS_22_F17FB28C.wem</Path>
+				</File>
+				<File Id="280502388" Language="SFX">
+					<ShortName>Medium Wood Room.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Medium Wood Room_04488EF1.wem</Path>
+				</File>
+				<File Id="285178446" Language="SFX">
+					<ShortName>glass 2.wav</ShortName>
+					<Path>SFX\glass 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="294815814" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_SmoothIntimate.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_SmoothIntimate_A6FB853E.wem</Path>
+				</File>
+				<File Id="298944768" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_B658F06C.wem</Path>
+				</File>
+				<File Id="299482527" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Volksdorfer Wald.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Volksdorfer Wald_A8AF2146.wem</Path>
+				</File>
+				<File Id="302765304" Language="SFX">
+					<ShortName>Drink_serve_5.wav</ShortName>
+					<Path>SFX\Drink_serve_5_1C9C67B2.wem</Path>
+				</File>
+				<File Id="304207026" Language="SFX">
+					<ShortName>Public_Chaud_mrc1.wav</ShortName>
+					<Path>SFX\Public_Chaud_mrc1_F17FB28C.wem</Path>
+				</File>
+				<File Id="304471121" Language="SFX">
+					<ShortName>AK_Factory_IR\Large Spaces\AK Stair Way Hall.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Stair Way Hall_028856EC.wem</Path>
+				</File>
+				<File Id="318157176" Language="SFX">
+					<ShortName>stir1.wav</ShortName>
+					<Path>SFX\stir1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="320335358" Language="SFX">
+					<ShortName>glass 1.wav</ShortName>
+					<Path>SFX\glass 1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="335444096" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_1E73F104.wem</Path>
+				</File>
+				<File Id="335771893" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_Bathroom.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Bathroom_911B5290.wem</Path>
+				</File>
+				<File Id="345588360" Language="SFX">
+					<ShortName>stir2.wav</ShortName>
+					<Path>SFX\stir2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="345749945" Language="SFX">
+					<ShortName>mrc3.wav</ShortName>
+					<Path>SFX\mrc3_F17FB28C.wem</Path>
+				</File>
+				<File Id="358895006" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Blue Noise Room 01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 01_3FBD5043.wem</Path>
+				</File>
+				<File Id="364552778" Language="SFX">
+					<ShortName>DJ_AVOUS_26.wav</ShortName>
+					<Path>SFX\DJ_AVOUS_26_F17FB28C.wem</Path>
+				</File>
+				<File Id="364607080" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LongAndComplex.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LongAndComplex_0250CB9A.wem</Path>
+				</File>
+				<File Id="411581490" Language="SFX">
+					<ShortName>Drink_serve_4.wav</ShortName>
+					<Path>SFX\Drink_serve_4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="413377259" Language="SFX">
+					<ShortName>DJ_Public_Froid_20.wav</ShortName>
+					<Path>SFX\DJ_Public_Froid_20_F17FB28C.wem</Path>
+				</File>
+				<File Id="417701481" Language="SFX">
+					<ShortName>AK_Factory_IR\Halls\AK Brasilien Halle.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Brasilien Halle_D03C07E7.wem</Path>
+				</File>
+				<File Id="427082242" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_EquallySpacedEchoes.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_EquallySpacedEchoes_2FD490A5.wem</Path>
+				</File>
+				<File Id="432605131" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_OpenShortTwoEchoes.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_OpenShortTwoEchoes_D7CD207B.wem</Path>
+				</File>
+				<File Id="433739779" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 02.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 02_3BC22A4B.wem</Path>
+				</File>
+				<File Id="435591620" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_LivingRoom_01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_LivingRoom_01_2A5F7B34.wem</Path>
+				</File>
+				<File Id="439093706" Language="SFX">
+					<ShortName>glaconsloop.wav</ShortName>
+					<Path>SFX\glaconsloop_9E5AC1AE.wem</Path>
+				</File>
+				<File Id="456749166" Language="SFX">
+					<ShortName>pour6short.wav</ShortName>
+					<Path>SFX\pour6short_1C9C67B2.wem</Path>
+				</File>
+				<File Id="459775695" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_87AE6458.wem</Path>
+				</File>
+				<File Id="468134466" Language="SFX">
+					<ShortName>Small Metal Room.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Small Metal Room_97827352.wem</Path>
+				</File>
+				<File Id="474855732" Language="SFX">
+					<ShortName>DJ_AVOUS_24.wav</ShortName>
+					<Path>SFX\DJ_AVOUS_24_F17FB28C.wem</Path>
+				</File>
+				<File Id="475887784" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_1F03AA62.wem</Path>
+				</File>
+				<File Id="477192351" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Blue Noise Room 01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 01_1539EE68.wem</Path>
+				</File>
+				<File Id="480496863" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_Hallway.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Hallway_8069A9DB.wem</Path>
+				</File>
+				<File Id="490914940" Language="SFX">
+					<ShortName>pour5dhort.wav</ShortName>
+					<Path>SFX\pour5dhort_1C9C67B2.wem</Path>
+				</File>
+				<File Id="507160656" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_DenseFar.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_DenseFar_4298018C.wem</Path>
+				</File>
+				<File Id="512867118" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_WideWithCars.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_WideWithCars_AB2CC2B7.wem</Path>
+				</File>
+				<File Id="522077337" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_SchoolHall.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_SchoolHall_67EE7626.wem</Path>
+				</File>
+				<File Id="530742618" Language="SFX">
+					<ShortName>Drink_serve_3.wav</ShortName>
+					<Path>SFX\Drink_serve_3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="535111107" Language="SFX">
+					<ShortName>AK_Factory_IR\Churches\AK St-Katharinen.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_F167436A.wem</Path>
+				</File>
+				<File Id="536838777" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_SlapsEchoClose.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_SlapsEchoClose_8520F115.wem</Path>
+				</File>
+				<File Id="538281099" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Hamburg Echo Chamber.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Echo Chamber_57C6FE7C.wem</Path>
+				</File>
+				<File Id="539027192" Language="SFX">
+					<ShortName>AK_Factory_IR\Large Spaces\AK Stair Way Hall.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Stair Way Hall_5B811A59.wem</Path>
+				</File>
+				<File Id="549794241" Language="SFX">
+					<ShortName>Small Wood Room.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Small Wood Room_F1072961.wem</Path>
+				</File>
+				<File Id="569254387" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel_BCC8803E.wem</Path>
+				</File>
+				<File Id="569393832" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Transport\AE_Peugeot_PartnerFront.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Peugeot_PartnerFront_457EB7DB.wem</Path>
+				</File>
+				<File Id="584011173" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Transport\AE_Peugeot_PartnerBackClosed.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Peugeot_PartnerBackClosed_C12F7471.wem</Path>
+				</File>
+				<File Id="584321412" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_E0626106.wem</Path>
+				</File>
+				<File Id="590155989" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_C05A8D5E.wem</Path>
+				</File>
+				<File Id="592174307" Language="SFX">
+					<ShortName>DJ_EndingMonolog_31.wav</ShortName>
+					<Path>SFX\DJ_EndingMonolog_31_F17FB28C.wem</Path>
+				</File>
+				<File Id="596456986" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_TwoFarBuildings.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_TwoFarBuildings_E78A06BB.wem</Path>
+				</File>
+				<File Id="597962641" Language="SFX">
+					<ShortName>DJ_Saxo_connard_16.wav</ShortName>
+					<Path>SFX\DJ_Saxo_connard_16_F17FB28C.wem</Path>
+				</File>
+				<File Id="599605051" Language="SFX">
+					<ShortName>DJ_AVOUS_25.wav</ShortName>
+					<Path>SFX\DJ_AVOUS_25_F17FB28C.wem</Path>
+				</File>
+				<File Id="602284699" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Misc\AE_FireDepartment.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Misc\AE_FireDepartment_C79A785C.wem</Path>
+				</File>
+				<File Id="606914820" Language="SFX">
+					<ShortName>Car Interior.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Car Interior_FDFEF740.wem</Path>
+				</File>
+				<File Id="609174261" Language="SFX">
+					<ShortName>AK_Factory_IR\Halls\AK Brasilien Halle.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Brasilien Halle_D45914F6.wem</Path>
+				</File>
+				<File Id="612082618" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Harburger See.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Harburger See_CB6DF326.wem</Path>
+				</File>
+				<File Id="621668866" Language="SFX">
+					<ShortName>Public_Chaud_mrc3.wav</ShortName>
+					<Path>SFX\Public_Chaud_mrc3_F17FB28C.wem</Path>
+				</File>
+				<File Id="634339356" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Hamburg Karl Schneider Halle.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Karl Schneider Halle_576716B6.wem</Path>
+				</File>
+				<File Id="647831537" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_Corridor.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Corridor_8F496741.wem</Path>
+				</File>
+				<File Id="650826822" Language="SFX">
+					<ShortName>DJ_Public_chaud_29.wav</ShortName>
+					<Path>SFX\DJ_Public_chaud_29_F17FB28C.wem</Path>
+				</File>
+				<File Id="652916030" Language="SFX">
+					<ShortName>pour1short.wav</ShortName>
+					<Path>SFX\pour1short_1C9C67B2.wem</Path>
+				</File>
+				<File Id="654850748" Language="SFX">
+					<ShortName>AK_Factory_IR\Halls\AK Berlin Teldex.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_3F2B2E8C.wem</Path>
+				</File>
+				<File Id="659069708" Language="SFX">
+					<ShortName>AK_Factory_IR\Churches\AK Medium Church.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK Medium Church_A0FBAD90.wem</Path>
+				</File>
+				<File Id="667537848" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Hamburg Echo Chamber.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Echo Chamber_DC72CC63.wem</Path>
+				</File>
+				<File Id="675803030" Language="SFX">
+					<ShortName>DJ_AVOUS_15.wav</ShortName>
+					<Path>SFX\DJ_AVOUS_15_F17FB28C.wem</Path>
+				</File>
+				<File Id="679777165" Language="SFX">
+					<ShortName>DJ_Public_Froid_21.wav</ShortName>
+					<Path>SFX\DJ_Public_Froid_21_F17FB28C.wem</Path>
+				</File>
+				<File Id="680452062" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Blue Noise Room 03.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 03_FAB0F99E.wem</Path>
+				</File>
+				<File Id="685400320" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Transport\AE_Helicopter_Sikorski.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Helicopter_Sikorski_3FE8BED2.wem</Path>
+				</File>
+				<File Id="686942828" Language="SFX">
+					<ShortName>glaconloop2.wav</ShortName>
+					<Path>SFX\glaconloop2_F17FB28C.wem</Path>
+				</File>
+				<File Id="689379105" Language="SFX">
+					<ShortName>AK_Factory_IR\Halls\AK Berlin Teldex.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_28BD1540.wem</Path>
+				</File>
+				<File Id="698364743" Language="SFX">
+					<ShortName>Drink_serve_6.wav</ShortName>
+					<Path>SFX\Drink_serve_6_1C9C67B2.wem</Path>
+				</File>
+				<File Id="702837950" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_NarrowShortAlley.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_NarrowShortAlley_A0CDD98F.wem</Path>
+				</File>
+				<File Id="709265911" Language="SFX">
+					<ShortName>shake loop 2.wav</ShortName>
+					<Path>SFX\shake loop 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="711600817" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_1958D97B.wem</Path>
+				</File>
+				<File Id="726190851" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_ComplexEcho.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_ComplexEcho_F19C3389.wem</Path>
+				</File>
+				<File Id="730694304" Language="SFX">
+					<ShortName>DJ_Public_chaud_14.wav</ShortName>
+					<Path>SFX\DJ_Public_chaud_14_F17FB28C.wem</Path>
+				</File>
+				<File Id="733994131" Language="SFX">
+					<ShortName>AK_Factory_IR\Halls\AK Berlin Teldex.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_26D8D382.wem</Path>
+				</File>
+				<File Id="734720824" Language="SFX">
+					<ShortName>AK_Factory_IR\Large Spaces\AK Hamburg Fabrik.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Hamburg Fabrik_E3DFF2B1.wem</Path>
+				</File>
+				<File Id="736316533" Language="SFX">
+					<ShortName>DJ_EndGame.wav</ShortName>
+					<Path>SFX\DJ_EndGame_F17FB28C.wem</Path>
+				</File>
+				<File Id="749103418" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Luna Studio.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Luna Studio_AE3BFB9E.wem</Path>
+				</File>
+				<File Id="749632793" Language="SFX">
+					<ShortName>DJ_AVOUS_23.wav</ShortName>
+					<Path>SFX\DJ_AVOUS_23_F17FB28C.wem</Path>
+				</File>
+				<File Id="750036927" Language="SFX">
+					<ShortName>DJ_AVOUS_27.wav</ShortName>
+					<Path>SFX\DJ_AVOUS_27_F17FB28C.wem</Path>
+				</File>
+				<File Id="750238559" Language="SFX">
+					<ShortName>shake loop 3.wav</ShortName>
+					<Path>SFX\shake loop 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="757112749" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_DistantSlaps.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_DistantSlaps_8307E642.wem</Path>
+				</File>
+				<File Id="765420740" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Luna Studio.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Luna Studio_DFD91B68.wem</Path>
+				</File>
+				<File Id="765520478" Language="SFX">
+					<ShortName>AK_Factory_IR\Large Spaces\AK Hamburg Fabrik SCOUT.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Hamburg Fabrik SCOUT_26DF88A6.wem</Path>
+				</File>
+				<File Id="766552005" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_Staircase.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Staircase_0FB4BC1C.wem</Path>
+				</File>
+				<File Id="783448466" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_PheeeewEcho_01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_PheeeewEcho_01_12ADFA92.wem</Path>
+				</File>
+				<File Id="784884764" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_WideEcho.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_WideEcho_866AA260.wem</Path>
+				</File>
+				<File Id="785966779" Language="SFX">
+					<ShortName>AK_Factory_IR\Large Spaces\AK Hamburg Parkhaus.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Hamburg Parkhaus_B1DE8805.wem</Path>
+				</File>
+				<File Id="789847363" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_DistantEcho.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_DistantEcho_F1FB3770.wem</Path>
+				</File>
+				<File Id="803100438" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_OpenThreeEchoes.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_OpenThreeEchoes_94ED670B.wem</Path>
+				</File>
+				<File Id="810134381" Language="SFX">
+					<ShortName>Church.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Church_FCF6567E.wem</Path>
+				</File>
+				<File Id="810781598" Language="SFX">
+					<ShortName>mrc2.wav</ShortName>
+					<Path>SFX\mrc2_F17FB28C.wem</Path>
+				</File>
+				<File Id="811934406" Language="SFX">
+					<ShortName>AK_Factory_IR\Large Spaces\AK Stair Way Hall.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Stair Way Hall_5C00E06D.wem</Path>
+				</File>
+				<File Id="814533814" Language="SFX">
+					<ShortName>DJ_Public_chaud_11.wav</ShortName>
+					<Path>SFX\DJ_Public_chaud_11_F17FB28C.wem</Path>
+				</File>
+				<File Id="818534887" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_C7596321.wem</Path>
+				</File>
+				<File Id="820946279" Language="SFX">
+					<ShortName>DJ_Public_Froid_17.wav</ShortName>
+					<Path>SFX\DJ_Public_Froid_17_F17FB28C.wem</Path>
+				</File>
+				<File Id="823722507" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_9E59A7F4.wem</Path>
+				</File>
+				<File Id="825862339" Language="SFX">
+					<ShortName>AK_Factory_IR\Large Spaces\AK Hamburg Fabrik SCOUT.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Hamburg Fabrik SCOUT_68911B43.wem</Path>
+				</File>
+				<File Id="828077476" Language="SFX">
+					<ShortName>glaconloop3.wav</ShortName>
+					<Path>SFX\glaconloop3_F17FB28C.wem</Path>
+				</File>
+				<File Id="828807711" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Blue Noise Room 02.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 02_91F5BDB9.wem</Path>
+				</File>
+				<File Id="830379118" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Blue Noise Room 01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 01_919EFD70.wem</Path>
+				</File>
+				<File Id="832296042" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_CloseEcho.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_CloseEcho_3072E34B.wem</Path>
+				</File>
+				<File Id="834279979" Language="SFX">
+					<ShortName>DJ_AVOUS_28.wav</ShortName>
+					<Path>SFX\DJ_AVOUS_28_F17FB28C.wem</Path>
+				</File>
+				<File Id="836670967" Language="SFX">
+					<ShortName>pour3short.wav</ShortName>
+					<Path>SFX\pour3short_1C9C67B2.wem</Path>
+				</File>
+				<File Id="847080287" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_ComplexDistantEcho.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_ComplexDistantEcho_FBBC2805.wem</Path>
+				</File>
+				<File Id="867122333" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_LivingRoom_02.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_LivingRoom_02_5EAEFCA4.wem</Path>
+				</File>
+				<File Id="873684731" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_DenseClose.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_DenseClose_D162BCDA.wem</Path>
+				</File>
+				<File Id="873919184" Language="SFX">
+					<ShortName>Rock Wall.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Rock Wall_0E11A6BA.wem</Path>
+				</File>
+				<File Id="875305838" Language="SFX">
+					<ShortName>City Center.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\City Center_6FDE8D0F.wem</Path>
+				</File>
+				<File Id="879974926" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Hamburg Pinguin Buro.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Pinguin Buro_4A634847.wem</Path>
+				</File>
+				<File Id="882264863" Language="SFX">
+					<ShortName>DJ_Public_Froid_18.wav</ShortName>
+					<Path>SFX\DJ_Public_Froid_18_F17FB28C.wem</Path>
+				</File>
+				<File Id="903989417" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_797C26B2.wem</Path>
+				</File>
+				<File Id="924389728" Language="SFX">
+					<ShortName>pour2short.wav</ShortName>
+					<Path>SFX\pour2short_1C9C67B2.wem</Path>
+				</File>
+				<File Id="926581161" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Harburger See.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Harburger See_F92AEEEF.wem</Path>
+				</File>
+				<File Id="930622549" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Harburger See.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Harburger See_E3896B6C.wem</Path>
+				</File>
+				<File Id="932825353" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsClose.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsClose_24177E9A.wem</Path>
+				</File>
+				<File Id="935758069" Language="SFX">
+					<ShortName>Public_Chaud_mrc2.wav</ShortName>
+					<Path>SFX\Public_Chaud_mrc2_F17FB28C.wem</Path>
+				</File>
+				<File Id="941961704" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar_1933E848.wem</Path>
+				</File>
+				<File Id="965606000" Language="SFX">
+					<ShortName>/boxmodel.wav</ShortName>
+					<Path>Plugins\iZotope Trash Box Modeler\/boxmodel_59C823C2.wem</Path>
+				</File>
+				<File Id="967156497" Language="SFX">
+					<ShortName>pour4short.wav</ShortName>
+					<Path>SFX\pour4short_1C9C67B2.wem</Path>
+				</File>
+				<File Id="983392952" Language="SFX">
+					<ShortName>116779__domrodrig__ringing-bell-happy.wav</ShortName>
+					<Path>SFX\116779__domrodrig__ringing-bell-happy_1C9C67B2.wem</Path>
+				</File>
+				<File Id="986367958" Language="SFX">
+					<ShortName>glaconsloop.wav</ShortName>
+					<Path>SFX\glaconsloop_F17FB28C.wem</Path>
+				</File>
+				<File Id="990812942" Language="SFX">
+					<ShortName>charlie puth remix 80-01.wav</ShortName>
+					<Path>SFX\charlie puth remix 80-01_F17FB28C.wem</Path>
+				</File>
+				<File Id="1002455079" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 02.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 02_82FCC1EC.wem</Path>
+				</File>
+				<File Id="1003161333" Language="SFX">
+					<ShortName>Medium Wood Hall.wav</ShortName>
+					<Path>Plugins\iZotope Hybrid Reverb\Medium Wood Hall_F84E3ADD.wem</Path>
+				</File>
+				<File Id="1005069349" Language="SFX">
+					<ShortName>AK_Factory_IR\Churches\AK St-Katharinen.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_49A1F88C.wem</Path>
+				</File>
+				<File Id="1007831171" Language="SFX">
+					<ShortName>DJ_Public_Froid_19.wav</ShortName>
+					<Path>SFX\DJ_Public_Froid_19_F17FB28C.wem</Path>
+				</File>
+				<File Id="1010311289" Language="SFX">
+					<ShortName>AK_Factory_IR\Large Spaces\AK Hamburg Parkhaus.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Hamburg Parkhaus_45879932.wem</Path>
+				</File>
+				<File Id="1010865615" Language="SFX">
+					<ShortName>AK_Factory_IR\Churches\AK Medium Church.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK Medium Church_CC223119.wem</Path>
+				</File>
+				<File Id="1012937349" Language="SFX">
+					<ShortName>AK_Factory_IR\Rooms\AK Luna Studio.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Luna Studio_F022B780.wem</Path>
+				</File>
+				<File Id="1035327887" Language="SFX">
+					<ShortName>AK_Factory_IR\Churches\AK Medium Church.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK Medium Church_08A28ABA.wem</Path>
+				</File>
+				<File Id="1036982009" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_Attic_01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Attic_01_EB1AE26A.wem</Path>
+				</File>
+				<File Id="1037099072" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LoudEcho.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LoudEcho_3100905E.wem</Path>
+				</File>
+				<File Id="1045271282" Language="SFX">
+					<ShortName>AK_Factory_IR\Halls\AK Berlin Teldex.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_EAB2AC3D.wem</Path>
+				</File>
+				<File Id="1051291759" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_512DE030.wem</Path>
+				</File>
+				<File Id="1054055703" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Transport\AE_Beetle.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Beetle_830245C8.wem</Path>
+				</File>
+				<File Id="1065017050" Language="SFX">
+					<ShortName>AudioEase\Altiverb - Outdoor and More\Domestic\AE_Classroom.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Classroom_8424B06A.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

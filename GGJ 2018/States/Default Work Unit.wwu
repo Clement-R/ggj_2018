@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FD9EB835-3365-4F55-A52A-B5F5CA4D876B}" SchemaVersion="80">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{FD9EB835-3365-4F55-A52A-B5F5CA4D876B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Public_Chaleur" ID="{BF241645-2841-410F-BCB1-2894751FFFB7}">
+					<ChildrenList>
+						<State Name="None" ID="{80606326-B316-4600-BD4A-16550D2E1F0E}"/>
+						<State Name="Chaud" ID="{2B7519AD-309C-4CD8-B164-F97171232D4F}"/>
+						<State Name="Froid" ID="{6EDE4753-8220-40B4-A05A-94FFB93039C4}"/>
+						<State Name="Bof" ID="{C51E8356-B265-4C04-B17D-8519C5B33D55}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

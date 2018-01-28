@@ -13,15 +13,23 @@ public class MenuManager : MonoBehaviour {
         {
             scanline.SetAlpha(1);
         }
+
+        AkSoundEngine.PostEvent("menu", gameObject);
     }
 
     public void LaunchStory()
     {
+        AkSoundEngine.PostEvent("menu_back", gameObject);
+        AkSoundEngine.PostEvent("menu_validation_game", gameObject);
+
         Story.story.LaunchNext();
     }
 
     public void LaunchTimeAttack()
     {
+        AkSoundEngine.PostEvent("menu_back", gameObject);
+        AkSoundEngine.PostEvent("menu_validation_game", gameObject);
+
         ScreenEffectsManager.manager.Launch();
         AsyncOperation op = SceneManager.LoadSceneAsync("main");
         op.allowSceneActivation = false;
@@ -40,11 +48,13 @@ public class MenuManager : MonoBehaviour {
 
     public void LaunchCredits()
     {
+        AkSoundEngine.PostEvent("menu_back", gameObject);
         ScreenEffectsManager.SwitchToScene("credits");
     }
 
     public void Quit()
     {
+        AkSoundEngine.PostEvent("menu_back", gameObject);
         Application.Quit();
     }
 }

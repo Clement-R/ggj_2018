@@ -51,6 +51,23 @@ public class LevelManager : MonoBehaviour {
         get { return score; }
     }
 
+    int recipesDone = 0;
+    public int RecipesDone
+    {
+        get { return recipesDone; }
+    }
+
+    private void Start()
+    {
+        EventManager.StartListening("LaunchGame", OnGameStart);
+    }
+
+    void OnGameStart(dynamic obj)
+    {
+        AkSoundEngine.PostEvent("ambiance", gameObject);
+        AkSoundEngine.PostEvent("ambiance", gameObject);
+    }
+
     Recettes GetNext(int player)
     {
         if(player == 0)
@@ -199,6 +216,16 @@ public class LevelManager : MonoBehaviour {
         {
             finish.Invoke();
         }
+
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            LevelManager.Manager.recipesDone = 3;
+        }
+        else if (Input.GetKeyDown(KeyCode.L))
+        {
+            LevelManager.Manager.recipesDone = 8;
+        }
     }
 
     public Ingredients GetNextIngredient(int joueur)
@@ -228,6 +255,7 @@ public class LevelManager : MonoBehaviour {
         EventManager.TriggerEvent("ReciepeWin", new { type = player });
         if (player == 0 && currentJoueur1.IsGood())
         {
+            recipesDone++;
             score += currentJoueur1.score;
             if (type == Type.Random)
             {
@@ -243,6 +271,7 @@ public class LevelManager : MonoBehaviour {
         if (player == 1 && currentJoueur2.IsGood())
         {
             Debug.Log("J2 Validé!");
+            recipesDone++;
             score += currentJoueur2.score;
             if (type == Type.Random)
             {

@@ -1,0 +1,690 @@
+Event	ID	Name			Wwise Object Path	Notes
+	186964326	Recipe_Fail			\Default Work Unit\Recipe_Fail	
+	251412229	shot			\Default Work Unit\shot	
+	261232384	stop_stir			\Default Work Unit\stop_stir	
+	626838023	succes			\Default Work Unit\succes	
+	626996420	succes_recipe			\Default Work Unit\succes_recipe	
+	688218825	stir			\Default Work Unit\stir	
+	1659936851	restart_game			\Default Work Unit\restart_game	
+	2333729290	stop_shake			\Default Work Unit\stop_shake	
+	2449969375	glass			\Default Work Unit\glass	
+	2454497651	end_pause			\Default Work Unit\end_pause	
+	2607556080	menu			\Default Work Unit\menu	
+	2659879935	menu_validation_game			\Default Work Unit\menu_validation_game	
+	2678880713	fire			\Default Work Unit\fire	
+	2724869341	music_switch			\Default Work Unit\music_switch	
+	2981377429	ambiance			\Default Work Unit\ambiance	
+	3063554414	menu_back			\Default Work Unit\menu_back	
+	3092587493	pause			\Default Work Unit\pause	
+	3104331673	shake			\Default Work Unit\shake	
+	3566393524	restart_menu			\Default Work Unit\restart_menu	
+	3763082595	apparition_recipe			\Default Work Unit\apparition_recipe	
+	4203375351	menu_select			\Default Work Unit\menu_select	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2864404705	Public_Chaleur			\Default Work Unit\Public_Chaleur	
+
+State	ID	Name	State Group			Notes
+	383935498	Chaud	Public_Chaleur			
+	546945310	Bof	Public_Chaleur			
+	748895195	None	Public_Chaleur			
+	1310827675	Froid	Public_Chaleur			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	10920639	Froid	Public_Chaleur	\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Chaud_mrc2		
+	88881104	Froid	Public_Chaleur	\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Chaud		
+	146462981	Bof	Public_Chaleur	\Interactive Music Hierarchy\Default Work Unit\musique\mrc1-03\Public_Chaud		
+	430684666	Bof	Public_Chaleur	\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Chaud		
+	449551715	Chaud	Public_Chaleur	\Interactive Music Hierarchy\Default Work Unit\musique\mrc1-03\Public_Froid		
+	994956663	Chaud	Public_Chaleur	\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Froid		
+	1038537971	Froid	Public_Chaleur	\Interactive Music Hierarchy\Default Work Unit\musique\mrc1-03\Public_Chaud		
+
+Effect plug-ins	ID	Name	Type				Notes
+	4496003	Dirty_Washing_Machine	Wwise RoomVerb			
+	12200851	Dirty_Mother	McDSP FutzBox			
+	13002894	Punch_150Hz	iZotope Trash Filters			
+	16119108	Dry_AHP	Auro Headphone			
+	16854635	Mason_Jar	McDSP FutzBox			
+	44414154	Petite_Room	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
+	45967670	Intercom_Far	McDSP FutzBox			
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	49888338	Metal_Scrap_01	iZotope Trash Box Modeler			
+	59662939	Dialog_Too_Quiet	Wwise Compressor			
+	81463525	Sputter_Butter	McDSP FutzBox			
+	81972052	Auditorium	iZotope Hybrid Reverb			
+	86245554	Attack_Remover	Wwise Compressor			
+	101186172	Lost_In_Noise	McDSP FutzBox			
+	109045632	Vibrato	Wwise Flanger			
+	131511410	Let_The_Power_Fall	Wwise Stereo Delay			
+	136714882	_500ms_Per_Hour	Wwise Stereo Delay			
+	137869705	AK_Hamburg_Volksdorfer_Wald	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 9ms  
+	145028528	Static_Sibilance_Remover_Female	Wwise Parametric EQ			
+	147717240	LongDeepAlley	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	157136568	LivingRoom_02	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	157136571	LivingRoom_01	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	163894461	The_Negotiator	McDSP FutzBox			
+	176439046	Caught_in_a_loop	Wwise Stereo Delay			
+	181491360	Chopper_Gate	iZotope Trash Dynamics Mono			
+	184063449	Find_A_Station	McDSP FutzBox			
+	188676667	EquallySpacedEchoes	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	199095971	Dialog_Through_AC_Vents	Wwise Parametric EQ			
+	206205725	Rock_Wall	iZotope Hybrid Reverb			
+	227367115	Fuzzy_Phaser_01	iZotope Trash Box Modeler			
+	241751098	Turn_Off_The_Radio	McDSP FutzBox			
+	241826432	Dirtier_Mother	McDSP FutzBox			
+	250713245	Squashed	iZotope Trash Dynamics Mono			
+	259313001	Master_Dynamic	McDSP ML1			
+	266383236	Beetle	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	270226430	Medium_Room_AHP	Auro Headphone			
+	289504994	Space_Ship	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 7ms  
+	321269102	Buss_Clean	McDSP ML1			
+	328189932	Stinky_Baby	McDSP FutzBox			
+	354871512	Bassy_Phone	McDSP FutzBox			
+	369343119	SlapsEchoClose	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	380213756	Buss_Gentle	McDSP ML1			
+	389252396	Next_Room	Wwise Parametric EQ			
+	400317747	Hall_Large_TooBright	Wwise RoomVerb			
+	403168485	WideWithCars	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	403558130	Foley_FX_Loud	McDSP ML1			
+	415841907	Space_Garage	Wwise RoomVerb			
+	418265525	Gentle_Program_Compressor_Minus_14dB_RMS	Wwise Compressor			
+	427837776	Breaking_Up_01	iZotope Trash Distortion			
+	443144232	Loosy_Robot	McDSP FutzBox			
+	452269912	Dark_Cathedral	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms  
+	457883327	Noisy_Whisperer	McDSP FutzBox			
+	458979813	HamburgHarburgerSee_Slap_01	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 2ms 
+	458979814	HamburgHarburgerSee_Slap_02	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 2ms 
+	484890516	Church_Small_Wood	Wwise RoomVerb			
+	491961918	Forest	iZotope Hybrid Reverb			
+	502771456	ForestAuterlitz_WideOpen	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	506891147	Plate_Small	Wwise RoomVerb			
+	535667444	Bathroom1	Wwise Matrix Reverb			
+	539626058	ZVerb	iZotope Trash Delay			
+	542485447	Blues_Amp_01	iZotope Trash Distortion			Tip: Try putting the GuitarCabinet modelor after this.
+	565573866	Burnt_to_a_Crisp	McDSP FutzBox			
+	602546716	Room_Large	Wwise RoomVerb			
+	608103065	Master_Smart	McDSP ML1			
+	646657713	Intercom_Near	McDSP FutzBox			
+	654807232	Chipmunk	Wwise Pitch Shifter			
+	701863527	Inside_My_Head	Wwise RoomVerb			
+	702543456	Tunnel1	Wwise Matrix Reverb			
+	756136927	Dialog_Dynamic	McDSP ML1			
+	757855099	Bus_Compressor	iZotope Trash Dynamics Mono			
+	776837744	Born_In_1950	Wwise Parametric EQ			
+	777687596	OpenThreeEchoes	Wwise Convolution Reverb			Impulse response created by AudioEase.   © 2011 AudioEase.  All rights reserved.
+	817922150	Hi_Pass_500Hz	iZotope Trash Filters			
+	818993645	Filtered_Cathedral	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 
+	819943492	Fear_no_Evil	Wwise Harmonizer			
+	829640284	Radio_01	iZotope Trash Box Modeler			
+	835446372	Small_Metal_Room	iZotope Hybrid Reverb			
+	850977310	Medium_Church	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms 
+	863670792	Cellular_Overdrive	McDSP FutzBox			
+	867808496	Emergency	McDSP FutzBox			
+	877770554	Lost_in_a_Cathedral	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 
+	896389095	Live_Room	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
+	904087509	Bright_Room	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms  
+	908863738	HamburgParkhaus	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  
+	917825808	Mister_Evil	McDSP FutzBox			
+	924212203	Destruction_01	iZotope Trash Distortion			
+	927250686	Rhythmic_Talk	Wwise Tremolo			
+	935026360	Transient_Snap	iZotope Trash Dynamics Mono			
+	949863463	Many_Even_Harm_Notches	Wwise Flanger			
+	956931676	AK_Hamburg_Karl_Schneider_Halle	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms 
+	976499795	Crappy_Call	McDSP FutzBox			
+	992612203	MI6_Headquarters	McDSP FutzBox			
+	992902880	Small_Tiled_Room1	Wwise Matrix Reverb			
+	998958365	Hello_Mr_Bell	McDSP FutzBox			
+	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+	1034592503	AK_Hamburg_Fabrik_SCOUT	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 0ms 
+	1095846606	LongAndComplex	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1096258038	ForestAuterlitz_DenseClose	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1108222942	Classic_Baseball	McDSP FutzBox			
+	1110677034	Underwater_Echoes	Wwise Stereo Delay			
+	1125262053	Blue_Distant_Echoes	Wwise Stereo Delay			
+	1129405757	Old_Trash_Bin_01	iZotope Trash Box Modeler			
+	1130520278	Thin_Walls	iZotope Trash Box Modeler			
+	1139053157	DistantBuilding_MicsClose	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1144018367	Plate_Large	Wwise RoomVerb			
+	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	1165124324	Emergency_Channel	McDSP FutzBox			
+	1176195720	Beam_Me_Uo	McDSP FutzBox			
+	1182031195	Hail_to_the_Chief	McDSP FutzBox			
+	1182528782	Scary_Bits	iZotope Trash Delay			
+	1182561210	Cut_3dB_10KHz	Wwise Parametric EQ			
+	1193269400	Boost_Mobiles_01	iZotope Trash Multiband Distortion			Tip: Great for boosting engine loops. Adjust crossovers to find favored frequncies in engine to enhance. 
+	1198215643	Boomerang	Wwise Tremolo			
+	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
+	1206840828	Annoying_Caller	McDSP FutzBox			
+	1218058898	Peugeot_PartnerBackClosed	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1219105571	Dirty_Metal_01	iZotope Trash Box Modeler			
+	1226008853	Big_Bottom_01	iZotope Trash Multiband Distortion			
+	1232017842	LR_Slap_with_CrossFeed	Wwise Stereo Delay			
+	1237275451	Octave_Up	Wwise Pitch Shifter			
+	1252796875	Light_Expander	Wwise Expander			
+	1277204892	Colossal_Cathedral	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 
+	1284463276	Industrial_Noize	McDSP FutzBox			
+	1285995230	Into_Thin_Air	McDSP FutzBox			
+	1291433344	Bass	Wwise Flanger			
+	1293178626	In_My_Car	Wwise Parametric EQ			
+	1297179092	Under_Pillow_Snooze	McDSP FutzBox			
+	1310797273	Master_Clean	McDSP ML1			
+	1311551109	Vocal_Smooth	McDSP ML1			
+	1355063951	The_Field_01	iZotope Trash Box Modeler			
+	1381302184	Bright_Echo_Chamber	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms 
+	1381911073	Next_Door	iZotope Trash Filters			
+	1396341940	Tape_Slap_Back	iZotope Trash Delay			
+	1403632385	Dialing_For_Dollars	McDSP FutzBox			
+	1409120697	Noisy_Neighbors	McDSP FutzBox			
+	1410098599	Get_What_You_Pay_For	McDSP FutzBox			
+	1416967478	All_Buttons_IN	Wwise Compressor			
+	1422441488	Telemarkets_Standard_Issue	McDSP FutzBox			
+	1431209347	One_Tap_One_Second	Wwise Delay			
+	1431265797	Monsterize	Wwise Pitch Shifter			
+	1434847377	Ma_Bell	McDSP FutzBox			
+	1443902288	_1_Second_Delay	Wwise Stereo Delay			
+	1451936678	Thumb_Knob_Tuning	McDSP FutzBox			
+	1459179808	Good_Buddy_10_4	McDSP FutzBox			
+	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
+	1463676659	Family_Meeting	McDSP FutzBox			
+	1487150281	Bigger_Boom	iZotope Trash Dynamics Mono			
+	1491229033	Lecture_Hall	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms
+	1516512741	Ballpark_Far_Away	McDSP FutzBox			
+	1520064353	Hall_Medium_Bright	Wwise RoomVerb			
+	1521978093	Big_Church_AHP	Auro Headphone			
+	1525857904	Call_Before_Curfew	McDSP FutzBox			
+	1541110787	DistantEcho	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1551236760	Small_Wooden_Room1	Wwise Matrix Reverb			
+	1552963293	HamburgStadtpark_Stage_Reflections_Gated	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms 
+	1572628435	Phone_Home	McDSP FutzBox			
+	1588715066	Echoes_Linear	Wwise Delay			
+	1590660382	Nearly_Forever	Wwise Delay			
+	1608695667	Vocal_Louder_n_Dynamic	McDSP ML1			
+	1609411046	OpenShortTwoEchoes	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1655770832	High_Freq_Cut_11	Wwise Parametric EQ			
+	1655770833	High_Freq_Cut_10	Wwise Parametric EQ			
+	1674078407	Chorus_Like	Wwise Flanger			
+	1675424737	Extreme_Limiting_1	Wwise Peak Limiter			
+	1675424738	Extreme_Limiting_2	Wwise Peak Limiter			
+	1675424739	Extreme_Limiting_3	Wwise Peak Limiter			
+	1692375042	Look_Ma_No_Hands	McDSP FutzBox			
+	1706684651	Plate_Medium	Wwise RoomVerb			
+	1711423976	Many_Odd_Harm_Notches	Wwise Flanger			
+	1721929831	LongSixWideEchoes	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1726449784	Large_Hall_AHP	Auro Headphone			
+	1727751784	AK_StKatharinen	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 
+	1735130781	Aliasing	Wwise Tremolo			
+	1751326353	Short_Hall	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms
+	1756167208	Staircase	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1759944409	Cut_3dB_100Hz	Wwise Parametric EQ			
+	1766891717	Sign_of_the_Times	McDSP FutzBox			
+	1782142158	DistantBuilding_MicsFar	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1786655400	Snake_TV	McDSP FutzBox			
+	1796269791	Damped_Chamber	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms 
+	1807395375	AK_Hamburg_Harburger_See	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 2ms 
+	1820854077	Noise_Gate_Fast_Attack	Wwise Expander			
+	1824661933	Big_Room_AHP	Auro Headphone			
+	1831461191	Bathroom	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1838115896	AK_Hamburg_Fabrik	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 0ms  
+	1861883076	Whats_Your_Number	McDSP FutzBox			
+	1863245162	Noise_Gate_Slow_Attack	Wwise Expander			
+	1866712626	High_Freq_Cut_8	Wwise Parametric EQ			
+	1866712627	High_Freq_Cut_9	Wwise Parametric EQ			
+	1866712632	High_Freq_Cut_2	Wwise Parametric EQ			
+	1866712633	High_Freq_Cut_3	Wwise Parametric EQ			
+	1866712635	High_Freq_Cut_1	Wwise Parametric EQ			
+	1866712636	High_Freq_Cut_6	Wwise Parametric EQ			
+	1866712637	High_Freq_Cut_7	Wwise Parametric EQ			
+	1866712638	High_Freq_Cut_4	Wwise Parametric EQ			
+	1866712639	High_Freq_Cut_5	Wwise Parametric EQ			
+	1873201575	Talkie_Squelch_01	iZotope Trash Multiband Distortion			
+	1889683967	Drums_Loud	McDSP ML1			
+	1896558304	Famous_Church	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms 
+	1904434771	Medium_Room1	Wwise Matrix Reverb			
+	1922795580	ComplexEcho	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	1972729069	Prank_Caller	McDSP FutzBox			
+	1975157802	Calling_the_Shoe_Phone	McDSP FutzBox			
+	1976939195	Deep	Wwise Flanger			
+	1984330376	Lo_Pass_500Hz	iZotope Trash Filters			
+	1986094670	AK_Hamburg_Pinguin_Buro	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 0ms  
+	1990128658	Room_Medium	Wwise RoomVerb			
+	2006155104	SmoothIntimate	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2036127921	Breaker_One_Niner	McDSP FutzBox			
+	2038996943	Plate_Sizzle	Wwise RoomVerb			
+	2039080384	Dialog_Maximizer_1	McDSP ML1			
+	2039080386	Dialog_Maximizer_3	McDSP ML1			
+	2039080387	Dialog_Maximizer_2	McDSP ML1			
+	2065495031	Something_Old_Something_New	McDSP FutzBox			
+	2078611552	Metallic_Hall	iZotope Hybrid Reverb			
+	2080872166	Brick_Wall_Minus_6dB_Peak_Fast_Release	Wwise Peak Limiter			
+	2098638826	Underground_Parking1	Wwise Matrix Reverb			
+	2108510837	In_Your_Imagination	McDSP FutzBox			
+	2125556882	Screech_01	iZotope Trash Multiband Distortion			
+	2135883084	Nasty_Radio	Wwise Peak Limiter			
+	2151769829	City_Streets	iZotope Hybrid Reverb			
+	2164542717	Golden_Gate_Phone	McDSP FutzBox			
+	2171127646	Hall_Conversation	Wwise RoomVerb			
+	2171939413	Dialog_Leveler_Hard	Wwise Compressor			
+	2180422931	One_Tap_Quarter_Second	Wwise Delay			
+	2198133169	Hallway	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2202047219	Few_Even_Notches	Wwise Flanger			
+	2204079748	City_Center	iZotope Hybrid Reverb			
+	2213149580	AK_BlueNoise_Room_03	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms  
+	2213149581	AK_BlueNoise_Room_02	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms 
+	2213149582	AK_BlueNoise_Room_01	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
+	2230265344	Very_Bad_Connection	Wwise Tremolo			
+	2236861442	iRobot	iZotope Trash Delay			
+	2245396720	Gibberish	McDSP FutzBox			
+	2246511750	Medium_Wood_Room	iZotope Hybrid Reverb			
+	2258521792	Brick_Wall_Minus_1dB_Peak_Slow_Release	Wwise Peak Limiter			
+	2265839006	Not_A_Yellow_Submarine	Wwise RoomVerb			
+	2272713232	Small_Wood_Room	iZotope Hybrid Reverb			
+	2300955955	Wind_Sweeper	iZotope Trash Filters			Tip: Assign RTPC to Filter 1 LFO Period to vary wind. Good for repurposing existing wind loops.
+	2301205192	Dialing_Long_Distance	McDSP FutzBox			
+	2301880513	Many_Even_Harm_Peaks	Wwise Flanger			
+	2306983855	Message_in_a_Bottle	McDSP FutzBox			
+	2307981147	HamburgStadtpark_ER	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
+	2326579992	Hiss_Me_With_Your_Best_Shot	McDSP FutzBox			
+	2336333712	Home_Movies	McDSP FutzBox			
+	2348467270	HamburgVolksdorferWald_Diffusion	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 9ms  
+	2352968372	Foley_FX_Transparent	McDSP ML1			
+	2358985440	Peugeot_PartnerFront	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2385860425	Black_Canyon	iZotope Trash Delay			
+	2389409386	Vocal_Dynamic	McDSP ML1			
+	2394809124	Very_Slow_Modulation	Wwise Tremolo			
+	2420937077	NarrowShortAlley	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2447951448	Small_Room_AHP	Auro Headphone			
+	2450756575	Blue_Reflective_Room	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
+	2474412339	Chips_n_Dip	McDSP FutzBox			
+	2496136362	Just_Noise_01	iZotope Trash Distortion			
+	2511817218	Locked_In_a_Cell	McDSP FutzBox			
+	2513915904	Hall_Large	Wwise RoomVerb			
+	2514884055	Inspector_Gadget	McDSP FutzBox			
+	2518477014	As_Good_as_it_Gets	McDSP FutzBox			
+	2530182247	FireDepartment	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2539557199	Treble	Wwise Flanger			
+	2539660297	Super_Duper	McDSP FutzBox			
+	2542900238	Medium_Wood_Hall	iZotope Hybrid Reverb			
+	2547645744	Boost_3dB_100Hz	Wwise Parametric EQ			
+	2561769505	Your_Conscience	McDSP FutzBox			
+	2565621323	Cold_Caller	McDSP FutzBox			
+	2568359573	Secret_message	Wwise Harmonizer			
+	2568407992	Church	iZotope Hybrid Reverb			
+	2584176708	Guitar_Cabinet_01	iZotope Trash Box Modeler			
+	2586115183	Glassy_Chamber	McDSP FutzBox			
+	2600020588	Bright_Metallic_Space	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 7ms  
+	2616252188	Can_You_Hear_Me_Now_1	McDSP FutzBox			
+	2616252191	Can_You_Hear_Me_Now_2	McDSP FutzBox			
+	2618456645	Retro_Fi	iZotope Trash Delay			
+	2619342215	Drums_Crushed	McDSP ML1			
+	2632948662	Digital_1_Second	iZotope Trash Delay			
+	2644834918	AK_Brasilien_Halle	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 10ms  
+	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
+	2652646462	Dialog_Leveler_Soft	Wwise Compressor			
+	2653529179	Three_Voices	Wwise Harmonizer			
+	2656259783	PA_Announcement1	Wwise Matrix Reverb			
+	2662085913	Large_Church1	Wwise Matrix Reverb			
+	2667647788	Single_Band_1Khz_Wide	Wwise Parametric EQ			
+	2676551150	High_School_PA	McDSP FutzBox			
+	2689042248	Attic_01	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2689042251	Attic_02	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2703414785	Wood_Floor_01	iZotope Trash Box Modeler			
+	2706410374	Monster_Foot_Steps_01	iZotope Trash Distortion			
+	2724604034	Talk_Me_Back	McDSP FutzBox			
+	2737052752	Attention_All_Shoppers	McDSP FutzBox			
+	2755291684	Pumping_and_Breathing_1	Wwise Compressor			
+	2755291686	Pumping_and_Breathing_3	Wwise Compressor			
+	2755291687	Pumping_and_Breathing_2	Wwise Compressor			
+	2770672812	Church_AHP	Auro Headphone			
+	2773116543	Digital_500ms	iZotope Trash Delay			
+	2773775470	Double_Double	McDSP FutzBox			
+	2774187880	Mind_The_Gap	McDSP FutzBox			
+	2781002665	Hit_the_Road_Jack	McDSP FutzBox			
+	2781261543	Brick_Wall_Minus_6dB_Peak_Slow_Release	Wwise Peak Limiter			
+	2791153688	Hall_Small	Wwise RoomVerb			
+	2793905659	Family_Classics	McDSP FutzBox			
+	2804988072	Crazy_Copter	iZotope Trash Filters			
+	2805769450	Special_Effect_1	Wwise Flanger			
+	2824393892	Transistor_Radio	iZotope Trash Filters			
+	2839397017	Noise_Gate	iZotope Trash Dynamics Mono			
+	2849147824	Medium	Wwise RoomVerb			
+	2851955642	Vocal_Louder	McDSP ML1			
+	2864638196	Small_Standard_Room_AHP	Auro Headphone			
+	2874313760	Double_the_Distortion	McDSP FutzBox			
+	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
+	2900412812	Robotic_Trash	Wwise RoomVerb			
+	2901222554	When_Phones_Attack	McDSP FutzBox			
+	2945072214	My_Closet	Wwise RoomVerb			
+	2949243095	Hall_Small_Bright	Wwise RoomVerb			
+	2952825346	Dual_Filters_Radio_Comm	Wwise Parametric EQ			
+	2955757691	Into_Thinner_Air	McDSP FutzBox			
+	2955946001	ComplexDistantEcho	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2957683562	Classroom	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2976146303	TwoFarBuildings	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2976941864	Smal_Reflection_Room_AHP	Auro Headphone			
+	2993824568	PheeeewEcho_02	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2993824571	PheeeewEcho_01	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	2995775460	Room_Small	Wwise RoomVerb			
+	2998002419	Boost_3dB_10KHz	Wwise Parametric EQ			
+	3007190083	AK_Hamburg_Echo_Chamber	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  
+	3008492597	DistantSlaps	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3013737254	Bass_Remover_8	Wwise Parametric EQ			
+	3013737255	Bass_Remover_9	Wwise Parametric EQ			
+	3013737256	Bass_Remover_6	Wwise Parametric EQ			
+	3013737257	Bass_Remover_7	Wwise Parametric EQ			
+	3013737258	Bass_Remover_4	Wwise Parametric EQ			
+	3013737259	Bass_Remover_5	Wwise Parametric EQ			
+	3013737260	Bass_Remover_2	Wwise Parametric EQ			
+	3013737261	Bass_Remover_3	Wwise Parametric EQ			
+	3013737263	Bass_Remover_1	Wwise Parametric EQ			
+	3014974811	AK_Stair_Way_Hall	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 7ms  
+	3020876761	Teleconference_Today	McDSP FutzBox			
+	3025917178	Standard	Wwise Flanger			
+	3036946058	Inside_Your_Head	Wwise RoomVerb			
+	3037110550	AK_Hamburg_Parkhaus	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  
+	3043085106	High_Impact	Wwise Compressor			
+	3054266423	Ford_TransitVanRear	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3059984139	Tunnel	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3117896785	Big_Pistol_01	iZotope Trash Multiband Distortion			
+	3128723539	Gated_Metallic_Reflections	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 7ms  
+	3157398371	Few_Odd_Harm_Notches	Wwise Flanger			
+	3164629247	Holy	Wwise RoomVerb			
+	3170345216	Exploder_01	iZotope Trash Multiband Distortion			
+	3172086564	AK_MediumChurch	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms 
+	3209444191	Static_Sibilance_Remover_Male	Wwise Parametric EQ			
+	3216246379	Space_Dreaming	Wwise RoomVerb			
+	3233208835	Buss_Loud	McDSP ML1			
+	3235663592	Engine_Grime	McDSP FutzBox			
+	3247707937	ForestAuterlitz_DenseFar	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3250156175	Say_what	Wwise Tremolo			
+	3250495146	Honda_ElementRear	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3270965175	Train_BlueAngel	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3287676558	Large_Bright_Space	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms
+	3289372100	Noisy_Phone	McDSP FutzBox			
+	3290519051	Aluminium_Tank	Wwise RoomVerb			
+	3332138788	Few_Even_Harm_Peaks	Wwise Flanger			
+	3344164943	HamburgStadtpark_Stage_Reflections	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms 
+	3347150349	Big_Guns_01	iZotope Trash Distortion			
+	3351723372	Underwater_01	iZotope Trash Box Modeler			
+	3354577677	Fast_LF_Tremolo	Wwise Tremolo			
+	3382838400	Bucket_Head	McDSP FutzBox			
+	3395979371	Straight_Delay	Wwise Stereo Delay			
+	3407225994	Phone_Booth	Wwise RoomVerb			
+	3422223641	Peak_Limiter	iZotope Trash Dynamics Mono			
+	3442768367	Hall_Large_Dark	Wwise RoomVerb			
+	3451596814	Hall_Medium	Wwise RoomVerb			
+	3465783835	WideEcho	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3487820010	One_Tap_Half_Second	Wwise Delay			
+	3491912472	Club_Music_Distant_02	Wwise Parametric EQ			
+	3491912473	Club_Music_Distant_03	Wwise Parametric EQ			
+	3491912475	Club_Music_Distant_01	Wwise Parametric EQ			
+	3491912478	Club_Music_Distant_04	Wwise Parametric EQ			
+	3494518574	LoudEcho	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3495314524	Lets_Do_Lunch	McDSP FutzBox			
+	3497757918	Fast_LF_Tremolo_No_Smoothing	Wwise Tremolo			
+	3499277326	Large_Warehouse	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 0ms  
+	3507681338	Helicopter_Sikorski	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3534777302	Keep_yer_Quarter	McDSP FutzBox			
+	3546444380	Big_Garage1	Wwise Matrix Reverb			
+	3559982155	Hall_Stop_Screaming	Wwise RoomVerb			
+	3563901164	Halfway_There	Wwise Tremolo			
+	3565773002	Medium_Metal_Room	iZotope Hybrid Reverb			
+	3602899718	Crowd_Control	McDSP FutzBox			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+	3614057183	_1_Frame_Delay	Wwise Stereo Delay			
+	3631438710	Cavern	iZotope Hybrid Reverb			
+	3632432029	LongNoEchoes	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3647366771	AK_Luna_Studio	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
+	3648407060	AK_Hamburg_Stadtpark_02	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms  
+	3648407063	AK_Hamburg_Stadtpark_01	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
+	3672549550	Master_Soft	McDSP ML1			
+	3673681183	Large_Bright_Chamber1	Wwise Matrix Reverb			
+	3674505091	High_End_Sizzle_01	iZotope Trash Multiband Distortion			
+	3701691487	Hall_Large_Bright	Wwise RoomVerb			
+	3711597390	Dont_Cry_For_Me	McDSP FutzBox			
+	3712787800	eq_succes	Wwise Parametric EQ			
+	3751907213	Charlie	McDSP FutzBox			
+	3774700109	Rock_Amp_01	iZotope Trash Distortion			Tip: Try putting the GuitarCabinet modelor after this.
+	3783794613	Tin_Can_01	iZotope Trash Box Modeler			
+	3788459820	CloseEcho	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3788750441	Other_Room_01	iZotope Trash Box Modeler			
+	3788924735	Bedroom	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	3792279061	sfx_reverb	Wwise Convolution Reverb			
+	3796564934	Hard_Knee_Minus_3dB_RMS	Wwise Compressor			
+	3797397085	Resonant_Room	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms   
+	3805599527	Progressing_Backwards	McDSP FutzBox			
+	3828758305	Dark_Hall	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms
+	3851006675	Secret_message_Distant	Wwise Harmonizer			
+	3869805701	Ponch_and_John	McDSP FutzBox			
+	3877457529	Gray_Tunnel	iZotope Trash Delay			
+	3880245921	Dirty_Double	iZotope Trash Delay			
+	3900114836	Metal_Hangar	Wwise RoomVerb			
+	3928039743	Buzz_Me_In	McDSP FutzBox			
+	3948262040	Octave_Down	Wwise Pitch Shifter			
+	4008017156	Light_Compression	iZotope Trash Dynamics Mono			
+	4022399812	HamburgStadtpark_Dense_Reflections	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms 
+	4037179432	Car_Interior	iZotope Hybrid Reverb			
+	4063189299	Corridor	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	4069760308	Wah_Wah_Bass	iZotope Trash Filters			
+	4070809840	Sonar_Pulse	iZotope Trash Filters			Good with underwater loops to help simulate sonar pulses. Change the speed by adjusting the LFO Period.
+	4090927170	AK_BerlinTeldex	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms
+	4092382052	AK_Berlin_Stadtbad	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms  
+	4096492265	Bigger_Footsteps_01	iZotope Trash Distortion			
+	4103555700	Duckin_The_Rain	McDSP FutzBox			
+	4109114357	MusicBed_Limiter_2	McDSP ML1			
+	4109114358	MusicBed_Limiter_1	McDSP ML1			
+	4113267698	Hall_Guns	Wwise RoomVerb			
+	4127371909	Big_Impacts_01	iZotope Trash Distortion			
+	4136714357	Few_Odd_Harm_Peaks	Wwise Flanger			
+	4143868620	Bass_Remover_11	Wwise Parametric EQ			
+	4143868621	Bass_Remover_10	Wwise Parametric EQ			
+	4156197984	Digital_Breakup	McDSP FutzBox			
+	4180008548	Intimate_Room	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms  
+	4180247629	New_Wwise_Parametric_EQ	Wwise Parametric EQ			
+	4185773483	Dual_Filters_Reset	Wwise Parametric EQ			
+	4185988630	Minus_6dB_Limit	iZotope Trash Dynamics Mono			
+	4186896960	Honda_Element	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	4190220820	Voice_CenterOnly_Lowered	Wwise Pitch Shifter			
+	4202347640	Repeat_after_me	Wwise Harmonizer			
+	4212217734	Personnel_Advisor	Wwise Stereo Delay			
+	4213309952	SchoolHall	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	4214592251	Crowded_Hall	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 10ms 
+	4236290354	Many_Odd_Harm_Peaks	Wwise Flanger			
+	4239446561	Dual_Filters_Narrow_Bandwidth	Wwise Parametric EQ			
+	4252409404	Need_a_Land_Line	McDSP FutzBox			
+	4253101658	Filter_Sweep	iZotope Trash Filters			Tip 1: Assign Filter 3 Frequency and Resonance to RTPC's and use on interacvite music to create breakdowns.  Tip 2: Assign Filter 3 Frequency to cut the bottom end during heavy SFX scenes, like engines, to help them sit better in the game mix and not get lost in the explosions.
+	4257784067	No_Attack	iZotope Trash Dynamics Mono			
+	4266099036	Alley_Intimate	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	4269441574	Heavy_Metal	Wwise Flanger			
+	4273684962	ForestAuterlitz_BetweenTrees	Wwise Convolution Reverb			Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.
+	4279410238	Buss_Dynamic	McDSP ML1			
+	4286906788	Gentle_Program_Compressor_Minus_20dB_RMS	Wwise Compressor			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	22125023	pour8short	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\pour8short_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\pour8short		101440
+	48953918	mrc1-03	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\mrc1-03_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc1-03\mrc1-03		16850216
+	49204470	AMB_INT_Party_50_people	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\AMB_INT_Party_50_people_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB_INT_Party_50_people		34058976
+	52904399	firecocktail	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\firecocktail_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\firecocktail		431848
+	58281665	Public_Chaud	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_chaud_12_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud		967028
+	83356018	AMB_INT_Party_50_people	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\AMB_INT_Party_50_people_8F38F0FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB_Bar\AMB_INT_Party_50_people		34059040
+	90947857	Pour3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Pour3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\Pour3		153664
+	98627056	Public_Chaud	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_chaud_13_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud		1012476
+	128335835	Public_Chaud	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_chaud_10_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud		967028
+	133032431	DJ_Transition_chier_30	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Transition_chier_30_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\DJ_Transition_chier_30		1910672
+	168504978	shake loop	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\shake loop_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shake\shake loop		958528
+	241335340	Recipe_Fail	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Recipe_Fail_8B4757C4.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Recipe_Fail		575708
+	241459180	Cursor_Select	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Cursor_Select_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cursor_Select		43432
+	269668124	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_22_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		1124084
+	285178446	glass 2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glass 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glass\glass 2		311360
+	302765304	Drink_serve_5	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Drink_serve_5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\drink_serve\Drink_serve_5		180932
+	304207026	Public_Chaud_mrc1	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Public_Chaud_mrc1_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc1-03\Public_Chaud_mrc1		1152384
+	318157176	stir1	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\stir1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\stir\stir1		1246336
+	320335358	glass 1	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glass 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glass\glass 1		344128
+	345588360	stir2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\stir2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\stir\stir2		2359360
+	345749945	mrc3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\mrc3_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\mrc3		16318496
+	364552778	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_26_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		803472
+	411581490	Drink_serve_4	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Drink_serve_4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\drink_serve\Drink_serve_4		426816
+	413377259	Public_Froid	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_Froid_20_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Froid		967028
+	439093706	glaconsloop	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glaconsloop_9E5AC1AE.wem		\Actor-Mixer Hierarchy\Default Work Unit\glaconsloop		8544
+	456749166	pour6short	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\pour6short_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\pour6short		100416
+	474855732	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_24_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		988180
+	490914940	pour5dhort	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\pour5dhort_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\pour5dhort		55360
+	530742618	Drink_serve_3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Drink_serve_3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\drink_serve\Drink_serve_3		306184
+	592174307	DJ_EndingMonolog_31	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_EndingMonolog_31_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3_01\DJ_EndingMonolog_31		38321416
+	597962641	DJ_Saxo_connard_16	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Saxo_connard_16_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc1-03\DJ_Saxo_connard_16		921096
+	599605051	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_25_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		945780
+	621668866	Public_Chaud_mrc3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Public_Chaud_mrc3_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud_mrc3		3797892
+	650826822	Public_Chaud	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_chaud_29_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud		960064
+	652916030	pour1short	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\pour1short_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\pour1short		96320
+	675803030	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_15_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		1014344
+	679777165	Public_Froid	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_Froid_21_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Froid		882356
+	686942828	glaconloop2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glaconloop2_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glacon\glaconloop2		688192
+	698364743	Drink_serve_6	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Drink_serve_6_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\drink_serve\Drink_serve_6		390580
+	709265911	shake loop 2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\shake loop 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shake\shake loop 2		1005632
+	730694304	Public_Chaud	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_chaud_14_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud		1257448
+	736316533	DJ_EndGame	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_EndGame_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\DJ_EndGame		592772
+	749632793	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_23_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		1144840
+	750036927	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_27_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		1036180
+	750238559	shake loop 3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\shake loop 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shake\shake loop 3		441408
+	810781598	mrc2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\mrc2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\mrc2		18092376
+	814533814	Public_Chaud	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_chaud_11_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\Public_Chaud		967028
+	820946279	Public_Froid	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_Froid_17_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Froid		1088176
+	828077476	glaconloop3	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glaconloop3_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glacon\glaconloop3		1818688
+	834279979	AVOUS	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_AVOUS_28_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc3\AVOUS		918744
+	836670967	pour3short	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\pour3short_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\pour3short		88128
+	882264863	Public_Froid	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_Froid_18_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Froid		1085572
+	924389728	pour2short	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\pour2short_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\pour2short		165952
+	935758069	Public_Chaud_mrc2	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\Public_Chaud_mrc2_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Chaud_mrc2		6091652
+	967156497	pour4short	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\pour4short_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\shots\pour4short		109632
+	983392952	Commande_recue	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\116779__domrodrig__ringing-bell-happy_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Commande_recue		551016
+	986367958	glaconsloop	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\glaconsloop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\glacon\glaconsloop		217152
+	990812942	charlie puth remix 80-01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\charlie puth remix 80-01_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\menu\music menu\charlie puth remix 80-01		14817664
+	1007831171	Public_Froid	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\SFX\DJ_Public_Froid_19_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\musique\mrc2\Public_Froid		1265160
+
+Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	8071170	Filtered_Cathedral	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_964036AA.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Cathedrals\Filtered_Cathedral	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 	1077968
+	13000250	AK_Hamburg_Volksdorfer_Wald	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Volksdorfer Wald_C721C0A9.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Exteriors\AK_Hamburg_Volksdorfer_Wald	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 9ms  	864336
+	13019290	Ford_TransitVanRear	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Ford_TransitVanRear_3B24F85A.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Transport\Ford_TransitVanRear	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	257840
+	13682022	Train_BlueAngel	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Train_BlueAngel_D97F12CD.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Transport\Train_BlueAngel	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	423520
+	28968810	City_Streets	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\City Streets_B99B8E72.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\City_Streets		100420
+	30489455	ForestAuterlitz_WideOpen	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_WideOpen_F480BA48.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Forest\ForestAuterlitz_WideOpen	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	901280
+	31744546	Honda_Element	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Honda_Element_C8EBFFC8.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Transport\Honda_Element	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	14752
+	42240585	LongSixWideEchoes	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LongSixWideEchoes_A5DD755F.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\LongSixWideEchoes	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	450848
+	46969464	AK_Stair_Way_Hall	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Stair Way Hall_85477ADC.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Large Spaces\AK_Stair_Way_Hall	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 7ms  	968608
+	58924823	Alley_Intimate	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_AlleyIntimate_D26BEF4E.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Alley\Alley_Intimate	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	298080
+	60907913	Attic_02	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Attic_02_F60CFD39.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\Attic_02	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	120192
+	71612166	Cavern	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Cavern_98991E9E.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Cavern		58660
+	75421461	Metallic_Hall	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Metallic Hall_2093BA28.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Metallic_Hall		58660
+	88530504	AK_Berlin_Stadtbad	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Stadtbad_C5C0ABDE.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Halls\AK_Berlin_Stadtbad	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms  	958160
+	92795692	LongNoEchoes	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LongNoEchoes_0ACA2939.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\LongNoEchoes	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	627040
+	95168818	Medium_Metal_Room	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Medium Metal Room_1160A2DC.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Medium_Metal_Room		58660
+	99990636	Dark_Cathedral	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_23628307.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Cathedrals\Dark_Cathedral	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms  	1146880
+	101091315	Colossal_Cathedral	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_DCE9E589.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Cathedrals\Colossal_Cathedral	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 	1464496
+	103650773	Auditorium	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Auditorium_5A7AD8D2.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Auditorium		135460
+	145606015	Bedroom	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Bedroom_2C11C86C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\Bedroom	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	263104
+	152920738	HamburgStadtpark_ER	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_F1295373.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Exteriors\HamburgStadtpark_ER	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	28320
+	161915250	Other_Room_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_7836889F.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Other_Room_01		5764
+	162018684	Short_Hall	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_67BBAE66.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Halls\Short_Hall	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms	809488
+	185425062	Bright_Echo_Chamber	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Echo Chamber_79B96FE9.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Rooms\Bright_Echo_Chamber	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms 	466304
+	191326382	Forest	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Forest_914E6796.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Forest		58660
+	195840689	HamburgStadtpark_Stage_Reflections	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 02_B639B2CE.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Exteriors\HamburgStadtpark_Stage_Reflections	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms 	339872
+	198373678	LongDeepAlley	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_LongDeepAlley_00AD0D88.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Alley\LongDeepAlley	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	243264
+	209885183	PheeeewEcho_02	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_PheeeewEcho_02_F719FEF0.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\PheeeewEcho_02	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	288384
+	211286947	Guitar_Cabinet_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_3B59BEE5.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Guitar_Cabinet_01		3840
+	217396452	Honda_ElementRear	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Honda_ElementRear_768C82C6.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Transport\Honda_ElementRear	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	24000
+	237532661	Intimate_Room	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Karl Schneider Halle_CC689982.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Rooms\Intimate_Room	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms  	458864
+	238341605	Bright_Room	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 02_DA69E80A.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Rooms\Bright_Room	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms  	496016
+	240375163	ForestAuterlitz_BetweenTrees	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_BetweenTrees_4953BEF6.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Forest\ForestAuterlitz_BetweenTrees	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	786208
+	280502388	Medium_Wood_Room	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Medium Wood Room_04488EF1.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Medium_Wood_Room		106180
+	294815814	SmoothIntimate	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_SmoothIntimate_A6FB853E.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\SmoothIntimate	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	488912
+	298944768	Tin_Can_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_B658F06C.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Tin_Can_01		2620
+	299482527	HamburgVolksdorferWald_Diffusion	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Volksdorfer Wald_A8AF2146.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Exteriors\HamburgVolksdorferWald_Diffusion	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 9ms  	420752
+	304471121	Gated_Metallic_Reflections	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Stair Way Hall_028856EC.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Rooms\Gated_Metallic_Reflections	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 7ms  	797360
+	335444096	Fuzzy_Phaser_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_1E73F104.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Fuzzy_Phaser_01		6560
+	335771893	Bathroom	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Bathroom_911B5290.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\Bathroom	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	223472
+	358895006	AK_BlueNoise_Room_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 01_3FBD5043.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Rooms\AK_BlueNoise_Room_01	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	721040
+	364607080	LongAndComplex	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LongAndComplex_0250CB9A.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\LongAndComplex	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	407424
+	417701481	AK_Brasilien_Halle	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Brasilien Halle_D03C07E7.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Halls\AK_Brasilien_Halle	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 10ms  	867888
+	427082242	EquallySpacedEchoes	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_EquallySpacedEchoes_2FD490A5.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\EquallySpacedEchoes	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	402176
+	432605131	OpenShortTwoEchoes	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_OpenShortTwoEchoes_D7CD207B.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\OpenShortTwoEchoes	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	382832
+	433739779	HamburgStadtpark_Stage_Reflections_Gated	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 02_3BC22A4B.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Exteriors\HamburgStadtpark_Stage_Reflections_Gated	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms 	168512
+	435591620	LivingRoom_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_LivingRoom_01_2A5F7B34.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\LivingRoom_01	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	289952
+	459775695	Old_Trash_Bin_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_87AE6458.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Old_Trash_Bin_01		4236
+	468134466	Small_Metal_Room	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Small Metal Room_97827352.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Small_Metal_Room		58660
+	475887784	Dirty_Metal_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_1F03AA62.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Dirty_Metal_01		5060
+	477192351	Resonant_Room	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 01_1539EE68.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Rooms\Resonant_Room	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms   	90816
+	480496863	Hallway	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Hallway_8069A9DB.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\Hallway	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	336208
+	507160656	ForestAuterlitz_DenseFar	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_DenseFar_4298018C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Forest\ForestAuterlitz_DenseFar	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	1120800
+	512867118	WideWithCars	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_WideWithCars_AB2CC2B7.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\WideWithCars	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	237856
+	522077337	SchoolHall	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_SchoolHall_67EE7626.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\SchoolHall	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	942272
+	535111107	Lost_in_a_Cathedral	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_F167436A.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Cathedrals\Lost_in_a_Cathedral	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 	1410016
+	536838777	SlapsEchoClose	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_SlapsEchoClose_8520F115.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\SlapsEchoClose	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	279216
+	538281099	Damped_Chamber	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Echo Chamber_57C6FE7C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Rooms\Damped_Chamber	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms 	182416
+	539027192	Space_Ship	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Stair Way Hall_5B811A59.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Large Spaces\Space_Ship	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 7ms  	870368
+	549794241	Small_Wood_Room	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Small Wood Room_F1072961.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Small_Wood_Room		58660
+	569254387	Tunnel	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Tunnel\AE_Tunnel_BCC8803E.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Tunnel\Tunnel	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	446752
+	569393832	Peugeot_PartnerFront	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Peugeot_PartnerFront_457EB7DB.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Transport\Peugeot_PartnerFront	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	127216
+	584011173	Peugeot_PartnerBackClosed	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Peugeot_PartnerBackClosed_C12F7471.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Transport\Peugeot_PartnerBackClosed	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	129648
+	584321412	AK_Hamburg_Stadtpark_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_E0626106.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Exteriors\AK_Hamburg_Stadtpark_01	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	655488
+	590155989	Underwater_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_C05A8D5E.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Underwater_01		3852
+	596456986	TwoFarBuildings	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_TwoFarBuildings_E78A06BB.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\TwoFarBuildings	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	190336
+	602284699	FireDepartment	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Misc\AE_FireDepartment_C79A785C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Misc\FireDepartment	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	295680
+	606914820	Car_Interior	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Car Interior_FDFEF740.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Car_Interior		58660
+	609174261	Crowded_Hall	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Brasilien Halle_D45914F6.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Halls\Crowded_Hall	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 10ms 	928656
+	612082618	HamburgHarburgerSee_Slap_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Harburger See_CB6DF326.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Exteriors\HamburgHarburgerSee_Slap_01	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 2ms 	441568
+	634339356	AK_Hamburg_Karl_Schneider_Halle	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Karl Schneider Halle_576716B6.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Rooms\AK_Hamburg_Karl_Schneider_Halle	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms 	697808
+	647831537	Corridor	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Corridor_8F496741.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\Corridor	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	298832
+	654850748	AK_BerlinTeldex	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_3F2B2E8C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Halls\AK_BerlinTeldex	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms	921936
+	659069708	Famous_Church	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK Medium Church_A0FBAD90.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Churches\Famous_Church	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms 	1303840
+	667537848	AK_Hamburg_Echo_Chamber	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Echo Chamber_DC72CC63.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Rooms\AK_Hamburg_Echo_Chamber	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  	403712
+	680452062	AK_BlueNoise_Room_03	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 03_FAB0F99E.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Rooms\AK_BlueNoise_Room_03	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms  	458864
+	685400320	Helicopter_Sikorski	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Helicopter_Sikorski_3FE8BED2.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Transport\Helicopter_Sikorski	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	39824
+	689379105	Dark_Hall	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_28BD1540.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Halls\Dark_Hall	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms	1489744
+	702837950	NarrowShortAlley	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Alley\AE_NarrowShortAlley_A0CDD98F.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Alley\NarrowShortAlley	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	901280
+	711600817	The_Field_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_1958D97B.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\The_Field_01		3452
+	726190851	ComplexEcho	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_ComplexEcho_F19C3389.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\ComplexEcho	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	388144
+	733994131	Large_Bright_Space	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_26D8D382.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Halls\Large_Bright_Space	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms	958672
+	734720824	AK_Hamburg_Fabrik	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Hamburg Fabrik_E3DFF2B1.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Large Spaces\AK_Hamburg_Fabrik	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 0ms  	709312
+	749103418	Live_Room	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Luna Studio_AE3BFB9E.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Rooms\Live_Room	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	607424
+	757112749	DistantSlaps	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_DistantSlaps_8307E642.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\DistantSlaps	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	299168
+	765420740	AK_Luna_Studio	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Luna Studio_DFD91B68.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Rooms\AK_Luna_Studio	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	561344
+	765520478	Large_Warehouse	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Hamburg Fabrik SCOUT_26DF88A6.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Large Spaces\Large_Warehouse	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 0ms  	288112
+	766552005	Staircase	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Staircase_0FB4BC1C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\Staircase	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	838464
+	783448466	PheeeewEcho_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_PheeeewEcho_01_12ADFA92.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\PheeeewEcho_01	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	259888
+	784884764	WideEcho	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_WideEcho_866AA260.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\WideEcho	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	288480
+	785966779	HamburgParkhaus	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Hamburg Parkhaus_B1DE8805.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Large Spaces\HamburgParkhaus	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  	1535776
+	789847363	DistantEcho	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_DistantEcho_F1FB3770.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\DistantEcho	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	260832
+	803100438	OpenThreeEchoes	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_OpenThreeEchoes_94ED670B.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\OpenThreeEchoes	Impulse response created by AudioEase.   © 2011 AudioEase.  All rights reserved.	443424
+	810134381	Church	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Church_FCF6567E.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Church		135460
+	811934406	Bright_Metallic_Space	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Stair Way Hall_5C00E06D.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Large Spaces\Bright_Metallic_Space	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 7ms  	996912
+	818534887	Metal_Scrap_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_C7596321.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Metal_Scrap_01		4772
+	823722507	Wood_Floor_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_9E59A7F4.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Wood_Floor_01		3840
+	825862339	AK_Hamburg_Fabrik_SCOUT	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Hamburg Fabrik SCOUT_68911B43.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Large Spaces\AK_Hamburg_Fabrik_SCOUT	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 0ms 	518848
+	828807711	AK_BlueNoise_Room_02	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 02_91F5BDB9.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Rooms\AK_BlueNoise_Room_02	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms 	574112
+	830379118	Blue_Reflective_Room	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Blue Noise Room 01_919EFD70.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Rooms\Blue_Reflective_Room	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	524400
+	832296042	CloseEcho	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_CloseEcho_3072E34B.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\CloseEcho	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	274352
+	847080287	ComplexDistantEcho	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_ComplexDistantEcho_FBBC2805.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\ComplexDistantEcho	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	329632
+	867122333	LivingRoom_02	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_LivingRoom_02_5EAEFCA4.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\LivingRoom_02	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	297136
+	873684731	ForestAuterlitz_DenseClose	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Forest\AE_ForestAuterlitz_DenseClose_D162BCDA.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Forest\ForestAuterlitz_DenseClose	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	822704
+	873919184	Rock_Wall	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Rock Wall_0E11A6BA.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Rock_Wall		104740
+	875305838	City_Center	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\City Center_6FDE8D0F.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\City_Center		135460
+	879974926	AK_Hamburg_Pinguin_Buro	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Hamburg Pinguin Buro_4A634847.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Rooms\AK_Hamburg_Pinguin_Buro	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 0ms  	96992
+	903989417	Radio_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_797C26B2.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Radio_01		492
+	926581161	AK_Hamburg_Harburger_See	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Harburger See_F92AEEEF.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Exteriors\AK_Hamburg_Harburger_See	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 2ms 	426432
+	930622549	HamburgHarburgerSee_Slap_02	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Harburger See_E3896B6C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Exteriors\HamburgHarburgerSee_Slap_02	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 2ms 	232528
+	932825353	DistantBuilding_MicsClose	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsClose_24177E9A.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Field\DistantBuilding_MicsClose	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	496592
+	941961704	DistantBuilding_MicsFar	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Field\AE_DistantBuilding_MicsFar_1933E848.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Field\DistantBuilding_MicsFar	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	645568
+	965606000	Thin_Walls	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Trash Box Modeler\/boxmodel_59C823C2.wem	iZotope Trash Box Modeler (Shared)	\Effects\Factory iZotope Box Modeler\Thin_Walls		5720
+	1002455079	AK_Hamburg_Stadtpark_02	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 02_82FCC1EC.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Exteriors\AK_Hamburg_Stadtpark_02	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms  	571776
+	1003161333	Medium_Wood_Hall	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\iZotope Hybrid Reverb\Medium Wood Hall_F84E3ADD.wem	iZotope Hybrid Reverb (Shared)	\Effects\Factory iZotope Hybrid Reverb Effects\Medium_Wood_Hall		58660
+	1005069349	AK_StKatharinen	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK St-Katharinen_49A1F88C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Churches\AK_StKatharinen	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 20ms 	1717936
+	1010311289	AK_Hamburg_Parkhaus	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Large Spaces\AK Hamburg Parkhaus_45879932.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Large Spaces\AK_Hamburg_Parkhaus	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  	987568
+	1010865615	AK_MediumChurch	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK Medium Church_CC223119.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\_IR Default\Churches\AK_MediumChurch	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms 	898608
+	1012937349	Petite_Room	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Rooms\AK Luna Studio_F022B780.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Rooms\Petite_Room	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	400416
+	1035327887	Medium_Church	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Churches\AK Medium Church_08A28ABA.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Churches\Medium_Church	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms 	982176
+	1036982009	Attic_01	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Attic_01_EB1AE26A.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\Attic_01	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	120432
+	1037099072	LoudEcho	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Outdoor\Street\AE_Street_LoudEcho_3100905E.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Outdoor Street\LoudEcho	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	211504
+	1045271282	Lecture_Hall	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Halls\AK Berlin Teldex_EAB2AC3D.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Halls\Lecture_Hall	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms	1533840
+	1051291759	HamburgStadtpark_Dense_Reflections	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_512DE030.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects\Audiokinetic\Exteriors\HamburgStadtpark_Dense_Reflections	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms 	300896
+	1054055703	Beetle	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Transport\AE_Beetle_830245C8.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Transport\Beetle	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	81984
+	1065017050	Classroom	C:\Users\clement.rondeau\Documents\ggj_2018\GGJ 2018\.cache\Windows\Plugins\Wwise Convolution Reverb\AudioEase\Altiverb - Outdoor and More\Domestic\AE_Classroom_8424B06A.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Altiverb - Outdoor and More\Altiverb - Outdoor and More\Domestic\Classroom	Impulse response created by AudioEase. © 2011 AudioEase.  All rights reserved.	220912
+

@@ -10,6 +10,7 @@ public class CountdownManager : MonoBehaviour {
 
 	void Start ()
     {
+        AkSoundEngine.PostEvent("ambiance", gameObject);
         StartCoroutine(Countdown());
     }
 
@@ -21,10 +22,15 @@ public class CountdownManager : MonoBehaviour {
         {
             print(i);
             counter.text = (3 - i).ToString();
+            AkSoundEngine.PostEvent("menu_back", gameObject);
             yield return new WaitForSeconds(1f);
         }
 
         counter.gameObject.SetActive(false);
         EventManager.TriggerEvent("TogglePause", new { });
+        EventManager.TriggerEvent("LaunchGame", new { });
+
+        AkSoundEngine.PostEvent("menu_select", gameObject);
+        AkSoundEngine.PostEvent("music_switch", gameObject);
     }
 }
