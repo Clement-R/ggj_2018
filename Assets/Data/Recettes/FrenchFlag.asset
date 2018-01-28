@@ -13,7 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeName: The French Flag
   type: 0
-  score: 10
+  sprite: {fileID: 0}
+  score: 30
   ingredients:
   - {fileID: 11400000, guid: 773a324a7592dff4dabec51f2ca0c369, type: 2}
   - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}

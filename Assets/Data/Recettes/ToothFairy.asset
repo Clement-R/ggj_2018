@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Tooth Fairy
   type: 0
   sprite: {fileID: 0}
-  score: 10
+  score: 50
   ingredients:
   - {fileID: 11400000, guid: b357757ae64903e4190d5582111fb9e0, type: 2}
   - {fileID: 11400000, guid: 773a324a7592dff4dabec51f2ca0c369, type: 2}

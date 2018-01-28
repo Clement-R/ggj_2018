@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Bloodlust
   type: 1
   sprite: {fileID: 0}
-  score: 10
+  score: 20
   ingredients:
   - {fileID: 11400000, guid: 175d9e14872cf5e42b55933cc9b8b301, type: 2}
   - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}

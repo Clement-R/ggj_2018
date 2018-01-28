@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Black Out
   type: 0
   sprite: {fileID: 0}
-  score: 10
+  score: 60
   ingredients:
   - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}
   - {fileID: 11400000, guid: a307c8c2dc0199447a19035cff815cc4, type: 2}

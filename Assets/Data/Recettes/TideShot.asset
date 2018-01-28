@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Tide Shot
   type: 1
   sprite: {fileID: 0}
-  score: 10
+  score: 20
   ingredients:
   - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}
   - {fileID: 11400000, guid: 27367e21b4eb93f45b398ecd0c0fd11a, type: 2}

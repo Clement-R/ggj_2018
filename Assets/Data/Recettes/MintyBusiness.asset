@@ -14,7 +14,7 @@ MonoBehaviour:
   recipeName: The Minty Business
   type: 1
   sprite: {fileID: 0}
-  score: 10
+  score: 30
   ingredients:
   - {fileID: 11400000, guid: b1939f6cc368a004681cdc7207296d95, type: 2}
   - {fileID: 11400000, guid: 792bf001b852765459374872456ccd2a, type: 2}
