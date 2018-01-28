@@ -31,6 +31,11 @@ public class CountdownManager : MonoBehaviour {
         EventManager.TriggerEvent("LaunchGame", new { });
 
         AkSoundEngine.PostEvent("menu_select", gameObject);
-        AkSoundEngine.PostEvent("music_switch", gameObject);
+        AkSoundEngine.PostEvent("music_switch", gameObject, (uint) AkCallbackType.AK_MusicSyncBeat, BeatEvent, null);
+    }
+
+    void BeatEvent(object in_cookie, AkCallbackType in_type, object in_callback_info)
+    {
+        EventManager.TriggerEvent("Beat", new { });
     }
 }
