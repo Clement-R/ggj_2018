@@ -31,6 +31,10 @@ public class LevelManager : MonoBehaviour {
     public event RecetteEnded joueur1Ended;
     public event RecetteEnded joueur2Ended;
 
+    public delegate void AddedIngredient(int player);
+    public event AddedIngredient ingredientAdded;
+    public event AddedIngredient ingredientMissed;
+
     public event System.Action finish;
 
     Recettes[] allRecipes;
@@ -100,6 +104,10 @@ public class LevelManager : MonoBehaviour {
             if(currentJoueur1 != null)
             {
                 achieved = currentJoueur1.ConsumeIngredient(ingredient);
+                if (achieved && ingredientAdded != null)
+                {
+                    ingredientAdded.Invoke(0);
+                }
             }
         }
         if (player == 1)
@@ -111,6 +119,10 @@ public class LevelManager : MonoBehaviour {
             if (currentJoueur2 != null)
             {
                 achieved = currentJoueur2.ConsumeIngredient(ingredient);
+                if (achieved && ingredientAdded != null)
+                {
+                    ingredientAdded.Invoke(1);
+                }
             }
         }
         if (!achieved)
@@ -118,10 +130,18 @@ public class LevelManager : MonoBehaviour {
             if(player == 0)
             {
                 currentJoueur1 = Instantiate<Recettes>(currentJ1Original);
+                if(ingredientMissed != null)
+                {
+                    ingredientMissed.Invoke(0);
+                }
             }
             else
             {
                 currentJoueur2 = Instantiate<Recettes>(currentJ2Original);
+                if (ingredientMissed != null)
+                {
+                    ingredientMissed.Invoke(1);
+                }
             }
         }
         return achieved;
@@ -171,7 +191,10 @@ public class LevelManager : MonoBehaviour {
     private void Update()
     {
         elapsedTime += Time.deltaTime;
-        
+        if (Input.GetButtonDown("A_1"))
+        {
+            Time.timeScale = 0;
+        }
         if((elapsedTime > level.time || DayFinished()) && finish != null)
         {
             finish.Invoke();

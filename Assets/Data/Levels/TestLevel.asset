@@ -14,4 +14,6 @@ MonoBehaviour:
   time: 50
   recetteJoueur1:
   - {fileID: 11400000, guid: acf603700698cdd4782e69b00b3be968, type: 2}
-  recetteJoueur2: []
+  - {fileID: 11400000, guid: 7a714b89cf9e9aa40889e1a458ce1416, type: 2}
+  recetteJoueur2:
+  - {fileID: 11400000, guid: 020ff55d9fc9a5946a1a5ca786cca18f, type: 2}
