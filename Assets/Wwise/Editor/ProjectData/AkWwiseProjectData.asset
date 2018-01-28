@@ -459,9 +459,9 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
-  defaultPoolSize: 81920
-  lowerPoolSize: 40960
-  streamingPoolSize: 20480
+  defaultPoolSize: 163840
+  lowerPoolSize: 81920
+  streamingPoolSize: 40960
   preparePoolSize: 0
   memoryCutoffThreshold: 0.95
   callbackManagerBufferSize: 4
