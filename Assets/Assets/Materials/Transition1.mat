@@ -69,12 +69,12 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RealTime: 56.48237
+    - _RealTime: 39.222103
     - _Selector: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TimeBegin: 11.639901
+    - _TimeBegin: 23.008413
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:

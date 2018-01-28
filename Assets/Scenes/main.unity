@@ -2670,12 +2670,12 @@ Prefab:
     - target: {fileID: 224240919888320124, guid: e753dffca32019142b970a2d4d18a2b2,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 730.17
+      value: 730.47
       objectReference: {fileID: 0}
     - target: {fileID: 224240919888320124, guid: e753dffca32019142b970a2d4d18a2b2,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -620.76
+      value: -620.87
       objectReference: {fileID: 0}
     - target: {fileID: 224240919888320124, guid: e753dffca32019142b970a2d4d18a2b2,
         type: 2}
@@ -2726,6 +2726,42 @@ Prefab:
         type: 2}
       propertyPath: m_SortingLayer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224545345919203852, guid: e753dffca32019142b970a2d4d18a2b2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 224545345919203852, guid: e753dffca32019142b970a2d4d18a2b2,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 288.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114775860333770320, guid: e753dffca32019142b970a2d4d18a2b2,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 32e65472c3709644ba2049ebfaa4caf8,
+        type: 3}
+    - target: {fileID: 114775860333770320, guid: e753dffca32019142b970a2d4d18a2b2,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224214172308844412, guid: e753dffca32019142b970a2d4d18a2b2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 63.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224214172308844412, guid: e753dffca32019142b970a2d4d18a2b2,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 272.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114743057265325832, guid: e753dffca32019142b970a2d4d18a2b2,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e753dffca32019142b970a2d4d18a2b2, type: 2}

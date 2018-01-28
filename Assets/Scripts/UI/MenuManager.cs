@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
 
+    public float alphaScan = 1f;
+
     private void Start()
     {
         Scanline scanline = Camera.main.GetComponent<Scanline>();
         if (scanline)
         {
-            scanline.SetAlpha(1);
+            scanline.SetAlpha(alphaScan);
         }
     }
 
