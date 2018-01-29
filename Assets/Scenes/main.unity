@@ -346,7 +346,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   timeToMove: 0.25
-  LightItUp: {fileID: 0}
+  LightItUp: {fileID: 11400000, guid: 28251d57edfc6144eaf7842249167d2a, type: 2}
   Stire: {fileID: 11400000, guid: 073f5fc8d833d12438c7d8694c6e50c9, type: 2}
   StireReverse: {fileID: 11400000, guid: e58f07719bd42584ab78ddf341a47fd5, type: 2}
   Shake: {fileID: 11400000, guid: ecf6d9689893b5d459e31397c639580e, type: 2}
@@ -638,7 +638,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   timeToMove: 0.25
-  LightItUp: {fileID: 0}
+  LightItUp: {fileID: 11400000, guid: 28251d57edfc6144eaf7842249167d2a, type: 2}
   Stire: {fileID: 11400000, guid: 073f5fc8d833d12438c7d8694c6e50c9, type: 2}
   StireReverse: {fileID: 11400000, guid: e58f07719bd42584ab78ddf341a47fd5, type: 2}
   Shake: {fileID: 11400000, guid: ecf6d9689893b5d459e31397c639580e, type: 2}
@@ -704,7 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bbc68e4a5032a40993b58bb022f67e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: {fileID: 11400000, guid: a0cd35cd35346d64d807718047656496, type: 2}
+  level: {fileID: 11400000, guid: 532a0e6f6706ab54699f962b5678190b, type: 2}
   currentJoueur1: {fileID: 0}
   currentJoueur2: {fileID: 0}
   type: 0
