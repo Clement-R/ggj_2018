@@ -192,7 +192,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PLOPLOPL
+  m_Text: SCORE
 --- !u!222 &16049926
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2212,6 +2212,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114086622357181114, guid: cbac93935d15e8948b3492a768586593,
+        type: 2}
+      propertyPath: m_Text
+      value: RECETTE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114460968116983570, guid: cbac93935d15e8948b3492a768586593,
+        type: 2}
+      propertyPath: m_Text
+      value: PRESS (RB) TO SEND
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbac93935d15e8948b3492a768586593, type: 2}
   m_IsPrefabParent: 0
@@ -3451,6 +3461,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114086622357181114, guid: cbac93935d15e8948b3492a768586593,
+        type: 2}
+      propertyPath: m_Text
+      value: RECETTE
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbac93935d15e8948b3492a768586593, type: 2}

@@ -167,6 +167,12 @@ public class PlayerMovement : MonoBehaviour {
                             AkSoundEngine.PostEvent("apparition_recipe", gameObject);
                         }
                     }
+                } else
+                {
+                    // Reset Drink
+                    FailMove();
+                    EventManager.TriggerEvent("WrongBottle", new { type = _playerId });
+                    print("Reset Drink");
                 }
 
                 print("Go to idle stance");

@@ -238,9 +238,9 @@ public class LevelManager : MonoBehaviour {
 
     public bool Valider(int player)
     {
-        EventManager.TriggerEvent("ReciepeWin", new { type = player });
         if (player == 0 && currentJoueur1.IsGood())
         {
+            EventManager.TriggerEvent("ReciepeWin", new { type = player });
             recipesDone++;
             score += currentJoueur1.score;
             if (type == Type.Random)
@@ -256,6 +256,7 @@ public class LevelManager : MonoBehaviour {
         }
         if (player == 1 && currentJoueur2.IsGood())
         {
+            EventManager.TriggerEvent("ReciepeWin", new { type = player });
             Debug.Log("J2 Validé!");
             recipesDone++;
             score += currentJoueur2.score;
