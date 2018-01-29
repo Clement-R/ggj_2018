@@ -69,10 +69,10 @@ Material:
     - _Move: 0.4
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _ScanLineSize: 0.333
+    - _ScanLineSize: 3
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 0.01
+    - _Speed: 0.5
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
