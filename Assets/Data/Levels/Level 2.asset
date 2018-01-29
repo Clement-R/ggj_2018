@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9cfa481ff14bf41b2b3a5ae03640db, type: 3}
   m_Name: Level 2
   m_EditorClassIdentifier: 
-  time: 50
+  time: 270
   recetteJoueur1:
   - {fileID: 11400000, guid: 2f2d2de1f80fb6e43a842d36e4574a98, type: 2}
   - {fileID: 11400000, guid: 56daa530db048cb4a8d11f135adece3a, type: 2}
